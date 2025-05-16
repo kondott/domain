@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>独自ドメイン取得でメールアドレスを作る方法</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/mail/domain-mailadrress.html" />
+
+<meta property="og:title" content="独自ドメイン取得でメールアドレスを作る方法">
+<meta property="og:description" content="独自ドメインを持つことで専用のメールアドレスを作ることが出来ます。どのような準備が必要になるのか当ページで解説しています">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/mail/domain-mailadrress.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?><!--上段ここまで-->
+
+
+
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/mail/tukuru.html" >独自ドメイン取得でメールアドレスを作る方法</a></li>
+</ul>
+</div>
+
+
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+<h1><span class="aka">【解説】</span>独自ドメイン取得でメールアドレスを作る方法</h1>
+
+<p>
+このページでは<span class="midori">独自ドメインを取得しオリジナルのメールアドレスを作る方法</span>について解説をします。
+</p>
+
+<p>
+解説にあたり必要な工程を6つにわけています。
+</p>
+
+<p>
+まず、メールアドレスを作るには<span class="aka">独自ドメインとサーバー</span>の契約が必要です。
+</p>
+
+<p>
+その次に、<span class="aka">ドメイン設定、メールアカウント作成、ネームサーバー設定</span>など設定関係の作業を行います。
+</p>
+
+<p>
+最後にOutlookやGmailなどのメーラーに設定をすれば完了です。
+</p>
+
+
+<div class="themebox" >
+<ul>
+<li>順序１．<a href="#domain">独自ドメインを契約する</a></li>
+<li>順序２．<a href="#rentalserver">レンタルサーバーを契約する</a></li>
+<li>順序３．<a href="#domaintouroku">管理画面でドメイン設定をする（レンタルサーバー側）</a></li>
+<li>順序４．<a href="#mailaccount">管理画面でメールアドレスを作る（レンタルサーバー側）</a></li>
+<li>順序５．<a href="#name">管理画面でネームアドレス設定をする（ドメイン側）</a></li>
+<li>順序６．<a href="#mailer">各種メーラーに設定する</a></li>
+</ul>
+</div>
+
+
+<p>
+  それぞれの工程について詳しく解説していきます。
+</p>
+
+
+
+
+<h2 id="domain" class="t10">準備1．独自ドメインを契約する</h2>
+
+<p>
+専用メールアドレスを作るためには、まずドメインを取得してレンタルサーバーを契約するところから始まります。
+</p>
+
+<p>
+なぜドメインを取得するのかと言うと<span class="midori">取得した独自ドメインのドメイン名がそのままメールアドレスになるから</span>です。
+</p>
+
+<p>
+仮に「<span class="midori">abc.com</span>」という独自ドメインを取得した場合だと、次のようなメールアドレスが作れます。
+</p>
+
+<div class="ddd">
+<p class="futoji">
+  info<span class="aka">@abc.com（赤字が取得したドメイン部分）</span><br>
+  sales<span class="aka">@abc.com</span><br>
+  t.yamada<span class="aka">@abc.com</span>
+</p>
+</div>
+
+<p>
+  上記からわかるようにメールアドレスに取得したドメインが入っています。
+</p>
+<p>
+  このようにメールアドレスを作成する時は「@」アットマークより右側の部分にドメインが入ると理解しておきましょう。
+</p>
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+          では、実際にドメインを取得してみましょう。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<h3>独自ドメインを取得する流れ</h3>
+
+<p>
+  ドメインを取得するには3つのステップが必要です。
+</p>
+
+<div class="ddd">
+  <h4 class="ddd">ドメインを取得する流れ</h4>
+  <ul>
+    <li>ステップ１．ドメイン名を決める</li>
+    <li>ステップ２．考えたドメイン名が空きドメインか検索する</li>
+    <li>ステップ３．ドメインを契約する</li>
+  </ul>
+</div>
+
+
+<h4>ステップ１．ドメイン名を決める</h4>
+<p>
+  まずドメイン名を考えます。自分の好きなドメイン名を考えて下さい。
+</p>
+<p>
+  ドメイン名は「<span class="midori">任意の文字列</span>」＋「<span class="midori">.comなどトップレベルドメインの種類</span>」の2つの要素から成り立ちます。
+</p>
+<p>
+  仮に「株式会社ドメイン」という会社のドメインを作る場合で考えてみましょう。
+</p>
+<p>
+  任意の文字列に「domain」を持ってきます。次にトップレベルドメインを「.com」にするとします。
+  この場合「domain.com」というドメイン名に決まります。
+</p>
+<p>
+  こうして決まったドメインをドメイン検索という検索システムで調べます。
+</p>
+
+
+<h4>ステップ２．考えたドメイン名が空きドメインか検索する</h4>
+
+<p>
+  「domain.com」というドメイン名の候補が決まった場合、それが空きドメイン（まだ誰も取得していないドメイン）か調べる必要があります。
+</p>
+<p>
+  この場合、お名前.comやムームードメインなどのドメイン事業者のWebサイトで、ドメイン検索を行うことで調べることが出来ます。
+  ドメイン検索はGoogleで検索するように無料でかつ何回でも調べることが出来ます。
+</p>
+<p>
+  例として「domain.com」をお名前.comでドメイン検索してみましょう。
+</p>
+
+<p class="t50">
+  ↓検索欄に「domain」を入力して、トップレベルドメインを「.com」にしたまま検索を実施します。
+</p>
+<p>
+  <img src="/img/domain-kensaku011.png" width="100%" alt="ドメイン検索">
+</p>
+
+<p class="t50">
+↓結果が出ましたが「×」ばかりでどのトップレベルドメインにおいても空きドメインではないことがわかります。
+空きドメインだと「〇」で表示されます。
+</p>
+
+<p>
+  <img src="/img/domain-kensaku012.png" width="100%" alt="ドメイン検索 結果">
+</p>
+
+<p class="t50">
+  この場合、任意の文字列であるキーワードを長くする必要があります。「domain」ではなくて「domains」や「domainly」のように
+  次のアイディアを出しましょう。
+</p>
+
+<p>
+  ↓下のように「domainly」再検索することで空きドメインが出てきます。
+</p>
+
+<p>
+  <img src="/img/domain-kensaku013.png" width="100%" alt="ドメイン検索 再建策">
+</p>
+
+<p>
+  空きドメインが出てきたら、その空きドメインで契約するかどうかを決めることになります。
+</p>
+<p>
+  仮にここでは任意の文字列を「domainly」、トップレベルドメインを「.jp」として「domainly.jp」で取得するとしましょう。
+</p>
+
+
+<h4>ステップ３．ドメインを契約する</h4>
+
+<p>
+  空きドメインが出てきて、そのドメイン名が気に入ればそのままドメインを取得することが出来ます。
+</p>
+
+<p>
+  その場で申込みが出来ます。契約をするとドメインの権利を1年間分購入したことになります。
+</p>
+
+
+
+
+<h3>独自ドメインを持つための2つの注意点</h3>
+
+<p>
+独自ドメインを契約するときに気を付けて欲しい点がいくつかあります。
+</p>
+
+<div class="ccc">
+<ul>
+  <li><span class="futoji">初年度料金はキャンペーンでお得</span><br>（2年目以降の更新料金も調べておきましょう）</li>
+  <li><span class="futoji">1年ごとの料金支払いを忘れないこと</span><br>（料金が不払いになるとドメインが失効になります）</li>
+</ul>
+</div>
+
+<h4>初年度料金はキャンペーンでお得</h4>
+<p>
+  お名前.comやエックスサーバードメインなど人気ドメイン事業者では、初年度キャンペーンが多く実施されています。
+</p>
+<p>
+  そのため初年度の費用がお得になっているドメインが多いです。
+</p>
+<p>
+  ドメイン料金は2年目から更新料金がかかってきます。初年度が100円でも更新料金がいくらになるのか調べてから購入しましょう。
+</p>
+
+
+<h4>料金の支払い忘れには注意</h4>
+
+<p>
+  また、ドメインの登録期間は1年ごとになり、その度に料金を支払います。
+  料金の支払い忘れをする方も多くなっているので「自動支払い設定」などを設定しておきましょう。
+ </p>
+
+
+
+
+
+<h2 id="rentalserver" class="t10">準備2．レンタルサーバーを契約する</h2>
+
+<p>
+独自ドメインを持ったら、次にレンタルサーバーを借りましょう。
+</p>
+
+<p>
+何故、レンタルサーバーを借りるのかと言うと独自ドメインはURLを登録する権利を持つだけで、メールアドレスを作った場合の
+<span class="midori">メールデータの保管やメールアカウント作成などはレンタルサーバーで行う</span>ようになっているためです。
+</p>
+
+<p>
+では、メールの運営にあたってレンタルサーバーで出来ることにはどんなことがあるでしょうか？
+</p>
+
+<h3>レンタルサーバーで作れるもの</h3>
+
+<p>
+  大体のレンタルサーバーでは<span class="aka">メールアドレスの作成、メーリングリストの作成</span>が出来ます。
+</p>
+
+<div class="ddd">
+  <ul class="futoji">
+    <li>メールアドレス作成</li>
+    <li>メーリングリスト作成</li>
+  </ul>
+</div>
+
+<p>
+  プランによってメールアドレスの作成数やメーリングリストを作れる数は異なります。
+</p>
+<p>
+  メールアドレスについては格安サーバーでなければ無制限にしていることが多いです。
+  メーリングリストについては制限がある、もしくは扱っていない場合もあるので利用する場合はプランの内容をよく調べておきましょう。
+</p>
+
+
+<h3>レンタルサーバーで出来る機能</h3>
+
+<p>
+  その他にもメールにはいろいろな機能なあります。
+</p>
+<p>
+  プランによってメール機能は大きく違ってきますが以下のような機能がついていることがあります。
+</p>
+
+<div class="ddd">
+  <ul class="futoji">
+    <li>メール転送</li>
+    <li>メール自動返信</li>
+    <li>SPF/DKIM/DMARC対応</li>
+    <li>ウェブメール機能</li>
+    <li>誤送信防止（上司承認機能）</li>
+  </ul>
+</div>
+
+
+
+<h3>おすすめサーバーは「エックスサーバー」</h3>
+
+<p>
+  どのレンタルサーバーを借りるべきなのか悩むところではありますが、2024年であればエックスサーバーがシェアNo1となっていておすすめです。
+</p>
+
+<p>
+  稼働率も99.99％と高く安定性はばっちり。高速化にも対応しています。
+</p>
+
+
+
+<p class="futoji">
+→<a href="/server/">人気レンタルサーバー17社を比較してまとめました</a>
+</p>
+
+
+
+
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+          独自ドメインを登録しレンタルサーバーを借りたら最初の準備は完了です。
+次はメールアドレスを作るための設定を実施していきましょう。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<h2 id="domaintouroku">準備3．レンタルサーバー側の管理画面で「ドメイン登録」をする</h2>
+
+<p>
+1番はじめに行う設定は<span class="midori">レンタルサーバー側の管理画面で行う「独自ドメイン登録」</span>になります。
+</p>
+
+<p>
+これは取得したドメインをレンタルサーバーに登録する設定になります。
+当サイトであれば「domain-server-study.com」が取得ドメインになりますので、このドメイン名をレンタルサーバーに登録する形になります。
+</p>
+
+<p>
+今回はレンタルサーバーを「エックスサーバー」で契約したと仮定して、エックスサーバーの管理画面を用いて説明していきます。
+</p>
+  
+  
+
+<h3>「ドメイン登録」を設定する方法</h3>
+
+
+<p>
+（１）エックスサーバーの管理画面にログインします。次に「ドメイン設定」をクリックします。
+</p>
+
+
+<p class="center">
+<img src="/img/domain-touroku001.png" width="500px">
+</p>
+
+
+<p>
+（２）「ドメイン設定」＞「ドメイン設定追加」をクリックします。
+</p>
+
+<p class="center">
+<img src="/img/domain-touroku002.png" width="500px">
+</p>
+
+
+
+<p>
+（３）自分で取得した独自ドメインを①に入力して、その後に「確認画面」をクリックします。
+</p>
+
+<p class="center">
+<img src="/img/domain-touroku003.png" width="500px">
+</p>
+
+<p>
+④入力したドメイン名を確認し「追加」をクリックします。
+</p>
+
+
+
+<p class="center">
+<img src="/img/domain-touroku004.png" width="500px">
+</p>
+
+
+<p>
+この時に無料独自設定は「追加」、Ｘアクセラレータは「有効にする」
+となっていると思いますが、これはこのままで問題ありません。
+</p>
+
+
+<p>
+また「ネームサーバーがエックスサーバー指定のものになっていません」などネームーサーバーについての表示がありますが、後程設定するのでこのままで問題ありません。
+</p>
+
+
+
+<p>
+エックスサーバーの場合は、この設定により「これからこのドメインを活用していきます」という意味でドメイン登録が完了になります。
+</p>
+
+<p>
+どのレンタルサーバー会社であっても、ドメイン登録を行う設定箇所があります。
+同様に設定してください。
+</p>
+
+<p>
+ドメイン登録が完了したら、次にメールアカウントを追加しましょう。
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="mailaccount">準備4．レンタルサーバー側の管理画面で「メールアカウント」の設定を行なう</h2>
+
+<p>
+ドメイン設定が完了したら、次に行うのがメールアドレスの設定になります。
+ここの設定でメールアドレスを生成することになります。
+</p>
+
+<p>
+ちゃんとドメイン設定が完了していないと、メールアドレスが作れませんので注意してください。
+</p>
+
+
+<h3>メールアドレスを作る設定の順序</h3>
+
+<p>
+①エックスサーバーの管理画面から「メールアカウント設定」を選択します。
+</p>
+
+<p class="center">
+<img src="/img/mail-sakusei001.png" width="500px">
+</p>
+
+
+<p>②「メールアカウント設定」の画面から独自ドメインの「選択」を選ぶ</p>
+
+
+<p>
+「メールアカウント設定」の画面にはこれまでに登録している独自ドメインが全て表示されいます。自分がメールアドレスを作りたい独自ドメインの「選択」を選びましょう。
+</p>
+
+<p class="center">
+<img src="/img/mail-sakusei002.png" width="600px">
+</p>
+
+
+
+<p>③「メールアカウント」の追加を選択</p>
+
+<p>
+「選択」を選んでから、次の画面で「メールアカウントの追加」を選びます。
+</p>
+
+
+<p class="center">
+<img src="/img/mail-sakusei003.png" width="600px">
+</p>
+
+
+
+<p>④「メールアカウント追加」の画面からメールアドレスを生成する</p>
+
+<p>
+「メールアカウント追加」の画面が開いたら、この画面からメールアドレスを生成することになります。自分が考えたメールアドレスとパスワードを入力してください（好きな任意の文字列を入力することが出来ます）
+</p>
+
+<p>
+・メールアドレス（メールアカウント）の入力<br>
+・パスワードを入力
+</p>
+
+<p class="center">
+<img src="/img/mail-sakusei004.png" width="600px">
+</p>
+
+
+<p>
+容量やコメントについては後からも変更できるので初期状態のままで大丈夫です。
+アドレス名とパスワードを入れたら「確認画面」を選択しましょう。
+</p>
+
+<p class="center">
+<img src="/img/mail-sakusei005.png" width="600px">
+</p>
+
+
+<p>⑤「追加する」でメールアドレス作成が完了</p>
+
+<p>
+「追加する」を選択することで、メールアドレスの登録が完了となります。
+この時点で専用のメールアドレスが1つ作られたことになります。
+</p>
+
+<p class="center">
+<img src="/img/mail-sakusei006.png" width="600px">
+</p>
+
+
+<p>⑥作成したメールアドレスを確認しましょう。</p>
+
+<p>
+もう一度メールアカウント設定から、メールアドレスが作れているか確認しておきましょう。
+</p>
+
+<p class="center">
+<img src="/img/mail-sakusei007.png" width="600px">
+</p>
+
+<p>
+このようにメールアドレスが表示されていれば、アドレス作成が完了しています。
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="name">準備5．ドメイン側の管理画面で「ネームサーバー設定」を行う</h2>
+
+<p>
+この時点でメールアドレスは生成できていますが、まだ独自ドメインとレンタルサーバーが紐づいていません。
+</p>
+
+<p>
+ドメイン登録しているドメイン会社が「ムームドメイン」であれば、ムームードメインの管理画面に入って「エックスサーバーに向けて紐づけます」と言うネームサーバー設定を行ってください。
+</p>
+
+<p>
+このネームサーバー設定（紐づけ設定）をしていないと、独自ドメインがどのレンタルサーバーで活躍するのか、わからないまま浮いてしまっている状態になります。
+メールをするだけでもしなくてはいけない設定になります。
+</p>
+
+<p>
+ネームサーバー設定については別ページで詳しく説明しています<br>
+（参照：<a href="/dns.html">【かんたん解説】ネームサーバー設定をわかりやすく解説します）</a>
+</p>
+
+
+
+
+
+
+
+
+
+<h2 id="mailer">準備6．各種メーラーにメールアドレスを追加する</h2>
+
+
+<p>
+メールアドレスを作ったら、次は「Outlook」など各種メーラーで設定をする形になります。
+Webメールとしてエックスサーバーの管理画面に入ってメールを活用することも出来ます。
+</p>
+
+<p>
+各種メーラーでの設定については<a href="https://www.xserver.ne.jp/manual/man_mail_setting.php">メールソフトの設定（エックスサーバー）</a>を参照してください。
+</p>
+
+<p class="center">
+<img src="/img/mail-sakusei008.png" width="600px">
+</p>
+
+<p>
+以上で、レンタルサーバーと独自ドメインを使った、専用メールアドレス作成の準備解説とさせて頂きます。
+</p>
+
+
+<p>
+このように独自ドメインとレンタルサーバーがあれば、自分の好きなメールアドレスをいくつでも幾つでも作ることが出来るようになり個人だけでなく、会社でビジネス用にメールアドレスの管理をすることも可能になります。
+</p>
+
+<p>
+今回は独自ドメインを活用したメールアドレス作成について説明をしましたが、
+Gmailなどのフリーメールを作る方法などメールサービス全般についても解説をしています。
+こちらも良かったら参照して見てください。
+</p>
+
+
+
+<div class="themebox" >
+<ul>
+<li><a href="/mail/">メールアドレスの作り方やメールサービスを徹底解説</a>：フリーメールアドレス比較や、会社や法人用のアドレス作成の解説など</li>
+</ul>
+</div>
+
+
+
+<p class="right font11">
+*1：ドメイン会社のメールサービスも含む
+</p>
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここから中段の右ＢＯＸ部分が始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidemenu_mail.php'); ?>
+
+
+
+</div><!--右ＢＯＸここまで-->
+
+</div><!--中段ここまで-->
+
+
+
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

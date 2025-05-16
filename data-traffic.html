@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>転送量とは？レンタルサーバーにおける転送量の解説・調べ方</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/data-traffic.html" />
+
+
+
+<meta property="og:title" content="転送量とは？レンタルサーバーにおける転送量の解説・調べ方">
+<meta property="og:description" content="レンタルサーバーにおける転送量の説明">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/data-traffic.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "転送量とは？レンタルサーバーにおける転送量の解説・調べ方",
+	  "image":        "https://www.domain-server-study.com/img/main_img_server.jpg" ,
+	  "dateModified": "2024-09-16", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="data-traffic.html" >転送量とは？</a></li>
+
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+<h1>転送量とは？レンタルサーバーにおける転送量の解説と調べ方</h1>
+
+
+<p class="font11 right t10 b10">更新：<time datetime="2023-07-25">2024年9月16日</time></p>
+<p class="t10">
+<img src="/img/data-traffic-main.jpg" alt="レンタルサーバー 転送量" width="100%">
+</p>
+
+<p>
+	当ページでは転送量について次の3点について解説しています。
+</p>
+
+<div class="ddd">
+	<h4 class="ddd">転送量について</h4>
+	<ol>
+		<li>転送量とは？どんなもの？</li>
+		<li>転送量を調べる方法</li>
+		<li>各レンタルサーバーの転送量を比較</li>
+	</ol>
+</div>
+
+<p>
+結果から言うと「転送量」については<span class="midori">ほとんどのレンタルサーバーで充分なデータ量が提供されています</span>
+</p>
+
+<p>
+	そのため1日数万アクセスあるサイトでもない限り転送量を気にする必要はないというのが実情で、レンタルサーバーを選ぶ際に「転送量はどれくらいあるのか？」ということは
+	あまり重要ではなくなってきています。
+</p>
+
+
+<p>
+例えばエックスサーバーでは転送量が無制限となっていますし、
+低価格プランのスターサーバー（ライトプラン・月額330円）でも1日の転送量は500GBものデータ量が提供されています。
+</p>
+
+<p>
+仮に写真を沢山載せているサイトで1ページあたり平均10MBものデータ量を使うサイトで、かつ1日あたり1万アクセスもあるサイトがあるとしましょう。
+この場合でも1日あたりの転送量は「1万アクセス」×「10MB」で100GBでしかありません。スターサーバーのライトプランでも400GB余る計算になります。
+</p>
+
+<p>
+転送量よりも高速化や稼働率などの安定性をより重視していった方がいいでしょう。
+</p>
+
+<div class="section">
+	<div class="oneArea">
+	  <div class="onebox">
+		<div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+		<div class="fukiArea">
+		  <div class="fukidasi">
+			今では低価格プランでも1日1万アクセスは問題なく耐えうる転送量になっています。
+  
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+<h2>転送量とは？</h2>
+<p>
+	より詳しく転送量について説明をしていきましょう。
+</p>
+
+
+<h3>転送量とはアクセス数×1ページあたりの平均データ量から計算できる「データ量の合算数値」のこと</h3>
+
+<p>
+	Webサイトに訪問者が訪れた際、テキストデータや画像データを見ることになります。
+	これらのデータはレンタルサーバーからネットワークを通って訪問者へ送られます。
+</p>
+<p>
+	テキストだけのデータであれば1ページあたり100KBや200KBだけでしかないかもしれませんし、動画や写真が使われていれば10MB～20MB以上になるかもしれません。
+</p>
+<p>
+	たくさんのページがある中で1日あたり1万人のアクセス数があったとします。
+	この場合、「1万アクセス」×「1ページあたりの平均データ量」で計算できるものが転送量となります。
+</p>
+<p>
+	当然、アクセス数が多くなってページビューが増えれば増えるだけ転送量は増えます。1ページごとのテキスト量や画像データが大きければ、やはり転送量は増えます。
+</p>
+
+
+
+
+<h3>「ページビュー」×「1ページあたりのデータ量」で計算できる</h3>
+<p>
+別のケースを持って1日あたりの転送量を計算してみましょう。
+</p>
+<p>
+あるブログでは1日あたりのページビューが3,000あるとします。
+</p>
+<p>
+1ページあたりのデータ量は画像を多用しているブログだと仮定して多めに7MBだとします。
+</p>
+<p>
+この場合、1日あたりの転送量はどのくらいになるでしょうか。
+</p>
+
+<div class="ccc">
+<p>
+<span class="aka">3,000ページビュー × 7MB＝ 21,000MB（21GB）が1日あたりの転送量</span>
+</p>
+</div>
+
+<p>
+計算すると1日あたりの転送量は「<span class="futoji">21GB</span>」ということになります。
+</p>
+
+<p>
+	一見すると21GBなのでかなり大きいデータ量に思えますが、先述したようにスターサーバー（ライトプラン）でも1日あたり500GBもの転送量が用意されています。
+</p>
+<p>
+	仮にページビュー数が10倍の1日あたり3万になったとしても転送量は210GBなので、制限である500gbには余裕があります。
+</p>
+
+
+
+
+
+<h3>多くのレンタルサーバーでは転送量が無制限になっている。</h3>
+<p>
+	この転送量。実は標準的なレンタルサーバー（月額1200円～1500円）では大半が無制限となっています。
+</p>
+
+<p>
+そのためプラン選びにおいて、転送量はそこまで気にしないでも良い要素と言って良いでしょう。
+</p>
+
+
+
+
+<h5>当サイトの1ページあたりのデータ量はわずか210KB</h5>
+
+<p>
+この転送量、当サイトにおいてはどのぐらいのデータ量になっているかを計算してみました。
+海外の調査サイトである<a href="https://gtmetrix.com/" target="_blank">GTmetrix</a>を使って算出しています。
+</p>
+
+<p>
+当サイトはワードプレスではなく自前のHTMLで記述している静的サイトのためデータ容量はとても軽くなっています。
+例えばこのページについてはわずか210KBのデータ容量となっています。
+</p>
+
+<p class="center">
+<img src="/img/gtmetrix_my_homepage.png" width="500">
+</p>
+
+<h5>ワードプレスの１ページあたりデータ量は大体1MB～3MB</h5>
+
+<p>
+実際には、ワードプレスを作る方が多いと思いますので、ワードプレスにおける1ページあたりのデータ容量についても調べてみました。
+</p>
+
+<p>
+ワードプレスで構築されていそうなサイトを5つほど調べたところ、大体1ページあたり1MB～3MBのデータ容量になりました。
+</p>
+
+<p>
+結果、素材のデータ量が大きな割合になっているところもあれば、
+意外にもJavascriptのデータ量が素材データよりも大きくなっているページも半数近くありました。
+</p>
+	
+
+<p>
+体感的に、<span class="aka">1人で作る一般的なワードプレスサイトであれば、1ページあたりのデータ量は1MB～2MBぐらい</span>になるのではないかと予想します。
+</p>
+
+
+
+
+
+
+
+
+<h2 id="hikaku" class="t40">レンタルサーバー転送量の比較</h4> 
+
+	<p>
+	各社レンタルサーバーの転送量制限について表にまとめてみました。
+	</p>
+	<p>
+	2020年以降に多くのレンタルサーバーが転送量を無制限に移行した結果、次のようになっています。
+	</p>
+	
+	
+	
+	<div class="spec">
+		<table>
+		
+		<tr>
+		<th class="hai" width="35%">会社名</th>
+		<th class="hai" width="65%">転送量</th>
+		</tr>
+	
+
+		<tr>
+		<th class="link"><a href="/server/xserver.html">エックスサーバー</a></th>
+		<td>無制限</td>
+		</tr>
+
+		<tr>
+		<th class="link"><a href="/server/conoha.html">Conoha Wing</a></th>
+		<td>無制限</td>
+		</tr>
+	
+		<tr>
+		<th class="link"><a href="/server/onamae-server.html">お名前レンタルサーバー</a></th>
+		<td>無制限</td>
+		</tr>
+
+		<tr>
+		<th class="link"><a href="/server/sakura.html">さくらレンタルサーバー</a></th>
+		<td>無制限</td>
+		</tr>	
+	
+		<tr>
+		<th class="link"><a href="/server/lolipop.html">ロリポップ</a></th>
+		<td>無制限</td>
+		</tr>
+	
+		<tr>
+			<th class="link"><a href="/server/heteml.html">ヘテムル</a></th>
+			<td>40TB／月</td>
+			</tr>
+
+	
+		<tr>
+		<th class="link"><a href="/server/shinserver.html">シン・レンタルサーバー</a></th>
+		<td>ベーシック900GB、スタンダード1,200GB、プレミアム1,500GB、ビジネス1,500GB（すべて1日単位）</td>
+		</tr>
+	
+		<tr>
+		<th class="link"><a href="/server/server/starserver.html">スターサーバー</a></th>
+		<td>エコノミー200GB、ライトプラン500GB、スタンダード700GB、ハイスピード900GB、エンタープライズ1,200GB（すべて1日単位）</td>
+		</tr>
+
+
+		</table>
+	</div>
+	
+	
+	
+	
+	
+	<h3>人気のレンタルサーバーは多くが「無制限」</h3>
+
+	<p>
+		エックスサーバーやConohaWINGなど人気の価格帯のレンタルサーバーは、ここ数年で無制限化しているところが大変多くなっています。
+	</p>
+
+	<div class="ddd">
+		<h4 class="ddd">標準プランのレンタルサーバー</h4>
+			<ul>
+				<li><a href="/server/xserver.html">エックスサーバー</a>：2022年3月に無制限化</li>
+				<li><a href="/server/onamae-server.html">お名前レンタルサーバー</a>：2022年2月より無制限化</li>
+				<li><a href="/server/conoha.html">Conoha　WING</a>：目安無制限</li>
+			</ul>
+	</div>
+
+
+
+
+	<h3>格安サーバーも「無制限」の方向に</h3>
+
+	<p>
+		当サイトで紹介しているロリポップやさくらレンタルサーバーは500円以下の格安プランを提供していますが、
+		この2社についても無制限化されています。
+	</p>
+
+
+	<div class="section">
+		<div class="oneArea">
+		  <div class="onebox">
+			<div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+			<div class="fukiArea">
+			  <div class="fukidasi">
+				このように紹介しているレンタルサーバーではどのレンタルサーバーも充分な転送量を提供しています。
+	  
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+
+
+
+<h2 class="t40">転送量（データ量）を調べる方法</h2>
+
+<p>
+データ量を調べるには海外の調査サイトを活用します。
+</p>
+
+<p>
+サイト全体のデータ量を調べることも出来ますし、1ページごとのデータ量を調べることも出来ます。
+</p>
+
+<h3>１ページあたりの転送量を調べる方法</h3>
+
+<h5><a href="https://gtmetrix.com/" target="_blank">GTmetrix</a></h5>
+
+<p>
+GTmetrixはサイト表示やデータ量など、様々な調査が簡単に出来るWebサービスになります。
+サイトに入ったら調べたいページのURLを入れましょう。
+</p>
+
+<p>
+データサイズやサイト表示の時間についてだけであれば、無料版のサービスで調べられます。
+</p>
+
+<p class="center">
+<img src="/img/gtmetrix_01.png" width="550">
+</p>
+
+<p>
+1分ぐらい待つと、結果が表示されます。最初に出てくる画面についてはページデータ量ではないので、こちらは確認をしなくても問題ありません。
+</p>
+
+<p class="center">
+<img src="/img/gtmetrix_02.png" width="550">
+</p>
+
+<p>
+「Page Details」の部分にページ量の内容が載っています。
+IMGは素材データ。JsはJavascriptのデータ、HTMLはHtmlのデータ量など種類別に確認することが出来ます。
+</p>
+
+<p class="center">
+<img src="/img/gtmetrix_03.png" width="550">
+</p>
+
+
+
+<h3>サイト全体の転送量を調べる方法</h3>
+
+<p>
+サイト全体の転送量を調べるには、レンタルサーバーに付属しているアクセス解析を活用します。
+</p>
+
+<p>
+
+
+例えばエックスサーバーではログイン後に、該当ドメインにおいて「アクセス解析」を作成、 アクセス解析の管理画面にて「転送量」をクリックすることでサイト全体のデータ量を調べることができます。 （アクセス解析がついているレンタルサーバーの場合）
+</p>
+
+
+
+
+
+
+
+
+
+
+<h2>まとめ</h2>
+
+<p>
+転送量は大半のレンタルサーバー事業者が「無制限」してきています。
+</p>
+
+<p>
+	無制限化していないスターサーバーやシンレンタルサーバーなどを見ても1日あたり500GB、900GBもの容量を設定しています。
+</p>
+
+<p>
+	そのため1日のページビューが1万や2万程度ではほぼ問題ないほどの容量が設定されています。
+	1ヶ月で100万PVあるような超人気ブログでもない限り、制限にあたることはないでしょう。
+</p>
+
+
+<p>
+	そのため、転送量については基本的には気にせず契約してしまっても良いでしょう。
+</p>
+
+
+
+
+
+<div class="server-matome">
+<div class="box">
+<h5>14社レンタルサーバー</h5>
+<ul>
+<li><a href="/server/conoha.html"><img src="/image/side_conoha.png" alt="Conoha" width="80px" height="40px"><br>Conoha Wing</a></li>
+<li><a href="/server/xserver.html"><img src="/image/side_xserver.png" alt="エックスサーバー" width="80px" height="40px"><br>エックスサーバー</a></li>
+<li><a href="/server/mixhost.html"><img src="/image/side_mixhost.png" alt="mixhost" width="80px" height="40px"><br>mix host</a></li>
+<li><a href="/server/cpi.html"><img src="/image/side_cpi.png" alt="CPI" width="80px" height="40px"><br>CPI</a></li>
+<li><a href="/server/onamae.html"><img src="/image/side_onamae.png" alt="お名前サーバー" width="80px" height="40px"><br>お名前サーバー</a></li>
+<li><a href="/server/colorfulbox.html"><img src="/img/side_colorfulbox.png" alt="カラフルボックス" width="80px" height="40px"><br>カラフルボックス</a></li>
+<li><a href="/server/heteml.html"><img src="/image/side_heteml.png" alt="ヘテムル" width="80px" height="40px"><br>ヘテムル</a></li>
+<li><a href="/server/gmocloud.html"><img src="/image/side_gmo.png" alt="iCLUSTA+" width="80px" height="40px"><br>iCLUSTA+</a></li>
+<li><a href="/server/lolipop.html"><img src="/image/side_lolipop.png" alt="ロリポップ" width="80px" height="40px"><br>ロリポップ</a></li>
+<li><a href="/server/sakura.html"><img src="/image/side_sakura.png" alt="さくらインターネット" width="80px" height="40px"><br>さくら</a></li>
+<li><a href="/server/starserver.html"><img src="/image/side_starserver.png" alt="スターサーバー" width="80px" height="40px"><br>スターサーバー</a></li>
+
+<li><a href="/website-builder/goope.html"><img src="/image/side_goope.png" alt="グーペ" width="80px" height="40px"><br>グーペ</a></li>
+<li><a href="/server/wix.html"><img src="/image/side_wix.png" alt="ＷＩＸ" width="80px" height="40px"><br>ＷＩＸ</a></li>
+</ul>
+</div>
+</div>
+	
+	
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

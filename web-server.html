@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>【レンタルサーバー】Webサーバーに載っている（Apache・nignx・Litespeed） などのソフトウェアを解説</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/web-server.html" />
+
+
+<meta property="og:title" content="【レンタルサーバー】Webサーバーに載っている（Apache・nignx・Litespeed） などのソフトウェアを解説">
+<meta property="og:description" content="レンタルサーバーに載っているApache・nignx・LitespeedなどのWebサーバーソフトの種類について解説しています。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/web-server.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "【レンタルサーバー】Webサーバーに載っている（Apache・nignx・Litespeed） などのソフトウェアを解説",
+	  "image":        "https://www.domain-server-study.com/img/main_img_server.jpg" ,
+	  "dateModified": "2024-08-28", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li>		<a href="/" title="ドメイン取得への道！">home</a> ＞</li>
+<li><a href="/web-server.html">webサーバー　Apache・nignx・Litespeed</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1>【レンタルサーバー】搭載Webサーバーソフトの解説<span class="aka">（Apache、nginx、Litespeed）</span></h1>
+
+<p>
+このページではApache（アパッチ）や、Nginx（エンジンエックス）、Litespeed（ライトスピード）など
+Webサーバーに搭載しているソフトウェアの種類について解説をしています。
+</p>
+
+<p>
+Webサーバー本体の構築方法についての解説ではありませんのでご注意ください。
+</p>
+
+<p>
+また、レンタルサーバー各社がどのWebサーバーソフトを導入しているのかについても、まとめています。
+レンタルサーバー選びの参考にして下さい。
+</p>
+
+
+
+<div class="themebox">
+
+<ol class="mail" style="list-style: none;">
+	<li><a href="#situation">Webサーバーソフトの概況と種類別シェアを解説</a></li>
+	<li><a href="#about">Apache、nginx、Litespeedの特長</a></li>
+		<ul>
+			<li>Apacheとは？</li>
+			<li>nginxとは？</li>
+			<li>Litespeedとは？</li>
+		</ul>
+	<li><a href="#webserver">レンタルサーバー別・導入Webサーバーまとめ</a></li>
+</ol>
+</div>
+
+
+
+<h2 id="situation" class="t40">Webサーバーソフトの概況とシェア</h2>
+
+<p>
+2023年時点のレンタルサーバーにおいて、Webサーバーに搭載されている主なソフトウェアは3種類あります。
+</p>
+
+<p>
+まず、2010頃までは70％以上のシェアを持って業界のデファクトスタンダードだった「Apache（アパッチ）」が1つ目。
+</p>
+
+<p>
+ここ10年でシェアを一気に伸ばしてきた「Nginx（エンジンエックス）」が2つ目。
+また、同じくシェアが増えている「Litespeed」が３つ目になります。
+</p>
+
+<p>
+ワードプレスに適しているのはLitespeed、次にNginxだと言われています。
+</p>
+
+<p>
+ここ10年ではNginxのシェアが大きく増えていますが、直近1～2年ではLitespeedが最もシェアを増やしています。
+</p>
+
+<p>
+「Cloudflare Server」も大きなシェアを持っていますが、当ページでは説明を割愛しています。
+</p>
+
+
+
+<h3>各ＷＥＢサーバーソフトのシェア推移</h3>
+
+<p>
+各ソフトウェアの世界シェアになります。次の図解は2017年時点のものになります。
+Apacheがシェアを落とし、Nginxが増やしているのがわかります。
+</p>
+
+<p class="center">
+<span class="font11">2010年～2017年のWEBサーバーシェア推移 <a href="https://w3techs.com/" target="_blank">w3techs</a></span>
+<img src="img/web_server.png" alt="WEBサーバーシェア推移" width="500">
+</p>
+
+<h4>2018年11月時点の各WEBサーバーシェア</h4>
+
+<p>
+実際にシェアのパーセンテージを表示させたものが次の数値になります。
+Nginxが40％にまで迫っています。
+</p>
+
+
+<p class="center">
+<img src="/img/webserver_201811.png" alt="2018年11月のWEBサーバーソフト世界シェア"><br>
+</p>
+
+<h4>2020年5月時点の各WEBサーバーシェア</h4>
+
+<p>
+Nginxが2年ほどで40％から32％までシェアを落としています。
+変わってLiteSpeedが3％から6.5％まで増やしています。
+</p>
+
+<p>
+「Cloudflare Server」が急にシェアに入ってきているのもわかります。
+</p>
+
+<p class="center">
+<img src="/img/webserver_202005.png" alt="2020年のWEBサーバーソフト世界シェア"><br>
+</p>
+
+
+<h4>2021年8月時点の各WEBサーバーシェア</h4>
+
+<p>
+「Litespeed」と「Cloudflare Server」がそれぞれ1年間で5％ほど増えています。また、Nginxもシェアを微増させています。
+結果、Apacheのシェアが31％近くまで落ち込みました。
+</p>
+
+
+<p class="center">
+<img src="/img/webserver_202108.png" alt="2021年8月のWEBサーバーソフト世界シェア"><br>
+</p>
+
+
+
+<h2 id="about" class="t40">Apache、nginx、Litespeedについて</h2>
+
+<h3 class="t25">Apache（アパッチ）とは？</h3>
+
+<h4>20年近くデファクトスタンダードとして使われているwebサーバーソフト</h4>
+
+<p>
+Apacheはwebサーバーソフトの代名詞でもあり20年近く多くのサーバーに導入され運営されてきた実績があります。
+2010年頃にはシェア70％近くありました。
+近年になりシェアを落としてきていているものの、まだ大体40％ほどのシェアがあります。
+</p>
+
+<p>
+つい最近まで7割以上のシェアを獲得していたということもあり、<span class="ore">日本のレンタルサーバーのほとんどでも導入されていたのがアパッチです</span>。
+サーバー系の書籍をみても本屋に並んでいるのはアパッチのものがほとんどでしたし、webサーバーを構築する際のソフトとしても大体、どのホームページでもアパッチを導入することを前提として
+いたところが多かったです。
+</p>
+
+
+<h3>nginx（エンジンエックス）とは？</h3>
+
+<h4>ここ10年で、最もシェアを獲得したwebサーバーソフト</h4>
+
+<p>
+20年近くアパッチが全盛期だったわけですが、インターネットでホームページを見るための規格として「HTTP2」が採用されたこと。
+多くのWebサイトがワードプレスで作られるようになり、それに適した「Nginx」がwebサーバーソフトとして選択されるようになりました。
+</p>
+
+<p>
+エックスサーバーなど日本の多くのレンタルサーバー会社でも、この「Nginx」が採用されています。
+</p>
+
+<p>
+「Nginx」は2010年にはわずか5％ほどのシェアでしたが、2017年には33％、そして2018年12月にはシェアが40％と
+なっています。その後2020年には32％まで落ちてきていますが、レンタルサーバーにおいて最も人気のWebサーバーソフトになります。
+</p>
+
+
+
+<h3>Lite speed（ライトスピード）とは？</h3>
+
+<p>
+W3Cの統計データでは2020年に6.5％、2021年8月に11％までシェアを増やしてきています。
+</p>
+
+<p>
+Wordpressに最適化した場合、Nginxよりも表示が速いとされていて、ここ1年～2年ほどでNginx以上にシェアを増やしています。
+今後の増え方によってはNginxを超える可能性もあります。
+</p>
+
+<p>
+当サイトで紹介しているレンタルサーバーでは「ロリポップ」「mixhost」「カラフルボックス」がLitespeedを導入しています。
+</p>
+
+<h5>LiteSpeedの検証テスト（自社調べ）</h5>
+<p class="center">
+<img src="img/litespeed_test.png" alt="litespeed 検証テスト" width="80%">
+<span class="font11">
+<a href="https://www.litespeedtech.com/benchmarks/wordpress" target="_blank">https://www.litespeedtech.com/benchmarks</a></span>
+</p>
+
+
+<h2 id="webserver" class="t40">レンタルサーバー別・導入ソフト</h2>
+
+
+
+<div class="spec t40">
+	<table>
+
+	<tr>
+	<th class="hai" width="35%">会社</th>
+	<th class="hai" width="75%">ＷＥＢサーバー</th>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/mixhost.html">mix host</a></th>
+	<td><span class="aka">LiteSpeed</span></td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/colorfulbox.html">カラフルボックス</a></th>
+	<td><span class="aka">LiteSpeed</span></td>
+	</tr>
+	
+	<tr>
+	<th class="link"><a href="/server/lolipop.html">ロリポップ</a></th>
+	<td><span class="aka">Litespeed（ハイスピードプラン）</span>、Apache</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/xserver.html">エックスサーバー</a></th>
+	<td><span class="aka">Nginx</span></td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/starserver.html">スターサーバー</a></th>
+	<td><span class="aka">Nginx</span></td>
+	</tr>
+	
+
+	
+	<tr>
+	<th class="link"><a href="/server/conoha.html">Conoha Wing</a></th>
+	<td><span class="aka">Nginx</span></td>
+	</tr>
+	
+	<tr>
+	<th class="link"><a href="/server/sakura.html">さくらインターネット</a></th>
+	<td><span class="aka">Nginx</span>、Apache</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/heteml.html">ヘテムル</a></th>
+	<td>Apache</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/onamae-server.html">お名前レンタルサーバー</a></th>
+	<td>Apache</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/gmocloud.html">iCLUSTA+</a></th>
+	<td>Apache</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/cpi.html">ＣＰＩ</a></th>
+	<td>Apache</td>
+	</tr>
+	
+	</table>
+</div>
+
+
+
+
+
+
+<h3 id="matome" class="t40">その他の要素で比較する</h3>
+
+<p>
+プラン選びは料金だけでなく、CPUやメモリなどのスペック、そして管理画面のわかりやすさ、お問合せなどのサービス面。
+様々な要素が関わってくるため迷ってしまうと思います。
+</p>
+
+<p>
+他の要素もくわしく比較していますので、検討の判断材料にして下さい。
+</p>
+
+<p>
+設定が不得意な方は：「<a href="/wp-install.html#install">ワードプレス簡単インストール</a>」<br>
+安定性を求める方は：「<a href="/server/#transfer">稼働率</a>」
+
+</p>
+
+
+
+<div class="server-hikaku t30">
+	<table>
+	
+	<tr>
+	<th class="mozi-naka" colspan="5">レンタルサーバーの比較</th>
+	</tr>
+	
+	<tr>
+  <td width="20%">１．<a href="/server/#transfer">稼働率</a></td>
+	<td width="20%">２．<a href="/hdd-ssd.html#storage">ストレージ</a></td>
+	<td width="20%">３．<a href="/wp-install.html#install">ＷＰ簡単インストール</a></td>
+	<td width="20%">４．<a href="/taiou.html#taiou">コールセンター対応</a></td>
+	<td width="20%">５．<a href="/database.html#database-hikaku">データベース数</a></td>
+	</tr>
+	
+	<tr>
+  <td>６．<a href="/rentalserver-kakaku.html#youryou">容量</a></td>		
+	<td>７．<a href="/cpu-memory.html#hikaku">CPU＆メモリ</a></td>
+	<td>８．<a href="/web-server.html#webserver">webサーバー</a></td>
+	<td>９．<a href="/backup.html#backup">自動バックアップ</a></td>
+	<td>10．<a href="/data-traffic.html#hikaku">転送量</a></td>				
+	</tr>	
+	</table>
+</div>
+<br>
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

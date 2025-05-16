@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>レンタルサーバーを引越し（移転・移行）する時の準備まとめ</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/server-iten.html" />
+
+<meta property="og:title" content="レンタルサーバーを引越し（移転・移行）する時の準備まとめ">
+<meta property="og:description" content="ワードプレスの引越し（レンタルサーバーの移行）で注意しておきたい点をまとめています。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/server-iten.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "レンタルサーバーを引越し（移転・移行）する時の準備まとめ",
+	  "image":        "https://www.domain-server-study.com/img/main-img-domain.jpg" ,
+	  "datePublished": "2022-07-17",
+	  "dateModified": "2024-08-28", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/server-iten.html" >レンタルサーバーを移転する時の準備まとめ。</a></li>
+
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1>レンタルサーバーを移転する時の準備まとめ</h1>
+
+<p>
+  レンタルサーバーの引越しをする時に注意して欲しいポイントについて解説してみたいと思います。
+</p>
+<p>
+  最近ではサーバー移転にあたって、ワードプレスのデータを簡易的に移行できるサービスが登場していますし、有償で引越し作業を行ってくれる会社も増えました。
+  このようなサービスも駆使してスムーズなサーバー移行を行ってください。
+</p>
+
+
+
+
+<h3>サーバー移転でデータを引越しさせるもの</h3>
+
+<p>
+  サーバー移転を行うにあたって「サイトデータだけ移動させたいのか」それとも「サイトデータとメールデータとまとめて一緒に移動させたいのか」によっても
+  作業内容が変わってきますが、引越しで移動させるデータは主にホームページデータとメールアカウントデータの2つになります。
+</p>
+
+
+<h5>引越しするもの「ワードプレスデータ」</h5>
+
+<p>
+ワードプレスの移行にあたってはワードプレス自体のデータとあわせてデータベースのデータを引越しさせます。
+ワードプレスのデータ移行に関してはエックスサーバーやConohaWINGなどの人気サーバーであれば簡易的にデータ移動させられるように簡易サービスを提供しています。
+自分だけで引越しをするとFTPやデータベース設定が必要になり、それなりに知識がいるので不安がある方は簡易サービスを活用しましょう。
+</p>
+
+
+<h5>引越しするもの「メールデータ」</h5>
+
+<p>
+  メールデータについてもデータの移動が必要になります。また、移行先のレンタルサーバーでも移行前と同じメールアカウントを作成する必要があります。
+</p>
+
+
+
+
+<h3>独自ドメイン側で行うこと</h3>
+
+<h5>変更するもの「ネームサーバー設定」</h5>
+
+<p>
+  データだけ移行してもまだ引越しは完了ではありません。独自ドメインのネームサーバー設定を変更しましょう。ネームサーバー設定は「どのレンタルサーバーにデータがあるのかについての設定」を
+  行うものになります。もし引越し先のサーバーがエックスサーバーならエックスサーバーのIPアドレスを入れますし、引越し先がConoha WINGならConoha WINGのIPアドレスを設定します。
+</p>
+
+
+
+<h3>引越し先のサーバーで行う事</h3>
+
+<h5>ドメイン登録</h5>
+
+<p>
+  引越し先のレンタルサーバーでまずはドメイン登録を行いましょう。
+</p>
+
+
+<h5>メールアカウントの作成</h5>
+
+<p>
+  メールアカウントも作成します。
+</p>
+
+
+
+
+<h3>時系列で作業を紹介</h3>
+
+
+<p>
+  既に移転先のレンタルサーバーの契約が完了しているものとして、移転時の引越し作業について紹介します。
+</p>
+
+<ol>
+<li>移行先サーバーでドメイン登録する</li>
+<li>移行先サーバーでメールアカウントを作成する</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+
+
+
+
+<h3></h3>
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

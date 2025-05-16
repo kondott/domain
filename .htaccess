@@ -1,0 +1,27 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+<ifModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 seconds"
+  ExpiresByType text/js "access plus  1 month"
+  ExpiresByType text/javascript "access plus  1 month"
+  ExpiresByType image/png "access plus  5 month"
+  ExpiresByType image/jpg "access plus  5 month"
+  ExpiresByType image/jpeg "access plus  5 month"
+  ExpiresByType image/gif "access plus  5 month"
+  ExpiresByType image/x-icon "access plus  5 month"
+  ExpiresByType application/javascript "access plus  1 month"
+  ExpiresByType application/x-javascript "access plus  1 month"
+  ExpiresByType application/x-font-ttf "access plus  1 month"
+  ExpiresByType application/x-font-woff "access plus  1 month"
+</ifModule>
+#suPHP_ConfigPath /home/xs007882/domain-server-study.com/xserver_php/
+#AddHandler php-script .php .html
+AddHandler fcgid-script .htm .html
+
+SetEnvIf Request_URI ".*" WpCommentDeny

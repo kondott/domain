@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>httpsとは？httpとの違いをわかりやすく解説！</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/https-http.html" />
+
+
+<meta property="og:title" content="httpsとは？httpとの違いをわかりやすく解説！">
+<meta property="og:description" content="SSL証明書を導入するとhttpからhttpsにURLが変わりセキュリティに強くなります。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/https-http.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "httpsとは？httpとの違いをわかりやすく解説！",
+	  "image":        "https://www.domain-server-study.com/img/main-img-domain.jpg" ,
+    "datePublished": "2024-02-01",  
+	  "dateModified": "2024-02-01",  
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+<body>
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li>		<a href="/" title="ドメイン取得への道！">home</a> ＞</li>
+<li><a href="/https-http.html">httpsとhttpの違い</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+<h1><span class="aka">httpsとは？</span>httpとの違いをわかりやすく解説！</h1>
+
+<p>
+  結論から言うと<span class="midori">「https」は通信データが暗号化されセキュリティが強化されたもの</span>です。「http」は平文で暗号化されていません。
+</p>
+<p>
+  Googleがhttpsを推奨していることもあり世界的にhttp:からhttps:への移行が進んでいます。
+</p>
+
+<p>
+  そのため、いまではGoogleが運営するブラウザ（chrome）でhttpsに対応していないWebサイトを訪問すると「このサイトは保護されていません」という表示が出ます。
+  これはhttpではセキュリティが確保されていないことを訪問者に伝えているわけです。
+</p>
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+         httpとhttpsについて。そしてSSL化について。わかりやすく解説していきます。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<h2>httpsとhttpの違い</h2>
+
+<p>
+httpとhttpsの違いがセキュリティの強度であることを説明しました。より具体的にこの点を説明してみます。
+</p>
+
+<div class="ddd">
+  <ul class="futoji">
+    <h4 class="ddd">この章の目次</h4>
+    <li>httpとは？</li>
+    <li>httpsとは？</li>
+    <li>データ通信が暗号化されているか、されていないかの違い</li>
+    <li>httpsとhttpは調べることが出来る</li>
+    <li>SSL化とは？</li>
+  </ul>
+</div>
+
+
+
+
+<h3>httpとは？</h3>
+<p>
+  httpとは正式には「Hypertext Transfer Protocol（ハイパーテキスト・トランスファー・プロトコル）」と呼ばれます。
+  Webのデータのやり取りをするための通信規約です。
+</p>
+
+
+<h3>httpsとは？</h3>
+
+<p>
+  httpsとは正式には「Hypertext Transfer Protocol Secure（ハイパーテキスト・トランスファー・プロトコル・セキュア）」と呼ばれます。
+</p>
+<p>
+  http通信を暗号化しセキュアにしたものです。SSL/TSLによってセキュリティ強化されています。
+</p>
+
+
+<h3>データ通信が暗号化されているか、されていないかの違い</h3>
+
+<p>
+  httpは平文のままのデータ。<br>
+  httpsはSSLによって暗号化されたデータ。
+</p>
+<p>
+  暗号化されていることでデータの読取りや改ざんがを防ぎます。これが大きな違いです。
+</p>
+
+
+<h3>httpsとhttpは調べることが出来る</h3>
+
+<p>
+  訪問しているWebサイトがhttpなのかhttpsなのかは簡単に調べることが出来ます。
+  PCであればアドレスバーをクリックすることでURLが表示されますので、そこから判断できます。
+</p>
+
+<p>
+  <img src="/img/https-url.png" width="100%" alt="https url">
+</p>
+
+
+<h3>SSL化とは？</h3>
+
+<p>
+  Webサイトやワードプレスを作る場合、レンタルサーバーを借りて立ち上げますが基本的に最初は「http」のままのURLです。
+</p>
+<p>
+  レンタルサーバーでの設定で「SSL証明書」を導入することでURLを「https」へ変更することが出きます。これをSSL化すると言ったりします。
+</p>
+
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+          SSLやSSL証明書についても、わかりやすく説明してみます。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<h2>SSL・SSL証明書について</h2>
+<p>
+  SSLとは「Secure Sockets Layer」の略でインターネットのデータを暗号化する技術のことです。
+</p>
+<p>
+  SSLの技術があることでデータの読み取り、改ざんなどを防止することが出来ます。
+</p>
+
+<div class="ddd">
+  <h4 class="ddd">この章の目次</h4>
+    <ul class="futoji">
+      <li>SSL証明書とは？</li>
+      <li>httpsにするにはSSL証明書の導入が必要</li>
+      <li>ブラウザでホームぺージのSSL証明書を確認する方法</li>
+    </ul>
+</div>
+
+
+<h3>SSL証明書とは？</h3>
+<p>
+  SSL証明書とはSSLの技術を取り込んだ電子証明書です。
+  SSL証明書は認証局から発行され「<span class="midori">データ暗号化</span>」だけでなく「<span class="midori">ホームぺージ運営者の実在確認</span>」を行ってくれます。
+</p>
+<p>
+SSL証明書には<span class="aka">「ドメイン認証」「企業認証」「EV認証」</span>段階のレベルがあります。
+</p>
+<p>
+審査が厳格な「企業認証」や「EV認証」では書類の提示や電話などによる実在性確認が行われるため信頼性があり、企業が導入するのに適したSSL証明書と言えます。
+</p>
+<p>
+  個人ブログなどであれば、ドメイン認証のSSLを導入するのが一般的です。
+</p>
+
+<div class="aaa">
+  <ul>
+    <li>
+      <a href="/ssl.html">無料で発行できるSSL証明書とは？わかりやすく解説（個人ブログむけ）</a>
+    </li>
+  </ul>
+</div>
+
+
+
+
+<h3>httpsにするにはSSL証明書の導入が必要</h3>
+<p>
+  Webサイトやワードプレスを作成は一般的にレンタルサーバーを借りて作りますが、SSL設定をしなければサイトURLは「http」のままです。
+</p>
+<p>  
+  この時、レンタルサーバーでSSL証明書の発行（SSL設定）を行うことでURLをhttpsに変更することが出来ます。
+</p>
+
+
+
+
+
+<h3>ブラウザでホームぺージのSSL証明書を確認する方法</h3>
+
+<p>
+  SSL証明書は電子証明書でありブラウザで確認することが出来ます。Google提供ブラウザであるchromeではアドレスバーの左側にある
+  マークを選択することでSSL証明書を確認することが出来ます。
+</p>
+<p>
+  例えば当サイトをSSL証明書をchromeで確認すると下のようになります。
+</p>
+
+<p>
+  <img src="/img/ssl-certificate.png" width="100%" alt="SSL証明書 確認">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

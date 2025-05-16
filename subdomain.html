@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>サブドメインとは？作り方やメリットの解説。SEOへの影響について考察</title>
+
+<link rel="home" title="ドメイン取得への道" href="/">
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/subdomain.html" />
+
+
+<meta property="og:title" content="サブドメインとは？作り方やメリットの解説。SEOへの影響について考察">
+<meta property="og:description" content="レンタルサーバーのサブドメイン機能を使えば1つのサーバーアカウントと1つの独自ドメインから何個もURLを作ることが出来ます。メリットやSEOへの影響を紹介。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/subdomain.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "サブドメインとは？作り方やメリットの解説。SEOへの影響について考察",
+	  "image":        "https://www.domain-server-study.com/img/main_img_server.jpg" ,
+	  "dateModified": "2024-08-29", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/subdomein.html" >サブドメインとは</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1>サブドメインとは？作り方やメリットの解説。SEOへの影響について考察</h1>
+
+<p class="font11 right t10 b10">更新：<time datetime="2023-08-22">2023年8月22日</time></p>
+<p class="center">
+<img src="/img/sub-domain001.png" alt="サブドメインの説明" width="300px">
+</p>
+
+
+<h2>サブドメインとは？</h2>
+
+
+
+
+<h3>サブドメインは「独自ドメイン」の前に任意の文字列をつける</h3>
+<p>
+サブドメインは自分が取得した「独自ドメイン」の前に任意の文字列をつけてディレクトリを作ることが出来るサービスです。
+</p>
+
+<p>
+サブドメイン自体は独自ドメインを持っていれば、レンタルサーバーの機能で作ることが出来ます。
+</p>
+
+<p>
+例えば「http://www.<span class="aka">yahoo.com</span>」というホームページがあるとします。<br>
+この場合、みなさんは「yahoo.com」というドメインを取得していることになります。
+</p>
+
+<p>
+ここからサブドメインを作ってみましょう。以下はサブドメインの例になります。
+</p>
+
+<div class="ddd">
+<ul>
+<li>「http://<span class="aka">japan</span>.yahoo.com」</li>
+<li>「http://<span class="aka">abc</span>.yahoo.com」</li>
+<li>「http://<span class="aka">domain</span>.yahoo.com」</li>
+</ul>
+</div>
+
+<p>
+これがサブドメインです。
+</p>
+
+
+<h3>サブドメインのディレクトリ構造は独特</h3>
+<p>
+このようにＵＲＬで見ると、独自ドメインの前に自分で指定したディレクトリが入ってくるのがサブドメインです。
+</p>
+
+<p>
+このホームページのＵＲＬは「http://www.domain-easy-study.com」なので、管理人がサブドメインを設定さえすれば
+「http://<span class="aka">web</span>.domain-easy-study.com/」のようなサブドメインを作ることができます。
+</p>
+
+
+<div class="themebox">
+<ul>
+<li>「http://<span class="aka">web</span>.domain-easy-study.com/」</li>
+<li>「http://<span class="aka">homepage</span>.domain-easy-study.com/」</li>
+</ul>
+</div>
+
+
+<h3>なぜサブドメインを作るのか？</h3>
+
+<h4>サイト内容をわけたい時や、別サイトを作るときに使う</h4>
+<p>
+サブドメインを使う理由として考えられるのは「違うホームページを作りたい」ということが考えられます。
+</p>
+
+<p>
+例えば、このサイトはドメイン取得をメインとした内容になっていますが、そこに「ブログ」をテーマにした内容を追加したい時などがそれにあたります。
+</p>
+
+<p>
+この時サブドメインを使って「http://<span class="aka">blog</span>.domain-easy-study.com/」といった形で別ドメインとしてわけることになります。
+</p>
+
+
+
+
+
+
+
+
+<h2>サブドメインのメリット・デメリット</h2>
+
+<h3>メリット：料金の節約</h3>
+
+<p>
+サブドメインのメリットを考えたとき、１つのドメインを持っていればそこから幾つもサブドメインを作ることが出来るので、
+お金をかけずに複数のホームページが作れることになります。
+</p>
+
+<p>
+サブドメインの１番のメリットはこのように<span class="aka">「複数サイトの運営にコストがかからない」</span>ことです。
+</p>
+
+<p>
+例えばメインサイトに「http://www.saitou.com」というドメインを取得して、趣味用のサイトとしてサブドメインを設定して運営をするような
+運営の形もあります。
+</p>
+
+<div class="themebox">
+<ul>
+<li>「http://<span class="aka">food</span>.saitou.com」（料理の趣味サイト）</li>
+<li>「http://<span class="aka">movie</span>.saitou.com」（映画用の趣味サイト）</li>
+</ul>
+</div>
+
+
+<h4>ブランディングを保ったままサイト展開できる</h4>
+
+<p>
+  サブドメインの場合、URLに独自ドメインが必ず残ることになります。
+</p>
+<p>
+  そのため、ブランディングを保ったままサブドメインで複数サイトを展開することが出来ます。
+</p>
+
+
+
+
+<h3>デメリット：SEOに悪影響があるか</h3>
+
+<p>
+ただし、最近ではこのサブドメインの形でサイト運営しているホームページをほぼ見かけなくなってきました。
+</p>
+
+<p>
+カテゴリー分けするのであればサブディレクトリを作ればいいですし、
+別のサイトを運営したいのであれば、独自ドメインを複数登録してマルチドメイン機能であたらしいホームページを作る人が多いです。
+</p>
+
+
+<p>
+Googleなどでの検索エンジンで検索をかけても、このようなサブドメインのURLをしているところを最近ではあまり見かけなくなっています。
+</p>
+
+<p>
+SEO的にあまりよくないためなのか、理由はわかりませんが基本的に
+サブドメインを見かける機会はここ10年ほどでかなり減ってきている感覚を持ちます。
+</p>
+
+
+<div class="ddd">
+<p>
+  →<a href="/multidomain.html">マルチドメインとは？</a>
+  </p>
+</div>
+
+
+
+<h2 class="t50">サブディレクトリ</h2>
+
+<h3 class="t10">「http:domain.jp<span class="aka">/abc/</span>」がサブディレクトリ</h3>
+
+<p>
+ホームページの内容を分けたい場合、例えばカテゴリーをいくつか作りたい場合などは、普通はフォルダの中にフォルダを作る方法とります。
+これをサブディレクトリと呼びます。
+</p>
+
+<p>
+今回の場合では「domain」フォルダのなかに「abc」「japan」フォルダを作っています。
+</p>
+
+<div class="themebox">
+<ul>
+<li>「http://domain.jp<span class="aka">/japan/</span>」</li>
+<li>「http://.domain.jp<span class="aka">/abc/</span>」</li>
+</ul>
+</div>
+
+<h5>「サブディレクトリ」では独自ドメインの後にディレクトリ構造が来る</h5>
+
+<p>
+サブドメインが独自ドメインの前にディレクトリ名が来るのに対して、サブディレクトリでは独自ドメインの後にディレクトリ名が来ることになります。
+</p>
+
+<p>
+ディレクトリ構造がまったく異なります。
+</p>
+
+<div class="themebox">
+<ul>
+<li>「http://<span class="aka">abc</span>.domain.jp」←サブドメイン</li>
+<li>「http://.domain.jp<span class="aka">/abc/</span>」←サブディレクトリ</li>
+</ul>
+</div>
+
+<p>
+イメージとしては「サブドメイン」がサイトごと違うテーマのものを作りたいときに使うもの。
+単純にカテゴリーわけだけをしたい場合は「サブディレクトリ」を作るイメージになります。
+</p>
+
+
+
+<h2>サブドメインの作り方</h2>
+
+<p>
+実際にサブドメインの作成方法をエックスサーバーの画面で説明してみたいと思います。
+</p>
+
+<p>
+  まず、エックスサーバーの管理画面に入ったら「サブドメイン設定」を選択しましょう。
+</p>
+
+
+
+<p class="center">
+<img src="/img/subdomain_img01.png" alt="サブドメインの登録" width="100%">
+</p>
+
+
+<p>
+  サブドメインを作る該当の独自ドメインを選択します。
+</p>
+
+<p class="center">
+<img src="/img/subdomain_img02.png" alt="サブドメインの登録" width="100%">
+</p>
+
+
+<p>
+  「サブドメイン設定追加」を選択します。サブドメインを入力したら「確認画面へ進む」を選択します。
+</p>
+
+
+<p class="center">
+<img src="/img/subdomain_img03.png" alt="サブドメインの登録" width="100%">
+</p>
+
+
+
+<p>
+  最後に「追加」を選択することでサブドメインが作成できます。
+</p>
+
+<p class="center">
+  <img src="/img/subdomain_img04.png" alt="サブドメインの登録" width="100%">
+  </p>
+  
+  
+
+
+
+
+<h2>まとめ</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+</body>
+</html>

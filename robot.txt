@@ -1,0 +1,9 @@
+
+User-agent: Googlebot
+Disallow: /ad/
+
+Sitemap: https://www.domain-server-study.com/sitemap.html
+
+
+
+

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>【独自ドメイン】ドメインロック・レジストラロックで高セキュリティ化する。</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/domain/domainlock.html" />
+
+
+<meta property="og:title" content="【独自ドメイン】ドメインロック・レジストラロックで高セキュリティ化する。">
+<meta property="og:description" content="ネームサーバーやwhois情報など登録情報を第三者に変えさせないドメインロックやレジストラロックのサービスでセキュリティを強化する">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/domain/domainlock.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "【独自ドメイン】ドメインロック・レジストラロックで高セキュリティ化する。",
+	  "image":        "https://www.domain-server-study.com/img/main_img_server.jpg" ,
+	  "dateModified": "2024-08-28", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+<body>
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+
+
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/domain/">独自ドメイン</a> > </li>
+<li><a href="/domain/domainlock.html">ドメインロック</a> > </li>
+</ul>
+</div>
+
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1>不正操作を防ぐ<span class="aka">「ドメインロック」「レジストラロック」</span>でセキュリティを守る</h1>
+
+
+<p>
+「ドメインロック」とは第三者による設定の不正操作を防ぐためのサービス。ネームサーバー設定やWhois情報など、不正操作で設定が変更されないよう、
+ダブルチェックすることが出来ます。
+</p>
+
+<p>
+このサービスに入ることで、設定変更時に登録メールアドレスまで連絡が入る形になります。
+そのため、セキュリティが増すという形になっています。
+</p>
+
+<p>
+もう１つ「レジストラロック」はドメインが不正操作で他の管理業者に移管させられないように、移管設定を一時的に出来なくする機能になります。
+</p>
+
+<div class="aaa">
+<ul>
+<li>ドメインロックは「ネームサーバー設定、Whois情報」</li>
+<li>レジストラロックは「レジストラ移管」</li>
+</ul>
+
+</div>
+
+<p>
+についてのセキュリティを守るサービスと言えます。
+</p>
+
+<p>
+どちらのサービスも独自ドメインのセキュリティを意識したい、法人向けのサービスと言えるでしょう。
+</p>
+
+
+<p>
+この2つのサービスについて、もう少し詳しく解説してみたいと思います。
+</p>
+
+
+<h3>ドメインロック</h3>
+
+<p>
+ドメインロックは現在「ムームードメイン」だけが提供するサービスになっています。有料のサービスになり月額100円（税抜）になります。
+</p>
+
+<p>
+Web制作会社や、法人のWeb管理者がよりセキュリティを意識したい場合に契約するサービスだと言えるでしょう。
+ドメインロックで守れる設定は以下の4つになります。
+</p>
+
+
+<h5>１．Whois情報のロック</h5>
+<p>
+ドメイン登録すると自動的に公表される「Whois情報（登録者の情報、担当者名など）」の変更についてロックします。
+</p>
+
+
+<h5>２．ネームサーバーのロック</h5>
+<p>
+登録している独自ドメインのネームサーバー設定（レンタルサーバーのIPアドレスを設定）についての変更をロックします。
+</p>
+
+
+<h5>３．管理者変更のロック</h5>
+<p>
+ドメインの管理画面で登録する「管理者情報」の変更についてロックします。
+</p>
+
+
+<h5>４．契約設定のロック</h5>
+<p>
+	ドメインの自動支払い、ドメインの解約についてロックします。
+</p>
+
+
+<h5>管理者メールに連絡が届きます（2重認証）</h5>
+
+<p>
+ドメインロックの場合、設定をすることで管理者メールへ連絡が入ります。その設定変更が入ると、管理者宛てに2重認証を求められることになります。
+</p>
+
+
+
+<div class="spec">
+	<table>
+	<tr>
+	<th width="25%" class="hai">会社名</th>
+	<th width="25%" class="hai">サービス名称</th>
+	<th width="50%" class="hai">内容</th>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/domain/mu-mu-domain.html">ムームードメイン</a></th>
+	<td>ドメインロック</td>
+	<td>Whois情報、ネームサーバー、管理者</td>
+	</tr>
+
+	</table>
+</div>
+
+
+<h3>レジストラロック</h3>
+
+
+<p>
+ドメイン管理のセキュリティでは「レジストラロック」機能の方がベースのセキュリティになっています。そのためほとんどのドメイン管理業者で
+採用されているサービスになります。
+</p>
+
+<p>
+また、レジストラ設定については基本的に無料で提供されています。
+</p>
+<p>
+レジストラロックで管理できる設定は以下になります。
+</p>
+
+
+<h5>ドメイン管理事業者（レジストラ）変更をロックする</h5>
+
+<p>
+ドメインの管理事業者である「レジストラの移管」について設定をロックします。
+</p>
+
+
+
+<h5>設定するとレジストラの変更自体が出来なくなる</h5>
+
+
+<p>
+一方でレジストラロックの場合は、管理画面から設定を解除しない限りはレジストラの変更が実施できません。一旦、レジストラロックの設定をした場合、設定したことを忘れてしまわないように気を付けましょう。
+</p>
+
+
+
+<div class="spec">
+	<table>
+	<tr>
+	<th width="25%" class="hai">会社名</th>
+	<th width="25%" class="hai">サービス名称</th>
+	<th width="50%" class="hai">内容</th>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/domain/onamae.html">お名前ドメイン</a></th>
+	<td>ドメイン移管ロック</td>
+	<td>レジストラ</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/domain/xdomain.html">エックスドメイン</a></th>
+	<td>レジストラロック</td>
+	<td>レジストラ</td>
+	</tr>
+
+	</table>
+</div>
+
+
+
+
+
+
+
+<h2 class="t50">まとめ</h2>
+
+<p>
+ドメインロックなどのサービスは、付帯サービスになります。そのため、ドメイン登録後に何もしていなければ、設定はされていません。
+</p>
+
+<p>
+あくまでも、セキュリティを良くするためのサービスになります。より安全にドメインを管理を実施したい法人向けサービスと言えます。
+</p>
+
+
+
+
+<br>
+<div class="domain-matome">
+<div class="themebox">
+<div class="theme-mokuzi">ドメイン会社</div>
+<ul>
+<li><a href="/domain/onamae.html"><img src="/image/side_onamae.png" alt="お名前.com"><br>お名前.com</a></li>
+<li><a href="/domain/mu-mu-domain.html"><img src="/image/side_mumu.png" alt="ムームードメイン"><br>ムームードメイン</a></li>
+<li><a href="/domain/star-domain.html"><img src="/image/side_stardomain.png" alt="スタードメイン"><br>スタードメイン</a></li>
+<li><a href="/domain/xdomain.html"><img src="/image/side_x.png" alt="エックスドメイン"><br>エックスドメイン</a></li>
+<li><a href="/domain/fc2.html"><img src="/image/side_fc2.png" alt="FC2ドメイン"><br>FC2ドメイン</a></li>
+<li><a href="/domain/nadukete.html"><img src="/image/side_nadukete.png" alt="名づけてねっと"><br>名づけてねっと</a></li>
+<li><a href="/domain/gonbei.html"><img src="/img/side_gonbei.jpg" alt="ゴンベイドメイン"><br>ゴンベイドメイン</a></li>
+</ul>
+</div>
+</div>
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここから中段の右ＢＯＸ部分が始まります--><div id="right-box">
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_domain.php'); ?>
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

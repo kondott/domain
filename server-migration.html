@@ -1,0 +1,852 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>【難易度別】レンタルサーバーの移行方法5選。ドメインそのまま。</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/server-migration.html" />
+
+<meta property="og:title" content="【難易度別】レンタルサーバーの移行方法5選。ドメインそのまま。">
+<meta property="og:description" content="ワードプレスの引越し（レンタルサーバーの移行）で注意しておきたい点をまとめています。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/server-migration.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "【難易度別】レンタルサーバーの移行方法5選。ドメインそのまま。",
+	  "image":        "https://www.domain-server-study.com/img/main-img-domain.jpg" ,
+	  "datePublished": "2022-07-17",
+	  "dateModified": "2024-09-18", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/server-iten.html" >レンタルサーバー移行</a></li>
+
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+
+  <h1><span class="aka">【難易度別】</span>レンタルサーバーの移行方法5選を紹介。ドメインそのまま。</h1>
+
+  <p>
+    このページはワードプレスを運営している方がレンタルサーバーの引越しを考えた時に読むページになります。
+    どんな移行方法があり、移行方法ごとにどのようなメリット・デメリットがあるのか学べるページとなっています。
+  </p>
+  <p>
+    紹介する移行方法は5つ。レンタルサーバー会社に設定を依頼して移行する方法やプラグインを利用した方法など。難易度別に5種類の移行方法について説明しています。
+  </p>
+  <p>
+    それでは、早速学んでいきましょう！
+  </p>
+  
+  <div class="ddd">
+    <h4 class="ddd">サーバーの移行方法5つ</h4>
+  <ol class="futoji">
+  <li><span class="aka">レンタルサーバー会社に依頼して有償で移行してもらう</span></li>
+  <li><span class="aka">かんたん移行ツールを活用する</span></li>
+  <li><span class="aka">プラグインを活用する</span></li>
+  <li><span class="aka">Wordpressのインポート・エクスポート機能を活用する</span></li>
+  <li><span class="aka">自分で1から移行設定する</span></li>
+  </ol>
+  </div>
+  
+  
+  
+  <p>
+  ここで紹介する5つの移行方法に関して、移行の難易度や特徴をかんたんにまとめてみました。
+  </p>
+  
+  
+  <p class="font11 right nasi futozi">
+  
+    </p>
+    <div class="spec">
+    <table>
+    
+        <tr>
+        <th class="hai" width="25%">方法</th>
+        <th class="hai" width="20%">難易度</th>
+        <th class="hai" width="55%">特徴</th>
+        </tr>
+        
+        <tr>
+          <th class="center">１．有償で依頼</th>
+          <td><span class="ore">★</span></td>
+          <td>レンタルサーバー会社に依頼する。安心に移行ができる。ただし有償なため料金が発生。（例：エックスサーバーの場合は33,000円）</td>
+        </tr>
+  
+        <tr>
+          <th class="center">２．かんたん移行ツール</th>
+          <td><span class="ore">★★</span></td>
+          <td>専用の移行ツールを使ってクリック操作で移行できる。ツールは無料。エックスサーバーやConoha WINGなどサービスを提供する一部レンタルサーバーに限る</td>
+          </tr> 
+    
+          <tr>
+            <th class="center">３．インポート・エクスポート機能</th>
+            <td><span class="ore">★★★</span></td>
+            <td>Wordpressの付属機能で移行を行う。記事データなど一部のデータのみ移行可能。テーマやプラグインの移行には別途操作が必要</td>
+            </tr> 
+  
+          <tr>
+            <th class="center">４．プラグイン</th>
+            <td><span class="ore">★★★★</span></td>
+            <td>専用プラグインを利用して移行する。インポート・エクスポート機能よりも、より詳細に移行ができる。費用は0円（有料プランがあるプラグインもあり）。</td>
+            </tr> 
+    
+        <tr>
+          <th class="center">５．自分で１から移行設定</th>
+          <td><span class="ore">★★★★★</span></td>
+          <td>1つ1つのデータを正確にかつ詳細に移行することが可能。ただしデータベースなどの操作を行うため知識が必要。</td>
+        </tr>
+  
+    </table>
+    </div>
+  
+    <p>
+    サーバーの移行は運営側にとってかなり大きな作業となります。できる限りトラブルなく移行を完了させるためにも移行方法を把握し、状況にあった方法を選択しましょう。
+    </p>
+  
+  
+    <div class="section">
+      <div class="oneArea">
+        <div class="onebox">
+          <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+        <div class="fukiArea">
+          <div class="fukidasi">
+          安心な移行を求めるなら有償で依頼することがおすすめ。費用をかけたくない場合はかんたん移行ツールの利用がおすすめ。
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    
+  
+
+      
+  
+  
+  
+  <h2>方法１．有償で設定を依頼する<span class="ore">（難易度☆）</span></h2>
+  <p>
+  WordpressやWebサイトデータの移行はレンタルサーバー会社に有償で依頼することが出きます。
+  最も安心して移行できる方法と言えるでしょう。
+  </p>
+  <p>
+  この時に大切なのは移行先のレンタルサーバーをどの会社にするかであり、
+  設定依頼を受けてくれレンタルサーバー会社を選ぶ必要があります。その後の利用も考えてレンタルサーバーの安定性やスピードも考慮しましょう。
+  </p>
+  
+  <h3>有償で依頼できるレンタルサーバー</h3>
+  <p>
+    移行を有償で依頼できるレンタルサーバーは近年増えてきています。比較的、安価な費用でお任せできます。
+  </p>
+  <p>
+    エックスサーバーやConohaWINGなどの人気サーバーや、アイクラスタ プラスといった法人向けサーバーで有償依頼が可能になっています。
+  </p>
+  
+  
+  
+  <p class="font11 right nasi futozi">
+  
+  </p>
+  <div class="spec">
+  <table>
+  
+      <tr>
+      <th class="hai" width="25%">会社名</th>
+      <th class="hai" width="20%">移行料金</th>
+      <th class="hai" width="55%">特徴</th>
+      </tr>
+      
+  
+      <tr>
+        <th class="center"><a href="/web/20250206223216/https://www.domain-server-study.com/server/conoha.html">Conoha WING</a></th>
+        <td><span class="ore">7,678円</span></td>
+        <td>利用アカウント数が70万突破の人気サーバー。サーバー移転に加えてドメイン関係の設定となるDNS設定（ネームサーバー設定）の変更も行ってくれます
+        </td>
+      </tr>
+  
+      <tr>
+        <th class="center"><a href="/web/20250206223216/https://www.domain-server-study.com/server/xserver.html">エックスサーバー</a></th>
+        <td><span class="ore">33,000円</span></td>
+        <td>運営サイト数の実績が250万。法人企業の利用が21万社となる国内シェア1位のレンタルサーバー。有償依頼ではサーバー移行だけでなく様々な設定が依頼可能</td>
+      </tr>
+  
+      <tr>
+        <th class="center"><a href="/web/20250206223216/https://www.domain-server-study.com/server/gmocloud.html">アイクラスタ プラス</a></th>
+        <td><span class="ore">33,000円</span></td>
+        <td>稼働率100%保障をしているレンタルサーバー。お引越しパックとしてサーバー移行を1サイト分受けてくれます
+        </td>
+      </tr>
+  
+  
+  </table>
+  </div>
+  
+  
+  
+  <h3>無料で依頼できるレンタルサーバー</h3>
+  
+  <p>
+    サーバー移行の作業を無料で受けてくれるレンタルサーバーもあります。
+  </p>
+  <p>
+    法人向けレンタサーバーとなるXserverビジネスがその1つで、webサイト（Wordpress）10個まで無料となっています。
+    所要日数も5営業日ほどしかかからないため1週間もすれば移行が完了します。
+  </p>
+  <p>
+    11サイト目からは移行1件につき16,500円の費用が発生します。
+  </p>
+  
+  
+  
+  <p class="font11 right nasi futozi">
+  
+  </p>
+  <div class="spec">
+  <table>
+  
+      <tr>
+      <th class="hai" width="25%">会社名</th>
+      <th class="hai" width="20%">移行料金</th>
+      <th class="hai" width="55%">特徴</th>
+      </tr>
+      
+      <tr>
+        <th class="center"><a href="/web/20250206223216/https://www.domain-server-study.com/server/xserver.html">Xserverビジネス</a></th>
+        <td><span class="ore">無料</span></td>
+        <td>エックスサーバーの法人向けプラン。サーバー移行に限らずメールアドレス作成やCMSインストールなどの設定を無料依頼できます</td>
+      </tr>
+  
+  </table>
+  </div>
+  
+  
+  
+  <div class="section">
+    <div class="oneArea">
+      <div class="onebox">
+      <div class="imgArea"><img src="/web/20250206223216im_/https://www.domain-server-study.com/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+       　レンタルサーバー会社にお任せするので安心してワードプレスやWebサイトの移行が可能になります
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  
+  
+  
+  
+  
+  <h2>方法２．かんたん移行ツール<span class="ore">（難易度☆☆）</span></h2>
+  <p>
+    自分で移行作業を行いたいのであればレンタルサーバー各社が提供している「かんたん移行ツール」の利用をおすすめします。
+  </p>
+  <p>
+    移転先のレンタルサーバーがかんたん移行ツールのサービスを提供していることが条件となりますが、今では多くのサーバー会社がかんたん移行ツールを提供しています。
+  </p>
+  
+  
+  <h3>移行に必要なのはWordpressのID・パスワードのみ</h3>
+  <p>
+    移行にあたって必要なものはWordpressに入るためのID・パスワードと、データベースのID・パスワード情報になります。
+  </p>
+  <p>
+    これらの情報は
+    Wordpressを開設した際にIDが記載されたメールが送られているか、レンタルサーバーの管理画面で確認できると思います。
+  </p>
+  <p>
+  新しいレンタルサーバーを契約したら移行ツールの設定画面に入り、運営しているWordpressのID・パスワードを入れます。
+  そうすることでツールがWordpressのサイトデータにアクセスできるようになりますので、関連した様々なデータを丸ごと新サーバーに引っ張ってくれます。
+  </p>
+  
+  
+  
+  
+  <h3>無料で利用ＯＫ。各種制限もないため推奨の移行方法</h3>
+  <p>
+    このかんたん移行ツールはサービスを提供しているサーバー会社であれば、どのレンタルサーバーであっても無料で利用することが出来ます。
+    また、他の移行方法のように各種制限を気にする必要もありません。
+  </p>
+  <p>
+    プラグインを使った移行の場合だと容量制限がかかるものもあり、サイトデータが多い場合は有料プランへの加入が必要になります。
+   インポート・エクスポート機能による移行だと抽出するデータにテーマやプラグインのデータが含まれていませんが、かんたん移行ツールであればそれらも丸ごと移行することが出来ます。
+    </p>
+  <p>
+    そのため、契約先のレンタルサーバーにかんたん移行ツールが提供されているようであれば、ツールを使って移行したほうが良いでしょう。
+  </p>
+  
+  
+  
+  
+  
+  <h3>かんたん移行ツールを導入しているレンタルサーバー</h3>
+  <p>
+  かんたん移行ツールを提供しているレンタルサーバーを以下の表にまとめてみました。
+  </p>
+  
+  <div class="spec">
+    <table>
+    
+        <tr>
+        <th class="hai" width="25%">会社名</th>
+        <th class="hai" width="25%">かんたん移行ツール</th>
+        <th class="hai" width="50%">特徴</th>
+        </tr>
+        
+    
+        <tr>
+          <th class="center"><a href="/web/20250206223216/https://www.domain-server-study.com/server/conoha.html">Conoha WING</a></th>
+          <td><span class="ore">あり</span></td>
+          <td>管理画面が整ったUIで作業がしやすい。サーバー契約でドメイン2個まで無料（WINGプラン）。登録アカウント70万超えの人気サーバー</td>
+        </tr>
+    
+        <tr>
+          <th class="center"><a href="/web/20250206223216/https://www.domain-server-study.com/server/xserver.html">エックスサーバー</a></th>
+          <td><span class="ore">あり</span></td>
+          <td>圧倒的なサーバースペックと安定性。長期割引＆ドメイン無料キャンペーンを実施。運営実績250万サイト。一般サイトにも法人サイトにも人気。
+  
+          </td>
+        </tr>
+    
+        <tr>
+          <th class="center"><a href="/web/20250206223216/https://www.domain-server-study.com/server/shinserver.html">シンレンタルサーバー</a></th>
+          <td><span class="ore">あり</span></td>
+          <td>エックスサーバーと同等のサーバー環境で、エックスサーバーよりも月額料金がお得でコスパ良し。
+          </td>
+        </tr>
+  
+        <tr>
+          <th class="center"><a href="/web/20250206223216/https://www.domain-server-study.com/server/rakkoserver.html">ラッコサーバー</a></th>
+          <td><span class="ore">あり</span></td>
+          <td>運営ワードプレスをラッコサービスで簡単に販売できるのが特徴</td>
+        </tr>
+  
+        <tr>
+          <th class="center"><a href="/web/20250206223216/https://www.domain-server-study.com/server/starserver.html">スターサーバー</a></th>
+          <td><span class="ore">あり</span></td>
+          <td>月額220円～でワードプレスが作れる低価格なレンタルサーバー</td>
+        </tr>
+    
+    </table>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>方法３．プラグイン<span class="ore">（難易度☆☆☆）</span></h2>
+  
+  <p>
+    ワードプレスには移行のための専用プラグインが提供されています。プラグインの機能により詳細にデータを抽出し移行することが出来ます。
+  </p>
+  
+  
+  <h3>必要なものは専用プラグインの導入と設定画面での操作だけ</h3>
+  <p>
+  まず行うことは専用プラグインをWordpressにインストールすることになります。
+  </p>
+  
+  <h4>移行専用のプラグインをインストールする</h4>
+  <p>
+  プラグインを導入する画面で「移行」などと打ってキーワード検索すれば「All-in-One WP Migration」「Duplicator」「WPvivid」「Backup Migration」など移行専用のプラグインがずらりと表示されます。
+  </p>
+  
+  <p>
+    どれか1つ選んでインストールをしましょう。
+  </p>
+  
+  <p> 
+    「All In One SEO」や「Yoast SEO」といった色々なSEO機能が盛りだくさん入っている人気プラグインも表示される可能性が
+    ありますが、これらはSEO対策用のプラグインでサーバー移行用としては向いていない（機能がない）ので注意しましょう。
+  </p>
+  
+  <h4>プラグイン用の設定画面でデータ抽出→データインストールを行う</h4>
+  <p>
+  どれか1つのプラグインを導入すればWordpressのメニューに該当のプラグインが表示されますので、そこからプラグイン専用の設定画面に入りましょう。
+  </p>
+  <p>
+  設定画面に入ったら落としたいデータの種類を選んでチェックボックスをクリック。
+  データを自分のパソコンに落としましょう。これで移行データの抽出が完了となります。
+  </p>
+  <p>
+  次に移行先のレンタルサーバーで新しいWordpressを作ります。そして抽出した際と同じ移行専用のプラグインをWordpressにインストールしましょう。
+  設定画面に入り落としたデータをインストールすることで作業が完了します。
+  </p>
+  
+  <p>
+  
+  </p>
+  
+  
+  
+  <h3>移行プラグインならこれ。推奨2選</h3>
+  <p>
+    ここではサーバー移行でおすすめのプラグインを紹介します。
+  </p>
+  
+  
+  
+  <div class="spec">
+    <table>
+    
+        <tr>
+        <th class="hai" width="25%">会社名</th>
+        <th class="hai" width="25%">料金</th>
+        <th class="hai" width="50%">特徴</th>
+        </tr>
+        
+    
+        <tr>
+          <th class="center"><a href="https://web.archive.org/web/20250206223216/https://ja.wordpress.org/plugins/wpvivid-backuprestore/">WPvivid</a></th>
+          <td><span class="ore">無料</span></td>
+          <td>フリープランのみで容量制限なくデータ移行が出来る移行専用のプラグイン</td>
+        </tr>
+    
+        <tr>
+          <th class="center"><a href="https://web.archive.org/web/20250206223216/https://ja.wordpress.org/plugins/all-in-one-wp-migration/">All-in-One WP Migration and Backup</a></th>
+          <td><span class="ore">無料・有料</span></td>
+          <td>無料プランではデータ移行にあたって容量制限あり。制限にかかる場合は有料プランへの加入が必要
+  
+          </td>
+        </tr>
+    
+    </table>
+    </div>
+  
+  
+  
+  <h3>WPvivid（無料）</h3>
+  <p>
+    WPvividはサーバー移行の専用プラグインとして人気があり無料で利用ができます。2024年10月時点で評価は5点（最大5点）と抜群で有効インストール数も50万を超えています。
+  </p>
+  <p>
+    データのバックアップを実施する際に容量制限がない点が強み。容量が多いワードプレスでもサイトデータをまるごと移行することが出来ます。
+  </p>
+  
+  <h3>All-in-One WP Migration and Backup（無料/有料）</h3>
+  <p>
+    サーバー移行の専用プラグインとして最もインストールされているプラグインになります。2024年10月時点で評価は4.5点（最大5点）となりインストール数は500万を超えています。
+  </p>
+  <p>
+  　無料プランと有料プランがあり、無料プランではデータ移行に関して容量制限があります。容量を超えるデータ量となる場合、有料プランでの利用
+  が必要となります。
+  </p>
+  
+  
+  <div class="section">
+    <div class="oneArea">
+      <div class="onebox">
+        <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+        容量制限なくデータ移行ができるWPvividが推奨でしょうか。評価も1点～2点といった低評価がほとんどなく5点満点に近い高評価なプラグイン
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  
+  
+
+
+  
+  <h2>方法４．インポート・エクスポート機能<span class="ore">（難易度☆☆☆☆）</span></h2>
+  <p>
+    wordpressにはインポート機能、エクスポート機能が備わっています。この機能により簡単に記事データを抽出し、移行先に移し変えることが出来るようになっています。
+  </p>
+  <p>
+  ただし、移し変えられるデータは記事データとメディアデータ（写真・イラスト）のみとなりサイトタイトル、パーマリンク、プラグイン、テーマのデータは含まれません。
+  </p>
+  <p>
+    インポート機能で移行する場合はこの点を考慮しなくてはいけません。
+  </p>
+  
+  
+  
+  <h3>wordpress自体の機能だけでさっとデータ移行できる点がメリット</h3>
+  <p>
+  インポート機能はワードプレスの管理画面に入っている機能なので、ワードプレスを使っている人であれば誰でも利用が出来るようになっています。
+  </p>
+  <p>
+  操作も今回紹介している5つの方法の中では最も簡単で、ボタン操作だけでデータの抽出とインストールが出来ます。
+  ただし、次に説明している作業が必要になるため今回は難易度を☆☆☆☆としています。記事データだけの移行でいいなら難易度は☆とします。
+  </p>
+  
+  
+  
+  <h3>記事とメディアデータのみの移行なので他要素のデータ移行が必要となるのがデメリット</h3>
+  <p>
+  プラグインやテーマ本体のデータは抽出しないため、移行先の環境でプラグインとテーマを新たにインストールする必要があります。
+  テーマを新たにインストールすればとうぜん初期状態となります。
+  </p>
+  
+  <p>
+    テーマの設定（デザインやウィジェット）をいじっていれば、そういった部分は現状復帰させなくてはいけません。
+  </p>
+  <p>
+  この場合、以下のような作用が必要となります。
+  </p>
+  
+  <div class="ddd">
+    <h4 class="ddd">その他必要な移行作業</h4>
+    <ol class="futoji">
+      <li>テーマのインストール・サイトデザインやウィジェット部分の現状復帰</li>
+      <li>プラグインのインストール・設定の現状復帰</li>
+      <li>パーマリンクの設定（個別にURLを変更していれば記事ごとに修正）</li>
+    </ol>
+  </div>
+  
+  <p>
+    パーマリンクについてもインポート機能では移行が出来ません。
+  </p>
+  <p>
+    パーマリンクの設定を「投稿名」などにしていて記事ごとに自分で
+    URLをつけていた場合は、これも初期化されることになりますので移行後に個別に修正していきましょう。
+  </p>
+  
+  
+  
+  <div class="section">
+    <div class="oneArea">
+      <div class="onebox">
+        <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+          テーマを改造している場合や、記事数が多くパーマリンク（URL）を個別につけていた場合はインポート機能での移行はあまり向いていません。
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <h2>方法５．自分で細かく移行設定を行う<span class="ore">（難易度☆☆☆☆☆）</span></h2>
+  
+  <p>
+    簡単移行ツールやプラグインを利用せず、自らの操作で移行することも出来ます。
+  </p>
+  <p>
+  この場合、<span class="midori">Wordpress本体のデータ</span>と<span class="midori">データベースのデータ</span>を専用の管理画面
+  から抽出する操作が必要になります。ピックアップしたデータは移行先となる新しいレンタルサーバーに上げます。
+  ツールに頼らない分、技術的な知識が必要で難易度がぐっと高くなります。
+  </p>
+
+  
+  <div class="bbb">
+    <ol class="futoji">
+      <li>データをダウンロードする（Wordpress情報とデータベース情報の2つ）</li>
+      <li>データをアップロードする（上記2つのデータを新環境となるレンタルサーバーへ上げる）</li>
+    </ol>
+  </div>
+
+<p>
+  この作業にあたって難しい点は、FTPやデータベースの管理画面を介してデータのやり取りを行う点になります。
+  ※FTPやデータベースの内部にはレンタルサーバーの管理画面から入ることが出来ます。
+</p>
+
+
+
+
+
+
+
+  <h3>作業１．ワードプレスとデータベースの情報をダウンロードする</h3>
+  
+  <p>
+
+  </p>
+
+  <div class="ddd">
+    <h4 class="ddd">ダウンロード</h4>
+    <ol class="futoji">
+      <li>wordpress本体のデータ：ファイルマネージャーかFTPソフトから落とす</li>
+      <li>データベースのデータ：phpmyadminから落とす（エックスサーバーの場合）
+      </li>
+    </ol>
+  </div>
+  
+  <p>
+  まず、wordpress本体のデータはファイルマネージャーもしくはFTPソフトを使って
+  データを確認しピックアップします。
+  </p>
+  <p>
+  データベースのデータについては「phpMyadmin」に入って確認しピックアップします（エックスサーバーの場合）。
+  phpmyadminとはデータベース管理用ソフトになります。わざわざ自分でソフトの準備をする必要はありません。
+  大抵、レンタルサーバーの管理画面に入ればリンクが用意されています。
+  </p>
+  
+  <p>
+  この2つの作業について、画面にどうやって入るのか？どのデータをどうやって落とすのか？
+  具体的に説明していきたいと思います。
+  </p>
+  
+  <div class="section">
+    <div class="oneArea">
+      <div class="onebox">
+        <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+        自分で1から作業するのは難しいので、より簡単に移行ができる「簡単移行ツール」や「プラグイン」を使うことをおすすめします。
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+          
+
+  
+  
+  <h4>ファイルマネージャー（もしくはFTPソフト）でワードプレスのphpファイルなどを落とす</h4>
+  <p>
+    まずは借りているレンタルサーバーのファイルマネージャーに入ります。
+    ファイルマネージャーにはWordpressのデータが入っています。
+  </p>
+  <p>
+    まずファイルマネージャー（もしくはFTPソフト）に入ったら
+    該当サイトのフォルダをクリック、次に「public_html」をクリックしましょう。
+  </p>
+  <p>
+    そこまで操作するとサイトデータが表示されます。
+  </p>
+  <p>
+    様々なフォルダとファイルが点在していますが、落とすべきフォルダとファイルは以下となります。
+  </p>
+  
+  
+  <div class="ddd">
+    <h4 class="ddd">該当データ</h4>
+    <ul>
+      <li>wp-admin（フォルダ）</li>
+      <li>wp-content（フォルダ）</li>
+      <li>wp-includes（フォルダ）</li>
+      <li>index.php（以下、ファイル）</li>
+      <li>xmlrpc.php</li>
+      <li>wp-activate.php</li>
+      <li>wp-blog-header.php</li>
+      <li>wp-comments-post.php</li>
+      <li>wp-config-sample.php</li>
+      <li>wp-config.php</li>
+      <li>・・・・・他の「wp-」から始まるファイル</li>
+    </ul>
+  </div>
+  
+  <p>
+    ワードプレスのバージョンによって落とすデータに違いが出てくるかもしれませんが
+    基本的にはフォルダを3つ落とす。そしてindex.php、xmlrpc.php、wp-関連のファイルを落とします。
+  </p>
+
+  
+
+  
+  
+  
+  <h4>２．データベース画面からテーブル情報を落とす</h4>
+  <p>
+次にMySQLなどのデータベースソフトの情報を落とす作業に入ります。
+  </p>
+<p>
+  大体、契約しているレンタルサーバーの管理画面からデータべースソフトの画面にいけるようになっています。
+</p>  
+<p>
+  データベースの画面には入れたら以下のテーブル情報をダウンロードします。
+</p>
+
+
+  <div class="ddd">
+    <h4 class="ddd">テーブル情報</h4>
+    <ul>
+      <li>wp_posts</li>
+      <li>wp_postmeta</li>
+      <li>wp_comment</li>
+      <li>wp_commentmeta</li>
+      <li>wp_terms</li>
+      <li>wp_termmeta</li>
+      <li>wp_term_taxonomy</li>
+      <li>wp_term_relationships</li>
+      <li>wp_users</li>
+      <li>wp_usermeta</li>
+      <li>wp_options</li>
+      <li>wp_links</li>
+    </ul>
+  
+  </div>
+  
+
+
+
+
+  
+  <h2>まとめ</h2>
+
+  <p>
+    サーバー移行の方法を5つ紹介してみました。
+  </p>
+  
+  <p>
+    様々な方法がありますが、操作が簡単で失敗のリスクも低い「簡単移行ツール」の利用がおすすめです。エックスサーバーやConohawingなど
+    移行ツールがあるレンタルサーバーに引っ越す場合は、ツールを使っての作業が無難です。
+  </p>
+  <p>
+    法人でより安全性を担保して移行したい場合は、移行代行サービスを検討しましょう。大体1万円～3万円の費用で受け持ってもらえます。
+  </p>
+  <p>
+    それでは、快適なサーバー移行を！
+  </p>
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

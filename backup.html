@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>レンタルサーバーの自動バックアップ機能があれば安心。各社の機能を比較してみた。</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/backup.html" />
+
+
+<meta property="og:title" content="レンタルサーバーの自動バックアップ機能があれば安心。各社の機能を比較してみた。">
+<meta property="og:description" content="自動バックアップ機能があればデータに問題が出ても1日前、数日前の状態に戻すことが可能。ここではバックアップ機能の基本的なことやレンタルサーバー各社のバックアップ機能を比較しています。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/backup.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "レンタルサーバーの自動バックアップ機能があれば安心。各社の機能を比較してみた。",
+	  "image":        "https://www.domain-server-study.com/img/main_img_server.jpg" ,
+	  "dateModified": "2024-09-16", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">HOME</a> ＞</li>
+<li><a href="/backup.html">バックアップ機能</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1>レンタルサーバーの<span class="aka"><span class="aka">自動バックアップ</span></span>機能。サービスを各社で比較</h1>
+
+
+<p class="font11 right t10 b10">更新：<time datetime="2023-07-23">2024年9月16日</time></p>
+<p class="t10">
+<img src="/img/backup-main.jpg" alt="自動バックアップ　比較" width="100%">
+</p>
+
+<p>
+レンタルサーバーには「自動バックアップ」と言って
+<span class="midori">ワードプレスやホームページのデータや、メールのデータを自動的に保存してくれる</span>サービスがあります。
+</p>
+
+<div class="bbb">
+<p>
+この、バックアップデータがあることで、エラーによってワードプレスの画面が表示されなくなった場合や、
+パソコンにあるサイトデータを間違って削除した場合でもデータを戻すことが可能になっています。
+</p>
+</div>
+
+
+
+
+
+<h2>自動バックアップとはどんなサービスなのか？</h2>
+
+
+
+<h3 class="t25">データの保存領域は「Web」「メール」「データベース」の3つ</h3>
+
+<p>
+バックアップデータには「Web領域」「データベース領域」「メール領域」の３つの保存領域があります。
+</p>
+
+<p>
+Webやデータベースについてはほぼ全てのレンタルサーバーで保存しています。
+</p>
+
+<p>
+ただし、メールデータについては「バックアップ外」となっているところもあります。
+会社用のメールサーバー用としてレンタルサーバーを借りる場合は、この辺りをよくチェックしてプランを選びましょう。
+</p>
+
+
+
+
+
+
+
+<h3>7日か14日分のデータを保存してくれるプランが多い</h3>
+<p>
+1日1回のバックアップで7日分や14日分のデータを保存してくれる所が多くなっています。
+</p>
+
+<p>
+当サイトが紹介しているレンタルサーバーでは唯一「CPIレンタルサーバー」だけが30日分まで保存してくれます。
+</p>
+
+
+<p>
+また会社によってはバックアップ期間を3世代前、7世代前というような言い方で表現していますが、
+これは1日1回のバックアップで7世代前までということであれば、7日前までのデータを遡って取得することが出来る。という意味になります。
+</p>
+
+<p>
+3日に1回のバックアップであれば、21日前までデータが保存されている。ということになります。
+</p>
+
+
+
+
+
+<h3>自動バックアップは無料が基本。一部は有料の場合も</h3>
+
+<p>
+バックアップデータを使う場合、無料でサービスを受けられる会社と有料になる会社に分かれます。
+</p>
+
+<p>
+有料の場合は「月額制」か「データ利用時に1回払い」など、それぞれ料金がかかる形が違います。
+</p>
+
+<p>
+以前は有料でサービスを提供していたプランが大半でしたが、最近では無料でサービスを受けられる所が増えてきています。
+</p>
+
+
+
+<h3>リストア作業（復旧）は簡単なのか？</h3>
+<p>
+実際に自動バックアップで保存されているデータを復元することをリストアと呼びますが、
+このリストア作業がどれくらい簡単にできるのか？というのも大切なポイントになります。
+</p>
+
+<p>
+リストア作業もエックスサーバーやConohaWINGなどのレンタルサーバーでは、
+管理画面から簡単にデータをもってこれるようになっています。
+</p>
+
+
+
+
+
+
+
+
+<h2 id="backup">自動バックアップサービスの比較</h2>
+
+<p>
+	自動バックアップについて各社のサービス内容を比較してみました。
+</p>
+<p>
+	以前は有料が多かったバックアップサービスも大半が無料化されています。エックスサーバーやConoha WINGなど人気サーバーでも
+	無料となっていますね。
+</p>
+
+
+<div class="spec">
+	<table width="100%">
+
+	<tr>
+	<th class="hai" width="30%">会社</th>
+	<th class="hai" width="20%">日数</th>
+	<th class="hai" width="25%">領域</th>
+	<th class="hai" width="25%">料金</th>
+	</tr>
+	
+
+	<tr>
+	<th class="link"><a href="/server/cpi.html">ＣＰＩ</a></th>
+	<td>30日分</td>
+	<td>web・DB</td>
+	<td>無料</td>
+	</tr>
+	
+	<tr>
+	<th class="link"><a href="/server/conoha.html">Conoha Wing</a></th>
+	<td>14日分</td>
+	<td>Web、DB、メール</td>
+	<td>無料</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/xserver.html">エックスサーバー</a></th>
+	<td>14日分</td>
+	<td>web、DB、メール</td>
+	<td>無料</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/onamae-server.html">お名前レンタルサーバー</a></th>
+	<td>14日分</td>
+	<td>Web・DB・メール</td>
+	<td>無料</td>
+	</tr>
+	
+	<tr>
+		<th class="link"><a href="/server/colorfulbox.html">カラフルボックス</a></th>
+		<td>14日分</td>
+		<td>web、DB</td>
+		<td>無料</td>
+		</tr>
+
+	<tr>
+	<th class="link"><a href="/server/lolipop.html">ロリポップ</a></th>
+	<td>7日分</td>
+	<td>web、DB、メール</td>
+	<td>月額330円</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/heteml.html">ヘテムル</a></th>
+	<td>7日分（Web、メール）<br>14日分（DB）</td>
+	<td>Web、DB、メール</td>
+	<td>1データ：5,500円</td>
+	</tr>
+
+	</table>
+</div>
+
+
+<h4>CPIレンタルサーバー</h4>
+
+<p>
+無料。SmartRelease機能によってWeb領域、データベース領域のデータを30日分バックアップ
+</p>
+
+
+<h4>エックスサーバー</h4>
+<p>
+	無料。全プラン搭載。サーバー（Web・メール）、データベースの過去14日分をバックアップ。
+</p>
+<p>
+	復旧作業についても管理画面から簡単に行えます。
+</p>
+
+<h4>Conoha WING</h4>
+<p>
+	無料。全プラン搭載。Webサイト、メール、データベースのデータを1日1回バックアップ、過去14日分を復旧用データとして利用することができる。かんたんに復元も可能。
+</p>
+
+<h4>お名前レンタルサーバー</h4>
+<p>
+	無料。全プラン搭載。WEBデータ、メールの受信データ、データベースをそれぞれ14日間、無料で自動保存
+</p>
+
+<h4>カラフルボックス</h4>
+<p>
+	無料。全プラン搭載。1日1回バックアップ過去14日分のデータを専用サーバーに自動的にバックアップ。管理画面がCパネルのため操作が他社より難しい。
+</p>
+
+<h4>ロリポップ</h4>
+<p>
+	ベーシック、エンタープライズプランは自動バックアップの保存・復旧が無料。
+</p>
+<p>
+	ただし下位プランのエコノミー・ライトプランについては有料オプションの7世代バックアップ（月額330円）が必要。
+</p>
+
+
+<h4>ヘテムル</h4>
+<p>
+	自動バックアップサービスとしてWeb、メールは7日分、データベースは14日分無料で保存されます。ただし復旧に関しては5,500円がかかります。
+</p>
+<p>
+	別途、バックアップオプションと呼ばれる月額770円の有償のサービスがあり、こちらは7世代分がいつでも取得・復元可能。
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="matome" class="t40">レンタルサーバーの比較10要素</h2>
+<p>
+プラン選びは自動バックアップサービス以外にも料金、スペック、サービスなど様々な要素が関わってきます。
+</p>
+
+<p>
+レンタルサーバーの比較要素として10つの要素をピックアップして、それぞれのページで解説しています。プラン選びの判断材料にして下さい。
+</p>
+
+<p>
+安定性を求める方は：「<a href="/server/#transfer">稼働率</a>」<br>
+料金が気になる方は：「<a href="/server/cost.html">料金・コスト</a>」
+</p>
+
+
+
+<div class="server-hikaku t30">
+	<table>
+	
+	<tr>
+	<th class="mozi-naka" colspan="5">レンタルサーバーの比較</th>
+	</tr>
+	
+	<tr>
+  <td width="20%">１．<a href="/server/#transfer">稼働率</a></td>
+	<td width="20%">２．<a href="/hdd-ssd.html#storage">ストレージ</a></td>
+	<td width="20%">３．<a href="/wp-install.html#install">ＷＰ簡単インストール</a></td>
+	<td width="20%">４．<a href="/taiou.html#taiou">コールセンター対応</a></td>
+	<td width="20%">５．<a href="/database.html#database-hikaku">データベース数</a></td>
+	</tr>
+	
+	<tr>
+  <td>６．<a href="/rentalserver-kakaku.html#youryou">容量</a></td>		
+	<td>７．<a href="/cpu-memory.html#hikaku">CPU＆メモリ</a></td>
+	<td>８．<a href="/web-server.html#webserver">webサーバー</a></td>
+	<td>９．<a href="/backup.html#backup">自動バックアップ</a></td>
+	<td>10．<a href="/data-traffic.html#hikaku">転送量</a></td>				
+	</tr>	
+	</table>
+</div>
+<br>
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<div class="main">
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

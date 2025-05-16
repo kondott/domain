@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>Wordpressで複数サイトを作る！レンタルサーバー各社のデータベース数を比較</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/database.html" />
+
+
+
+<meta property="og:title" content="Wordpressで複数サイトを作る！レンタルサーバー各社のデータベース数を比較">
+<meta property="og:description" content="レンタルサーバーでは提供されるデータベースの数だけWordpressが構築できます。そのため各社の提供データベース数を比較してみました。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/database.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "Wordpressで複数サイトを作る！レンタルサーバー各社のデータベース数を比較",
+	  "image":        "https://www.domain-server-study.com/img/main_img_server.jpg" ,
+	  "dateModified": "2024-09-16", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li>		<a href="/" title="ドメイン取得への道！">home</a> ＞</li>
+<li><a href="/database.html">Wordpressで複数サイトを作る</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1><span class="aka">【Wordpressで複数サイトを作る】</span>レンタルサーバー各社のデータベース数を比較</h1>
+
+<p>
+基本的に、個人でブログを運営する方においてレンタルサーバーにおけるデータベースの役割は<span class="midori">ワードプレスを作るために必要なもの</span>
+という位置づけではないでしょうか。
+</p>
+
+<p>
+	ワードプレスを１つ作るためにはデータベースが１つ必要です。契約プランのデータベース数が10個であれば、ワードプレスも10個作れます。
+	データベース数が0個であればワードプレスは作れません。
+</p>
+
+<div class="bbb">
+<p class="futoji">
+1つの契約でWordpressを複数サイト運営するのであればデータベースの数も複数必要になってきます。
+</p>
+</div>
+
+
+
+<p>
+	いまではコンテンツありきのブログ作成が重視されているため、数多くのワードプレスを作る人は減ったイメージがありますが、
+	2つ目のワードプレス、3つ目のワードプレスを作ってみたいと考える方はいらっしゃるでしょう。
+</p>
+
+
+<p>
+　そんな時にデータベースが複数提供されていれば、1つのサーバー契約でワードプレスが簡単に複数に作れます。
+</p>
+
+
+
+<div class="section">
+	<div class="oneArea">
+	  <div class="onebox">
+		<div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+		<div class="fukiArea">
+		  <div class="fukidasi">
+			500円以下の格安プランの場合、データベース数が0だったり1つだけだったりするので注意です。
+  
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+
+<p>
+当ページでは、各レンタルサーバーが提供するデータベースの数について比較しています。
+</p>
+
+
+<div class="themebox">
+<div class="theme-mokuzi">目次</div>
+<ol>
+<li><a href="#database">データベース数とWordpress</a></li>
+<li><a href="#database-hikaku">レンタルサーバー各社のデータベース数を比較</a></li>
+<li><a href="#matome">まとめ</a></li>
+</ol>
+</div>
+
+
+
+
+
+
+<h2 id="database" class="t40">データベース数とWordpress</h2>
+
+<p>
+	Wordpressを複数サイト作るにあたって知っておきたい基本的な知識を紹介します。
+</p>
+
+
+<h3>マルチドメイン数が多くてもデータベース数が少ない場合、ワードプレスは提供データベース分しか作れない</h3>
+
+<p>
+レンタルサーバー選びの際に、データベース周りで注意してほしいのが「<span class="futoji">マルチドメイン</span>」との関係になります。
+マルチドメインとは「独自ドメイン」を複数登録できる機能のこと。
+</p>
+
+<p>
+例えばマルチドメインが10個、データベースが3個というプランの場合で考えてみましょう。
+</p>
+
+<p>
+この場合、<span class="midori">普通の静的ホームぺージは10個まで作れます。</span>
+マルチドメインが10個なので独自ドメインを10個まで登録できます。そしてその分の静的サイトを作れます。
+</p>
+
+
+
+<p>
+一方でワードプレスを作れる数は提供されるデータベースの数と同じなので<span class="midori">3個まで作れることになります。</span>
+</p>
+
+
+<p>
+「マルチドメインが10個だからワードプレスも10個作れると思っていた・・・」
+ということではありませんので注意してください。
+</p>
+
+
+
+<h3>月額500円未満のプランになると提供されるデータベースの数が少ないので注意</h3>
+
+<p>
+レンタルサーバー各社のプランにおいて、だいたい月額500円未満のプランになると提供されるデータベースの数が少なくなります。
+</p>
+
+<div class="ccc">
+<p>
+例えば月額100円プランの場合は「データベース0個」、月額250円プランの場合は「データベース1個だけ」といったイメージになります。
+</p>
+</div>
+
+<p>
+ワードプレスをたくさん作りたい場合で月額500円未満のプランを契約される場合、提供されるデータベース数がいくつになっているのか確認しておきましょう。
+</p>
+
+<p>
+「ワードプレスを5個は作りたい」という場合は、月額料金500円以上するプランから選んだ方が無難です。
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="database-hikaku" class="t50">各レンタルサーバーのデータベース数の比較</h2>
+
+<p>
+当サイトで紹介しているレンタルサーバーについて各プランのデータベース数についてまとめてみました。
+</p>
+
+
+
+
+
+
+<h3>データベースが0個プラン</h3>
+
+<p>
+	いわゆる格安サーバーにおいて、最も安価なプランは大抵データベースがついていません。
+</p>
+
+<p>
+	当サイトで紹介している、スターサーバー―、さくら、ロリポップについても同様で、
+	最安値の価格帯となるプランはそれぞれ提供されているデータベース数が0個となっています。
+</p>
+<p>
+そのため、これらのプランではワードプレスを作ることが出来ません。
+</p>
+
+
+
+<div class="spec">
+	<table>
+	
+		<tr>
+		<th class="hai" class="20%">会社名</th>
+		<th class="hai" class="50%">月額料金</th>
+		<th class="hai" class="30%">データベース数</th>
+		</tr>
+	
+		<tr>
+		<th class="link"><a href="/server/">スターサーバー（エコノミープラン）</a></th>
+		<td>138円</td>
+		<td>0個</td>
+		</tr>
+
+		<tr>
+		<th class="link"><a href="/server/">ロリポップ（エコノミー）</a></th>
+		<td>198円</td>
+		<td>0個</td>
+		</tr>
+
+		<tr>
+		<th class="link"><a href="/server/">さくらレンタルサーバー（ライトプラン）</a></th>
+		<td>131円</td>
+		<td>0個</td>
+		</tr>
+			
+	</table>
+	</div>
+
+
+
+
+
+<h3>データベース1個以上のプラン</h3>
+
+<div class="spec">
+	<table>
+	
+		<tr>
+		<th class="hai" class="20%">会社名</th>
+		<th class="hai" class="50%">月額料金</th>
+		<th class="hai" class="30%">データベース数</th>
+		</tr>
+
+		<tr>
+		<th class="link"><a href="/server/">スターサーバー（ライトプラン）</a></th>
+		<td>330円</td>
+		<td>1個</td>
+		</tr>
+
+		<tr>
+		<th class="link"><a href="/server/">ロリポップ（ライト）</a></th>
+		<td>550円</td>
+		<td>1個</td>
+		</tr>
+
+		<tr>
+		<th class="link"><a href="/server/">さくらレンタルサーバー（スタンダード）</a></th>
+		<td>524円</td>
+		<td>50個</td>
+		</tr>
+
+
+		<p>
+			格安サーバーでも下から2番目に安価なプラン（月額300円～500円ぐらい）からデータベースが提供されます。
+		</p>
+		<p>
+			スターサーバーやロリポップでは提供数が1個になっているため、複数作りたい場合は注意してください。
+		</p>
+
+	</table>
+	</div>
+
+
+
+
+<h3>データベース数が無制限となるプラン</h3>
+
+<p>
+	各レンタルサーバーでは月額料金が1,000円を超えくるとデータベース数も一気に提供数が増え、無制限で提供されるようになります。
+</p>
+<p>
+	この価格帯のプランにおいてはデータベース数を気にする必要はないでしょう。
+</p>
+
+
+<div class="spec">
+	<table>
+	<tr>
+	<th width="35%" class="center">会社名</th>
+	<th width="32%" class="center">データベース数</th>
+	<th width="32%" class="center">月額料金</th>
+	</tr>
+	
+		
+	<tr>
+	<th class="link"><a href="/server/sakura.html">シン・レンタルサーバー</a></th>
+	<td>無制限</td>
+	<td>月額990円</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="/server/xserver.html">エックスサーバー</a></th>
+	<td>無制限</td>
+	<td>月額1,320円</td>
+	</tr>
+
+
+	<tr>
+	<th class="link"><a href="/server/lolipop.html">ロリポップ</a></th>
+	<td>無制限</td>
+	<td>月額1,430円</td>
+	</tr>
+
+
+		
+
+	<tr>
+	<th class="link"><a href="/server/mixhost.html">mix host</a></th>
+	<td>無制限</td>
+	<td>月額1,380円</td>
+	</tr>
+
+	
+	<tr>
+	<th class="link"><a href="/server/conoha.html">Conoha Wing</a></th>
+	<td>無制限</td>
+	<td>月額1,452円</td>
+	</tr>
+	
+	<tr>
+	<th class="link"><a href="/server/onamae.html">お名前レンタルサーバー</a></th>
+	<td>無制限</td>
+	<td>月額1,430円</td>
+	</tr>
+
+	</table>
+</div>
+
+
+
+
+<h2>データベースは幾つ必要？</h2>
+
+
+<h3>データベース数は5個もあれば充分</h3>
+
+<p>
+	標準プランのデータベース数は多くが無制限となっていますが、実際にはそこまで沢山のワードプレスを作る人は少ないでしょう。
+</p>
+<p>
+今ではGoogleがコンテンツの質を重視しているため、2個、3個とブログの数を増やすのがとても大変だからです。
+</p>
+<p>
+	質を兼ねて運営するためには、個人では数個のブログ運営するだけでも作業が追いつかないと思います。
+</p>
+
+
+
+
+<h3>「データベース数」はもはやあまり重要ではない要素</h3>
+<p>
+ここまで説明してきたようにデータベースが5個もあれば十分だと言える今では、データベース数はレンタルサーバー選びにおいてあまり重要とは言えなくなっています。
+</p>
+<p>
+それよりも、「稼働率」や「高速化」などを重視して検討した方がいいでしょう。
+</p>
+<p>
+	あと低価格サーバーを検討している方は、そのプランにデータベースが入っているかどうかを確認しておきましょう。
+	月500円以下のプランを検討している方はしっかり調べてから検討しましょう。
+</p>
+
+
+
+
+
+
+
+<h3 id="matome" class="t40">その他の要素で比較する</h3>
+
+<p>
+プラン選びは料金だけでなく、CPUやメモリなどのスペック、そして管理画面のわかりやすさ、お問合せなどのサービス面。
+様々な要素が関わってくるため迷ってしまうと思います。
+</p>
+
+<p>
+他の要素もくわしく比較していますので、検討の判断材料にして下さい。
+</p>
+
+<p>
+設定が不得意な方は：「<a href="/wp-install.html#install">ワードプレス簡単インストール</a>」<br>
+安定性を求める方は：「<a href="/server/#transfer">稼働率</a>」
+</p>
+
+
+
+<div class="server-hikaku t30">
+	<table>
+	
+	<tr>
+	<th class="mozi-naka" colspan="5">レンタルサーバーの比較</th>
+	</tr>
+	
+	<tr>
+  <td width="20%">１．<a href="/server/#transfer">稼働率</a></td>
+	<td width="20%">２．<a href="/hdd-ssd.html#storage">ストレージ</a></td>
+	<td width="20%">３．<a href="/wp-install.html#install">ＷＰ簡単インストール</a></td>
+	<td width="20%">４．<a href="/taiou.html#taiou">コールセンター対応</a></td>
+	<td width="20%">５．<a href="/database.html#database-hikaku">データベース数</a></td>
+	</tr>
+	
+	<tr>
+  <td>６．<a href="/rentalserver-kakaku.html#youryou">容量</a></td>		
+	<td>７．<a href="/cpu-memory.html#hikaku">CPU＆メモリ</a></td>
+	<td>８．<a href="/web-server.html#webserver">webサーバー</a></td>
+	<td>９．<a href="/backup.html#backup">自動バックアップ</a></td>
+	<td>10．<a href="/data-traffic.html#hikaku">転送量</a></td>				
+	</tr>	
+	</table>
+</div>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

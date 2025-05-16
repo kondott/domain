@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="keywords" content="gmail,メール,振分け,振分け方法,設定,ラベル,フォルダ,フォルダ分け">
+
+<title>Gmailの自動メール振り分け（ラベル分け）を行う方法</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/mail/gmail-sort-mail.html" />
+
+<meta property="og:title" content="Gmailのメール振り分けを行う方法">
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/mail/gmail-sort-mail.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "blogposting",
+    "headline": "Gmailの自動メール振り分け（ラベル分け）を行う方法",
+    "image":        "https://www.domain-server-study.com/img/gmail.jpg" ,
+    "dateModified": "2022-06-12T14:00:00+08:00",
+    "author": {     "@type": "Person",
+                    "name": "daiji kondo",
+                    "url": "https://www.domain-server-study.com/profile.html"  }
+  }
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?><!--上段ここまで-->
+
+
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/mail/" >メールアドレス</a> > </li>
+<li><a href="/mail/gmail-sort-mail" >Gmail メール振り分け</a></li>
+</ul>
+</div>
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+<h1>Gmailの自動メール振り分け（ラベル分け）を行う方法</h1>
+
+<p class="right futozi font11 ">記事編集：2022年6月12日</p>
+
+<p>
+このページではGmailのフォルダ分け（ラベル分け）の方法について解説しています。
+</p>
+
+<p>
+  この自動振分け設定（ラベル分け）についてはPC版のGmailから行います。
+  基本的にスマホアプリ版ではできない仕様になっています。
+</p>
+
+
+
+<h3>１．ラベルを作成する</h3>
+
+<p>
+まずはラベル分けのルールを設定する前に、メールを保存するラベル（フォルダ）を作成しておきます。
+</p>
+
+<p class="center">
+  <img src="/img/gmail_label02.jpg" alt="gmail ラベル作成" width="100%" class="shadow">
+</p>
+
+
+
+<h5>サイトバーの1番下にある「もっと見る」を選択する</h5>
+<p>
+  では、実際にラベルの作り方を説明します
+</p>
+<p>
+まず、Gmailのサイドバーを1番下まで表示させます。そうすると「もっと見る」の表示が出てきますので、こちらをクリックしてください。
+</p>
+<p class="center">
+  <img src="/img/gmail_label03.jpg" alt="gmail もっと見る" width="100%" class="shadow">
+</p>
+
+
+
+<h5>「新しいラベルの作成」を選択する</h5>
+<p>
+新しく出てきた画面表示に「新しいラベルの作成」がありますので、こちらをクリックします。
+</p>
+<p class="center">
+  <img src="/img/gmail_label04.jpg" alt="gmail 新しいラベルの作成" width="100%" class="shadow">
+</p>
+
+
+
+<h5>ラベル名を入れて作成完了</h5>
+<p>
+  次にラベル名とネスト先を入れると実際にラベルが作成されます。
+  </p>
+  <p>
+  好きなラベル名を入れましょう。ラベル名は後から簡単に変更することも出来ます。
+  </p>
+  <p>
+  ネストについては基本的に空白のままで何も設定しなくて問題ありません。ラベルの数が多くなりすぎてラベルを階層化して整理したい場合に設定するものになります。
+</p>
+<p class="center">
+  <img src="/img/gmail_label05.jpg" alt="gmail ラベル名 ネスト先" width="100%" class="shadow">
+</p>
+
+<p>
+  これでラベル先を作成することが出来ました。次にメールの自動振分け（フォルダ分け）を行います。
+</p>
+
+
+
+
+
+
+
+<h3>２．自動メール振り分け（ラベル分け）を行う</h3>
+<p>
+  「自動メール振分け」ではルールを設定して、受信したメールを各ラベルに振分けるようにします。
+</p>
+
+<h5>フォルダ分けしたいメールを開く</h5>
+
+<p>
+  まずフォルダ分けをしたいメールを開きましょう。
+</p>
+
+<h5>「メールの自動振り分け設定」を選択する</h5>
+
+<p>
+  メールの上部に表示されるメニューからアイコンを選択します。さらに表示される「メールの自動振り分け設定」を選択します。
+</p>
+
+<p class="center">
+  <img src="/img/gmail_label06.jpg" alt="gmail メールの自動振り分け設定" width="100%" class="shadow">
+</p>
+
+
+
+
+<h5>フィルタの設定をする①</h5>
+
+<p>
+次はフィルタ設定になります。メールを振り分けるルール決めとも言えます。
+</p>
+
+<p>
+基本的には<span class="midori">「FROM」の場所に、そのメールのメールアドレスを入れておく</span>ことで、今後そのアドレスから来るメールをラベルに振り分けられるように設定できます。
+</p>
+
+<p class="center">
+  <img src="/img/gmail_label07.jpg" alt="gmail メールの自動振り分け設定" width="100%" class="shadow">
+</p>
+
+
+
+
+<h5>フィルタの設定をする②</h5>
+
+<p>
+  さらにフィルタの詳細ルールを設定します。
+</p>
+
+<p class="center">
+  <img src="/img/gmail_label08.jpg" alt="gmail フィルタの設定" width="100%" class="shadow">
+</p>
+
+
+<h5>（１）受信トレイをスキップする（アーカイブする）</h5>
+
+<p>
+  届いたメールを受信トレイに残すかどうかを設定します。チェックを入れた場合、受信トレイにはメールが残らずラベルだけにメールが入ります。
+</p>
+
+<h5>（２）ラベルをつける</h5>
+
+<p>
+  「ラベルを付ける」ではどのラベルに振り分けるのかラベルの選択を行います。振り分け先にしたいラベルを選びましょう。
+</p>
+
+<h5>（３）一致するスレッドにもフィルタを適用する</h5>
+
+<p>
+  「一致するスレッドにフィルタを適用する」にチェックを入れることにより、受信フォルダにある同じ条件のメールも一緒にフォルダに入ります。
+  ここにチェックを入れておけば一括でフォルダに移動させれます。
+</p>
+
+
+<h5>「フィルタを作成」で設定完了</h5>
+<p>
+フィルタを生成することによりルール設定が完了となります。その後、設定したアドレスからメールが届いた場合、自動的にラベルに入ります。
+</p>
+
+
+<h3>３．ラベル、フィルタの編集を行う</h3>
+
+<p>
+  作成したラベルやフィルタは、その後で編集することが出来ます。
+</p>
+
+<h5>ラベルの編集方法</h5>
+
+<p>
+  ラベルの編集は<span class="midori">ラベルの場所にマウスを載せた時に出てくるアイコン</span>から編集できるようになっています。ここではラベルの色、名前、削除などが行えます。
+</p>
+
+<p class="center">
+  <img src="/img/gmail_label09.jpg" alt="gmail ラベルの編集" width="50%" class="shadow">
+</p>
+
+
+
+<h5>フィルタの編集方法</h5>
+
+<p>歯車アイコン＞すべての設定を表示＞「フィルタとブロックアドレス」からフィルタにつけたルールの変更が行えます。</p>
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+
+
+
+<h5>関連した記事</h5>
+
+<ul>
+  <li><a href="/mail/gmail-inbox.html">Gmailのレイアウトを変更する方法</a></li>
+  <li><a href="/mail/gmail-delete.html">Gmailを一括削除する方法</a></li>
+  <li><a href="/mail/gmail-archive.html">Gmailのアーカイブ機能とは？</a></li>
+</ul>
+
+
+
+
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここから中段の右ＢＯＸ部分が始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidemenu_mail.php'); ?>
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+
+</div><!--中段ここまで-->
+
+
+
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

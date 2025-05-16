@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+
+<title>ワードプレスのログイン方法がわからない場合の対処法</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/wordpress/login.html" />
+
+
+<meta property="og:title" content="ワードプレスのログイン方法がわからない場合の対処法">
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/wordpress/login.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "ワードプレスのログイン方法がわからない場合の対処法",
+	  "image":        "https://www.domain-server-study.com/img/main-img-domain.jpg" ,
+	  "datePublished": "2022/10/25",
+	  "dateModified": "2022/10/25",  
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?><!--上段ここまで-->
+
+
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/wordpress/login.html">ワードプレスにログインできない</a></li>
+</ul>
+</div>
+
+
+
+<!--ここから中段が始まります--><div class="wrap"><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1><span class="aka">ワードプレスのログイン方法がわからない場合の対処法</h1>
+
+
+
+<p>
+ワードプレスを運営していてログインが出来なくなるケースとしては、いくつかの場面が考えられます。
+</p>
+
+<p>
+（１）ユーザー名やパスワードを忘れた<br>
+（２）ログインURLを忘れた<br>
+（３）ログイン画面が表示されなくなった
+</p>
+
+<p>
+それぞれのケースにおいて、対処方法を解説してみたいと思います。
+</p>
+
+<h3>１．ユーザー名やパスワードを忘れてしまった場合</h3>
+
+<h4>パスワード忘れ</h4>
+<p>
+パスワードを忘れても、パスワードの再発行から設定を変更することができます。
+</p>
+
+<p class="center">
+<img src="/img/wordpress-login-img.png" width="400px">
+</p>
+
+<p>
+「パスワードをお忘れですか？」をクリックし、メールアドレスかユーザー名を入力することで
+登録メールアドレス宛にパスワード変更メールが届きます。
+</p>
+
+
+<p class="center">
+<img src="/img/wordpress-login-password.png" width="400px">
+</p>
+
+
+<h4>ユーザー名忘れ</h4>
+
+<p>
+ワードプレスにおけるユーザー名の入力は「ユーザー名」及び「登録メールアドレス」の入力をすればＯＫとなります。そのため、ユーザー名を忘れてしまっても、メールアドレスを入れれば問題ありません。
+</p>
+
+<p>
+「どのメールアドレスで登録していたのか、それも覚えていない」という場合は、自分が活用しているメールアドレスを幾つか入力してみましょう。
+</p>
+
+
+<h5>登録メールアドレスを正確に調べたい場合</h5>
+<p>
+ユーザー名の入力において登録したメールアドレスも忘れてしまって、いくつか入力しても
+ログインできない場合は、データベースからユーザー名とパスワードを調べることができます。
+</p>
+
+<p>
+普通、データベースに入って調べるのはとても難しいので、出来ない方が多いと思います。
+ただエックスサーバーなどであればレンタルサーバーにログインして、MYSQLなどのデータベース部分から入ることで調べることができます。
+</p>
+
+
+
+<h3>２．ログインするためのURLを忘れた場合</h3>
+
+<p>
+次に考えられるログインできないケースの例は、「ログインURLがわからなくなってしまった」ケース。
+このようなことがないようにログインURLなどはお気に入りに登録しておきましょう。
+</p>
+
+<p class="center">
+<img src="/img/wordpress-notfound.png" width="600px">
+</p>
+
+<p>
+ログインURLを忘れてしまった場合の、対応方法として取得したドメイン名に
+次のURLを追加することで画面を表示する方法になります。
+</p>
+
+<div class="themebox">
+<ul>
+<li>ドメイン名<span class="aka">/wp-admin</span></li>
+<li>ドメイン名<span class="aka">/wp-login.php</span></li>
+</ul>
+</div>
+
+<p>
+ご自身の取得したドメイン名については、ドメイン会社にログインすればわかります。
+登録ドメイン名に「/wp-admin/」を追加し、ＵＲＬを表示させることでログイン画面が表示されます。
+</p>
+
+<h4>追加URLを入力しても表示されない場合</h4>
+
+<p>
+ドメイン名に「/wp-admin」や「/wp-login.php」を入力してもログイン画面が表示されない場合、
+ワードプレスのデータを「wp」フォルダなどに入れている可能性があります。
+</p>
+
+<p>
+そのため追加入力する場合も「<span class="aka">wp/</span>wp-admin」や「<span class="aka">wp/</span>wp-login.php」といったように、
+「wp」も加えて追加してみてください。
+</p>
+
+<p>
+これまで10社以上の会社でワードプレスを作成してきましたが、大体の場合、ワードプレスのデータを入れているフォルダは「wp」でした。そのためここでは「wp」を追加する形にしています。
+</p>
+
+
+<h3>３．ログインURLは合っているけど画面が表示されない</h3>
+
+<p>
+ログインが出来ないケースとして考えられる3つ目のケースが
+「ログインURLはあっているけど画面が表示されない」「404 notfoundの画面も出てこない」
+というケースではないでしょうか。
+</p>
+
+<p>
+例えばワードプレスの修正や、バージョンアップなどを行った際、ログイン画面に入ってみたけれども
+画面が出てこないというパターンにあたります。
+</p>
+
+<p>
+お気に入りでサイト登録していれば、URL間違いということもありません。
+この場合は、修正
+</p>
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここから中段の右ＢＯＸ部分が始まります--><div id="right-box">
+
+
+
+
+	<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_wordpress.php'); ?>
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+
+</div></div><!--中段ここまで-->
+
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+</body>
+</html>

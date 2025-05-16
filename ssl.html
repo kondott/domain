@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>無料で発行できるSSL証明書とは？わかりやすく解説</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/ssl.html" />
+
+<meta property="og:title" content="無料で発行できるSSL証明書とは？わかりやすく解説">
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/ssl.html">
+<meta property="og:image" content="https://www.domain-server-study.com/image/main2.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "blogposting",
+    "headline": "無料で発行できるSSL証明書とは？わかりやすく解説",
+    "image":        "https://www.domain-server-study.com/img/main-img-domain.jpg" ,
+	  "datePublished": "2024-01-20",
+	  "dateModified": "2024-01-20", 
+    "author": {     "@type": "Person",
+                    "name": "daiji kondo",
+                    "url": "https://www.domain-server-study.com/profile.html"  }
+  }
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/ssl.html" >SSL証明書</a></li>
+
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+<!--ここから中段が始まります--><div id="container">
+
+
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+<h1>無料で発行できる<span class="aka">SSL証明書とは？</span>わかりやすく解説（個人ブログむけ）</h1>
+
+
+<p class="font11 right t10 b10">更新：<time datetime="2023-07-13">2024年1月20日</time></p>
+
+<p>
+  今では当たり前になったWebサイトにおける<span class="midori">SSL証明書の導入。これをSSL化</span>とも呼びます。
+</p>
+<p>
+  SSL証明書と聞くとなんだか難しく思えてきますが、要は<span class="aka">セキュリティ強化のための施策</span>です。そして導入はレンタルサーバーで簡単に行えるようになっているので安心です。
+
+</p>
+<p>
+  GoogleがSSL化を推奨していることもあり、ワードプレスやWebサイトを作ったらSSL証明書を導入しておかないとSEO上かなり不利になります。
+</p>
+<p>
+  そのため、ワードプレスで個人ブログを作る場合でもSSL証明書の設定は早めに行っておきたいところでしょう。
+</p>
+
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+          SSL証明書がどんなものなのかがわかるよう、初心者の方に向けてわかりやすく説明しています。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<h2>SSL証明書の特徴８つ</h2>
+
+<p>
+  まず、SSL証明書のおもな特徴について解説していきます。その特徴や導入にあたっての基本的な部分を8つにまとめてみました。
+</p>
+
+<p>
+  エックスサーバーやConohaWINGなどで個人ブログを運営する方に向けた内容になっています。
+</p>
+
+
+<div class="ddd">
+  <h4 class="ddd">8つの特徴</h4>
+  <ol class="futoji">
+    <li>通信を暗号化してくれる</li>
+    <li>運営者の実在証明をしてくれる</li>
+    <li>無料から有料まで。いろんな発行会社のSSLがある</li>
+    <li>認証レベルによって3つの種類がある</li>
+    <li>個人ブログでもSSL導入は必須</li>
+    <li>導入すると「http://」が「https://」になる</li>
+    <li>導入はとても簡単（レンタルサーバーによる）</li>
+    <li>更新も不要（レンタルサーバーによる）</li>
+  </ol>
+</div>
+
+
+
+
+<h3>特徴１．通信を暗号化してくれる</h3>
+
+<p>
+SSLの主な役割は<span class="midori">通信の暗号化</span>です。
+</p>
+<p>
+SSL証明書を入れることによって通信データを読み取りされるリスクが減りセキュリティが強化されます。
+</p>
+
+
+
+<h3>特徴２．運営者の実在証明をしてくれる</h3>
+
+<p>
+  SSLのもう1つの主な役割は<span class="midori">サイト運営者の実在証明</span>です。
+</p>
+
+<p>
+  有料のSSL証明書になると第三者機関がWebサイトを運営者の実在証明をしてくれます。
+  運営サイトの信頼性を担保したい法人企業のサイトにはぴったりの機能と言えます。
+</p>
+
+
+
+
+
+<h3>特徴３．無料から有料まで。いろいろな発行会社のSSL証明書がある</h3>
+
+<p>
+  SSL証明書は認証局と呼ばれる企業から発行されています。
+</p>
+<p>
+  人気の発行企業としては<span class="midori">ジオトラスト</span>や<span class="midori">グローバルサイン</span>、<span class="midori">Let’s Encrypt</span>などがあります。
+</p>
+
+<p>
+  無料のSSLを発行しているのがLet’s Encryptです。ただし審査レベルが軽いドメイン認証のSSLだけを扱っています。
+</p>
+
+<p>
+  ジオトラストやグローバルサインでは様々な種類の有料SSL証明書が発行されています。
+</p>
+
+<p>
+  主だった発行企業を表にまとめてみました。
+</p>
+
+
+<div class="spec">
+  <table class="center">
+  
+  <tr>   
+  <th class="hai" width="25%">サービス名</th>
+  <th class="hai" width="25%">料金</th>
+  <th class="hai" width="50%">特徴</th>
+  </tr>
+  
+  
+  <tr>
+  <th>Let’s Encrypt</td>
+  <td>無料</td>
+  <td>アメリカの非営利団体であるISRGが運営。個人向けの共用レンタルサーバーでは無料の独自SSLを発行していますが大体ここのSSLを利用しています。</td>
+  </tr>
+  
+
+  <tr>
+  <th>デジサート</td>
+  <td>55,000円～</td>
+  <td>世界的に認知度があるSSL発行企業。企業認証、EV認証のSSLのみを扱う。</td>
+  </tr>
+
+    
+  <tr>
+  <th>ジオトラスト</td>
+  <td>31,300円～</td>
+  <td>デジサート傘下の発行企業。ドメイン認証～EV認証まで扱う。デジサート社より安価</td>
+  </tr>
+
+
+  <tr>
+  <th>グローバルサイン</td>
+  <td>34,800円～</td>
+  <td>GMOが運営する発行会社で日本企業が管理しています。国内シェアNo1。</td>
+  </tr>
+
+
+  </table>
+  </div>
+
+  
+
+
+
+<h3>特徴５．証明レベルによって３つの種類がある</h3>
+
+<p>
+  SSL証明書はその認証レベルによって3つタイプにわかれます。
+</p>
+
+
+<h4>ドメイン認証（DV認証）信頼度★</h4>
+
+<p>
+  ドメイン認証は最も簡易的な認証方法です。発行スピードも速いです。
+</p>
+
+
+<h4>企業認証（OV認証）信頼度★★</h4>
+
+<p>
+  企業認証から企業が実際に存在しているのかどうかの実在性確認が行われます。
+</p>
+
+
+
+<h4>EV認証（信頼度★★★）</h4>
+
+<p>
+  EV認証はSSL証明書において最も厳格な認証となります。DV認証（企業認証）よりも審査が厳しくなり、より詳細な実在性確認が行われます。
+</p>
+
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+          個人ブロガーの方が共用のレンタルサーバーで導入する無料SSLはドメイン認証レベルのSSL証明書になります。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<h3>特徴４．個人ブログでもSSL導入は必須</h3>
+<p>
+  いま運営されているWebサイトやワードプレスはそのほとんどがSSL化に対応していますが、ここまで浸透したのには理由があります。
+</p>
+<p>
+  SSL化していない場合、Google検索から訪問者がくる際に「この接続ではプライバシーが保護されません」というページ表示が入ります。
+</p>
+<p>
+  本来であればGoogleから直接自サイトに訪問者が来るところ、間に1ページはさまってしまうのでSEO上かなり不利になります。
+</p>
+<p>
+  SSL化しておけば、このペナルティは回避できます。そのため個人ブログであってもSSLは必ず設定しておいた方がよいでしょう。
+</p>
+
+
+
+
+
+
+<h3>特徴５．導入すると「http://」が「https://」になる</h3>
+<p>
+  SSL化を実施すると、サイトURLが変わります。
+</p>
+<p>
+  具体的にはURLの先頭が「<span class="futoji">http://</span>」から「<span class="futoji">http</span><span class="aka">s</span><span class="futoji">://</span>」になって1文字増えます。
+</p>
+
+
+
+
+
+
+
+
+<h3>特徴６．無料SSLの導入はとても簡単（レンタルサーバーによる）</h3>
+
+<p>
+  個人ブロガーが借りているレンタルサーバーで<span class="midori">無料SSLを導入するのであれば、本当に簡単に導入することができます。</span>
+</p>
+
+<p>
+  基本的にレンタルサーバーの管理画面でSSL化の設定を行いますが、人気サーバーだと数クリックするだけで設定が完了するようになっています。
+</p>
+
+
+
+<h3>特徴７．無料SSLは更新も不要（レンタルサーバーによる）</h3>
+
+<p>
+  同様に無料SSLを導入した場合<span class="midori">基本的には自動更新になっています</span>。1回設定をしたらあとはほったらかしでも大丈夫です。
+</p>
+
+<p>
+  実際にはLet’s Encryptの無料SSLは更新期間が90日となっていますが、導入しているレンタルサーバー側で自動更新をしてくれるので、利用者側で更新処理は必要ありません。
+</p>
+
+
+
+
+
+<h2>SSL証明書の導入方法（エックスサーバー）</h2>
+
+<p>
+  実際にエックスサーバーを例にして、SSL証明書の設定方法を説明してみましょう。
+</p>
+
+<p>
+  無料の独自SSLを導入してみます。
+</p>
+
+
+
+<h3>1.サーバーパネルにログイン</h3>
+<p>
+まずは、エックスサーバーの管理画面に入ります。IDとパスワードを打ち込みましょう。
+</p>
+<p>
+  <img src="/img/ssl-xserver01.png" alt="エックスサーバー SSL証明書" width="100%">
+</p>
+
+
+<h3>2.SSL設定を選択</h3>
+<p>
+  サーバーパネルの画面に入ったら「SSL設定」を探してクリック
+</p>
+<p>
+  <img src="/img/ssl-xserver02.png" alt="エックスサーバー SSL証明書 設定" width="100%">
+</p>
+
+
+
+<h3>3.SSL化したいドメインを選ぶ</h3>
+<p>
+  SSLを導入したい独自ドメインを選んで「選択」をクリック
+</p>
+<p>
+  <img src="/img/ssl-xserver03.png" alt="エックスサーバー SSL証明書 導入" width="100%">
+</p>
+
+
+
+
+<h3>4.「変更」を選択する</h3>
+<p>
+  「変更」をクリック。
+</p>
+<p>
+  ※下のドメインは既にSSL化しているので「ON」と表示されています。
+</p>
+<p>
+  <img src="/img/ssl-xserver04.png" alt="エックスサーバー SSL証明書" width="100%">
+</p>
+
+
+
+<h3>「ONにする」をクリックで完了</h3>
+<p>
+  「ONにする」をクリックして設定完了。
+</p>
+<p>
+  ※下のドメインは既にSSL化が完了しているため「OFFにする」と表示されていますが、本来は「ONにする」と表示されます。
+</p>
+<p>
+  <img src="/img/ssl-xserver05.png" alt="エックスサーバー SSL証明書" width="100%">
+</p>
+
+
+<p>
+  以上でSSL設定が完了します。
+</p>
+
+<p>
+  マウス操作だけで押していくだけなので、かなり簡単な操作だけで設定できてしまいます。
+</p>
+
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+          Wordpressに設定する際は、Wordpress側の設定も忘れないようにしましょう。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<h2>各レンタルサーバーのSSL証明書を比較</h2>
+
+<p>
+  個人向けレンタルサーバーでは、ほぼ大半のレンタルサーバーは無料SSLに対応しています。
+</p>
+
+<p>
+  マルチドメインで取得したドメインごとに設定できるので、登録ドメイン数を気にする必要もありません。
+</p>
+
+
+
+<div class="spec">
+  <table class="center">
+  
+  
+  <tr>   
+  <th class="hai" width="30%">会社名</th>
+  <th class="hai" width="30%">無料SSL</th>
+  <th class="hai" width="40%">有料SSL（年間）</th>
+  </tr>
+  
+  
+  
+
+  <tr>
+  <th class="link"><a href="/server/xserver.html">エックスサーバー</a></td>
+    <td>あり</td>
+    <td>6種類<br>836円～66,880円</td>
+  </tr>
+  
+  <tr>
+  <th class="link"><a href="/server/shinserver.html">シン・レンタルサーバー</a></td>
+    <td>あり</td>
+    <td>6種類<br>880円～83,600円</td>
+  </tr>
+  
+  
+  <tr>
+  <th class="link"><a href="/server/conoha.html">Conoha Wing</a></td>
+  <td>あり</td>
+  <td>3種類<br>2,200円～129,800円</td>
+  </tr>
+
+    
+  
+  <tr>
+  <th class="link"><a href="/server/colorfulbox.html">カラフルボックス</a></td>
+    <td>あり</td>
+    <td>4種類<br>1,320円～96,800円</td>
+  </tr>
+
+
+  <tr>
+  <th class="link"><a href="/server/gmocloud.html">iCLUSTA+</a></td>
+    <td>あり</td>
+    <td>3種類<br>31,350円～140,800円</td>
+  </tr>
+  
+  <tr>
+  <th class="link"><a href="/server/heteml.html">ヘテムル</a></td>
+    <td>あり</td>
+    <td>3種類<br>19,800円～140,800円</td>
+  </tr>
+  
+  <th class="link"><a href="/server/lolipop.html">ロリポップ（ライト）</a></td>
+    <td>あり</td>
+    <td>3種類<br>22,000円～140,800円</td>
+  </tr>
+  
+  <tr>
+  <th class="link"><a href="/server/starserver.html">スターサーバー（ライト）</a></td>
+    <td>あり</td>
+    <td>1種類<br>1,650円</td>
+  </tr>
+  
+  <tr>
+  <th class="link"><a href="/server/sakura.html">さくらレンタルサーバー（スタンダード）</a></td>
+    <td>あり</td>
+    <td></td>
+  </tr>
+  
+  
+  </table>
+  </div>
+  
+
+  
+
+
+
+
+
+<h3>SSLの暗号化通信は「無料SSL」と「有料SSL」で性能が異なるか？</h3>
+
+<p>
+  有料SSLや無料SSL、またはブランドごとのSSLによって暗号化のレベルは変わりません。
+</p>
+
+<p>
+  無料SSLでも有料SSLでも同様の技術で暗号化されます。
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+			
+
+
+
+
+
+
+
+</body>
+</html>

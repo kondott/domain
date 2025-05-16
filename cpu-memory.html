@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>レンタルサーバー各社のCPUとメモリを比較してみる</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/cpu-memory.html" />
+
+
+<meta property="og:title" content="レンタルサーバー各社のCPUとメモリを比較してみる">
+<meta property="og:description" content="レンタルサーバーに入っているメモリやCPUとはどんな物なのか？というところからレンタルサーバーのCPU機能を会社別に比較しています。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/cpu-memory.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "レンタルサーバー各社のCPUとメモリを比較。役割を解説",
+	  "image":        "https://www.domain-server-study.com/img/main_img_server.jpg" ,
+	  "dateModified": "2024-09-16", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li>		<a href="/" title="ドメイン取得への道！">home</a> ＞</li>
+<li><a href="cpu-memory.html">CPU・メモリ</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1>レンタルサーバー各社の<span class="aka">CPUとメモリ</span>を比較。役割を解説</h1>
+
+<p class="font11 right t10 b10">更新：<time datetime="2023-07-23">2024年9月8日</time></p>
+<p class="t10">
+<img src="/img/cpu-memory-main.jpg" alt="レンタルサーバー CPU メモリ" width="100%">
+</p>
+
+<p>
+レンタルサーバーの処理性能を把握する一面としてサーバーにどんなCPUやメモリが載っているのか知っておきたくはないでしょうか？
+</p>
+<p>
+  cpuやメモリの性能が良ければ、それだけデータ処理も早くスムーズになります。
+</p>
+
+<p>
+  そこでこのページではCPUとメモリの基本的な役割について説明し、
+  レンタルサーバー各社に搭載されているCPU・メモリを調べて比較をしています。
+</p>
+<p>
+
+</p>
+
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+CPUやメモリ性能が第一だとは思いませんがサーバーに載っているCPUの性能が良ければやっぱり安心じゃないでしょうか。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<p>
+  なお、CPUの性能がよく安定性があるレンタルサーバーとして<a href="/server/xserver.html">エックスサーバー</a>をおすすめしています。
+  国内No1のサーバー速度のテスト結果が出ていて。稼働率99.99％という安定稼動を実践しています。
+</p>
+
+
+<div class="themebox">
+<ol>
+<li><a href="#cpu">レンタルサーバーにおけるCPUやメモリの役割</a></li>
+<li><a href="#cpu">CPUとは？</a></li>
+<li><a href="#memori">メモリとは？</a></li>
+<li><a href="#hikaku">各社のCPU・メモリの比較表</a></li>
+</ol>
+</div>
+
+
+
+<h2>CPUやメモリが関わるのは「処理速度」と「同時に起動させるアプリケーションの数」</h2>
+
+<p>
+  レンタルサーバーというのは言ってしまえば高性能なパソコンであり、パソコンと同様に<span class="aka">CPUの役割は処理速度</span>を担うものとなっています。
+</p>
+<p>
+  一方でメモリは複数のアプリケーションを立ち上げた際に同時処理が出来るデータ量に関わってくるものになります。
+  メモリの容量が多ければ、その分複数のアプリケーションを同時に起動できます。
+</p>
+<p>
+多くのアクセス数があっても素早く処理を行い訪問者にページを表示させる役割を任されているのがCPUとメモリといえるでしょう。
+</p>
+
+
+<h3>ストレージやWebサーバーソフトも処理性能に関わるもの</h3>
+
+
+<p>
+  CPUだけでなく<a href="/web-server.html">Webサーバーソフト</a>や<a href="">ストレージ</a>もサーバーの処理速度に関わってくる要素となります。
+</p>
+<p>
+  サーバーの比較をする際にはCPUだけでなくWebサーバーソフトやストレージにも気を払っておきましょう。
+</p>
+
+
+
+
+
+<h2 id="cpu" class="t40">もっとわかりやすく。CPUとは？</h2>
+
+<p>
+CPUとは「中央演算装置」とも言われデータを処理する役割を担っています。
+</p>
+
+<p>
+CPUによって処理の早さが違いますので、性能が良いCPUであれば様々なデータ処理の時間が短くなります。
+</p>
+
+<p>
+インテル社のCPUと、AMD社の２社のCPUでほとんどのシェアを占めています。
+</p>
+
+<p>
+  1人向けのパソコンの場合、Intel製だと「core i5」や「core i7」などが搭載されています。
+  </p>
+
+<p>
+レンタルサーバーに載っているCPUは、個人向けパソコンに搭載されている「coreシリーズ」よりも機能が良い、
+<span class="aka">「Xeon（ジーオン）」とよばれるよりエンタープライズ向けのCPUが使われています</span>。
+</p>
+
+<p>
+この「Xeon」は1人向け（コンシューマー用）のパソコンには、ほぼ搭載されていません。
+データーセンターなど、つまりレンタルサーバーで活用するたのハイエンド向けCPUになります。
+また、ワークステーションなど企業用パソコンにも搭載されています。
+</p>
+
+
+<div class="spec">
+	<table>
+
+	<tr>
+	<th class="mozi-naka" width="35%">CPU種類</th>
+	<th class="mozi-naka" width="65%">用途</th>
+	</tr>
+
+	<tr>
+	<th>Xeon</th>
+	<td><span class="ki">エンタープライズ向けサーバー・ワークステーション</span></td>
+	</tr>
+
+	<tr>
+	<th>Core</th>
+	<td>コンシューマー向けPC</td>
+	</tr>
+
+	<tr>
+	<th>Pentium</th>
+	<td>コンシューマー向けPC</td>
+	</tr>
+
+	<tr>
+	<th>Celeron</th>
+	<td>コンシューマー向け廉価版PC</td>
+	</tr>
+
+	<tr>
+	<th>Atom</th>
+	<td>ネットブック・タブレット端末向け</td>
+	</tr>
+
+
+	<tr>
+	<th>Quark</th>
+	<td>ウェアラブル端末向け</td>
+	</tr>
+
+
+	</table>
+</div>
+
+
+
+
+
+
+
+<h2 id="memori" class="t40">もっとわかりやすく。メモリとは？</h2>
+<p>
+CPUが処理速度を決める要素だとすると、
+その処理したデータを保管して同時処理する役割を持つのがメモリになります。
+</p>
+<p>
+フォトショップだけでなく、イラストレーターや動画ソフトも同時に編集したいという場合、<span class="aka">複数のソフトを同時並行で編集する場合はメモリがどれくらいあるのかも大切になります。</span>
+</p>
+
+
+<h3>メモリ（RAM）があることでソフトの同時処理がより早くなっている。</h3>
+<p>
+どれだけ良いCPUをサーバーに搭載していても、メモリ容量が少ないと複数ソフトを編集するという並行処理をする場合は遅くなってしまいます。
+</p>
+<p>
+これだとCPUの良さが全く生かしきれないことになります。
+CPUに加えてメモリの容量が確保されて初めて、
+複数ソフトの同時処理がすばやく行えることになるわけです。
+</p>
+
+
+<h3>レンタルサーバーのメモリについて</h3>
+
+<p>
+コンシューマ向け（家庭用）のパソコンの場合、搭載されているメモリは
+低価格パソコンで2GB～4GBとなります。10万を超えるようなパソコンの場合は8GB～16GB搭載されていると大体のイメージを持ってください。
+</p>
+
+
+<p>
+企業用のレンタルサーバーに搭載されているメモリの容量は、
+コンシューマ向けよりも遥かに多くなっていてレンタルサーバーにもよりますが256GB～512GBといった
+メモリが搭載されているものが活用されています。
+</p>
+
+<p>
+このメモリをそのまま1人で消費できるということではありません。各社それぞれサーバー1台につき収容人数が40人だったり50人と決まっています。
+同じサーバーに割り当てられた管理者同士で共有する形になります。
+</p>
+
+
+
+
+
+<h2 id="hikaku" class="t50">レンタルサーバー「CPU・メモリ」比較</h2>
+
+<p>
+各社の「CPU」と「メモリ」をまとめてみました。
+太字で表示している会社は、サイトでの公表値になります。
+</p>
+
+<p>
+この公表値については最新サーバーのものが割り当てられた際の数値になると思いますので、
+契約すれば必ずこのスペックになるということではありません。
+</p>
+
+
+<p class="right font11 nasi"></p>
+
+<div class="spec">
+  <table class="td_center">
+
+    <colgroup>
+    <col style="width: 30%">
+    <col style="width: 30%">
+    <col style="width: 40%">
+    </colgroup>
+
+    <tr>
+    <th class="hai">会社名</th>
+    <td class="hai">ＣＰＵ</th>
+    <td class="hai">メモリ</th>
+    </tr>
+  
+    <tr>
+    <th class="link"><a href="/server/xserver.html">エックスサーバー</a></td>
+    <td><span class="futozi">256コア</span><br></td>
+    <td><span class="futozi">約1.5TB</span><br></td>
+    </tr>
+
+    <tr>
+    <th class="link"><a href="/server/gmocloud.html">カラフルボックス</a></td>
+    <td><b>64コア</b></td>
+    <td><b>512GB</b></td>
+    </tr>
+
+    <tr>
+      <th class="link"><a href="/server/heteml.html">ヘテムル</a></td>
+      <td><b>32コア</td>
+      <td><b>256GB</b></td>
+      </tr>
+    
+    <tr>
+    <th class="link"><a href="/server/mixhost.html">Mix host</a></td>
+    <td><b>非公開</b></td>
+    <td><b>非公開</b></td>
+    </tr>
+  
+ 
+    <tr>
+    <th class="link"><a href="/server/conoha.html">Conoha Wing</a></td>
+    <td>非公開</td>
+    <td>非公開</td>
+    </tr>
+  
+    <tr>
+    <th class="link"><a href="/server/sakura.html">さくらレンタルサーバー</a></td>
+    <td>非公開</td>
+    <td>非公開</td>
+    </tr>
+    
+    <tr>
+    <th class="link"><a href="/server/lolipop.html">ロリポップ</a></td>
+      <td>非公開</td>
+      <td>非公開</td>
+
+    </tr>
+  
+
+    
+    <tr>
+    <th class="link"><a href="/server/onamae-server.html">お名前レンタルサーバー</a></td>
+    <td>非公開</td>
+    <td>非公開</td>
+    </tr>
+  
+  </table>
+</div>
+
+
+<h3 class="t40">エックスサーバー、さくらインターネットでは管理画面で搭載CPUを確認できる</h3>
+
+<p>
+「エックスサーバー」「さくらインターネット」では、管理画面から割り当てられているCPUやメモリの確認が出来ます。
+それぞれXeon E5シリーズの「Xeon E5-2640」を導入していることが確認できました。
+</p>
+
+
+
+
+
+<h3 id="matome" class="t40">その他の要素で比較する</h3>
+
+<p>
+プラン選びはCPUやメモリだけでなく、他にも様々な要素が関わってくるため迷ってしまうと思います。
+他の要素もくわしく比較していますので、検討の判断材料にして下さい。
+</p>
+
+<p>
+設定が不得意な方は：「<a href="/wp-install.html#install">ワードプレス簡単インストール</a>」<br>
+安定性を求める方は：「<a href="/server/#transfer">稼働率</a>」
+
+</p>
+
+
+
+<div class="server-hikaku t30">
+	<table>
+	
+	<tr>
+	<th class="mozi-naka" colspan="5">レンタルサーバーの比較</th>
+	</tr>
+	
+	<tr>
+  <td width="20%">１．<a href="/server/#transfer">稼働率</a></td>
+	<td width="20%">２．<a href="/hdd-ssd.html#storage">ストレージ</a></td>
+	<td width="20%">３．<a href="/wp-install.html#install">ＷＰ簡単インストール</a></td>
+	<td width="20%">４．<a href="/taiou.html#taiou">コールセンター対応</a></td>
+	<td width="20%">５．<a href="/database.html#database-hikaku">データベース数</a></td>
+	</tr>
+	
+	<tr>
+  <td>６．<a href="/rentalserver-kakaku.html#youryou">容量</a></td>		
+	<td>７．<a href="/cpu-memory.html#hikaku">CPU＆メモリ</a></td>
+	<td>８．<a href="/web-server.html#webserver">webサーバー</a></td>
+	<td>９．<a href="/backup.html#backup">自動バックアップ</a></td>
+	<td>10．<a href="/data-traffic.html#hikaku">転送量</a></td>				
+	</tr>	
+	</table>
+</div>
+<br>
+
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

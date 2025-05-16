@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>レンタルサーバーの種類（共用サーバー・専用サーバー・マネージドサーバーの特徴を解説）</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/server/server-type.html" />
+
+<meta property="og:title" content="レンタルサーバーの種類（共用サーバー・専用サーバー・マネージドサーバーの特徴を解説）">
+<meta property="og:description" content="1台を複数人で利用する「共用サーバー」。1台を専有する「専用サーバー」。共用サーバーよりも自由度が高いが知識が必要なVPSなど。サーバーの種類について説明しています。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/server/server-type.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "レンタルサーバーの種類（共用サーバー・専用サーバー・マネージドサーバーの特徴を解説）",
+	  "image":        "https://www.domain-server-study.com/img/main_img_server.jpg" ,
+	  "dateModified": "2024-01-05", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li>		<a href="/" title="ドメイン取得への道！">home</a> ＞</li>
+<li><a href="/server/server-type.html">レンタルサーバーの種類</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1><span class="aka">【解説】</span>レンタルサーバーの種類（共用サーバー・専用サーバー・マネージド）</h1>
+
+<p>
+レンタルサーバーはサービスの内容によって幾つかの種類に分けることができます。
+</p>
+
+<p>
+どのようなサービスがあって、それぞれどんな特徴や違いがあるのかについて解説をしていきます。
+</p>
+
+
+<div class="themebox">
+<ol>
+<li><a href="#kyouyou">共用サーバー</a></li>
+<li><a href="#wordpress">ワードプレス専用サーバー（共用サーバー）</a></li>
+<li><a href="#vp">VRP</a></li>
+<li><a href="#mane-zido">マネージドサーバー</a></li>
+<li><a href="#senyou">専用サーバー</a></li>
+<li><a href="#mail">メール専用サーバー</a></li>
+</ol>
+</div>
+
+
+
+<h3>サービスの種類まとめ</h3>
+
+
+
+<p>
+まず簡単にレンタルサーバー会社が提供しているサービスを5タイプ紹介をします。
+どんな特徴があって、どれくらいの料金で借りれるのかについてもまとめています。
+</p>
+
+<ul>
+<li><span class="futozi">共用サーバー</span>：最も一般的なプラン</li>
+<li><span class="futozi">Wordpress専用</span>：共用サーバーをWordPress特化したもの</li>
+<li><span class="futozi">VP</span>：自分で管理が必要な共用サーバー。割当CPUが決まっている。複数人数のマルチプレイ用で人気</li>
+<li><span class="futozi">専用サーバー</span>：自社で管理が必要な専用サーバー。1台丸ごと借りられる。</li>
+<li><span class="futozi">マネージドサーバー</span>：共用サーバーのように管理がいらない。1台丸ごと借りられる。専用サーバーより価格が高い</li>
+<li><span class="futozi">メールサーバー</span>：メールのためだけに借りれるサービス</li>
+</ul>
+
+
+<div class="spec">
+<table class="center">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+  <tr>
+    <th class="hai">種類</th>
+    <td class="hai">借りる人数</th>
+    <td class="hai">月額料金</th>
+    <td class="hai">管理</th>
+  </tr>
+  <tr>
+    <th>共用サーバー</td>
+    <td>30人～50人</td>
+    <td>1,500円</td>
+    <td>簡単</td>
+  </tr>
+  <tr>
+    <th>VP</td>
+    <td>30人～50人</td>
+    <td>1,200円</td>
+    <td>自分で管理</td>
+  </tr>
+  <tr>
+    <th>専用サーバー</td>
+    <td>1人（1社）</td>
+    <td>1万～5万</td>
+    <td>自分で管理</td>
+  </tr>
+  <tr>
+    <th>マネージドサーバー</td>
+    <td>1人（1社）</td>
+    <td>2万～10万</td>
+    <td>簡単</td>
+  </tr>
+  <tr>
+    <th>Wordpress<br>専用サーバー</td>
+    <td>30人～50人</td>
+    <td>1,500円</td>
+    <td>簡単</td>
+  </tr>
+
+</table>
+</div>
+
+
+
+<h3 id="kyouyou">１．共用サーバー</h3>
+
+<h5 class="t25">1台のレンタルサーバーを複数の利用者でシェアするタイプ</h5>
+
+<p>
+共用サーバーは1台のレンタルサーバーを30人～50人でシェアするタイプのレンタルサーバーになります（人数はイメージ）。
+ホームぺージやワードプレスを作る場合は、基本的に多くの人がこの共用サーバーを借ります。
+</p>
+
+<p>
+<span class="aka">レンタルサーバーで最も普及しているサービスと言えるでしょう。</span>
+</p>
+
+<p>
+この共用レンタルサーバーのサービスには法人向けの「ビジネスプラン」も入ってきます。
+</p>
+
+
+<h5>料金は月1,500円以下が標準的な価格。ビジネスプランなら4,000円</h5>
+
+<p>
+共用サーバーで人気の価格帯は月額1,200円～1,500円ほどになります。
+どのプランも6ヵ月や12ヵ月の長期契約することで、月額料金が割引されます。
+</p>
+
+<p>
+エックスサーバーやCPIなどの共用サービスのビジネスプランでは、料金が月5,000円程からになります。
+長期割引で4,000円ほどに下がります。
+</p>
+
+
+<h5>難しい保守管理は事業者側がしてくれる</h5>
+
+<p>
+共用レンタルサーバーの保守管理は、事業者側に任せることが出来ます。
+そのため、管理や設定は他の種類のレンタルサーバーと比べると、大変簡単になっています。
+</p>
+
+<p>
+ワードプレスを作るためのインストール設定や、メールアドレスの作成など。
+何かを作る際に自分側で行う設定は出てきますが、サーバー自体の管理については一切行いません。
+</p>
+
+
+<h5>共用サーバーでも1日1万アクセスは大丈夫</h5>
+
+<p>
+標準的（月1,500円ぐらい）の共用サーバーでも、1日1万アクセスぐらい迄は問題ないプランも多くなってきています。
+エックスサーバーなど、会社によって1日辺りのアクセス許容数を公表している会社もあります。
+</p>
+
+
+
+<h3 id="kyouyou">２．WordPress専用サーバー</h3>
+
+<h5>Wordpressに特化した共用サーバー</h5>
+
+<p>
+次に紹介したいのが、Wordpress専用サーバーになります。ほぼ共用サーバーと内容が一緒になりますが、
+よりWordpressに特化したサービスになっているのが特徴と言えます。
+</p>
+
+<p>
+また、多くのWordpress専用サーバーでは、VPのように1人あたりにCPUとメモリを割当してサービスを展開しています。
+</p>
+
+
+<p>
+Wordpress専用サーバーは、いくつかの会社が運営しています。
+何故かわかりませんが、どちらかと言うと共用サーバーの一般プランの方が人気があります。
+</p>
+
+
+
+
+
+<h3 id="vp">２．ＶＲＰ</h3>
+
+<h5>1人1人にCPUとメモリが固定割当される</h5>
+
+<p>
+ＶＲＰは共用サーバーと同じように1台のレンタルサーバーを複数人で共用するタイプのものになります。
+</p>
+
+<p>
+共用サーバーと違い、CPUやメモリを1人1人に分量を決めて割当てる形でサービスを提供しています。
+</p>
+
+<p>
+大きな会場を1人ごとにパーテーションで区切っているのがVP。
+</p>
+
+<p>
+大きな会場をみんなでシェアしているのが共用サーバーと言えるでしょう。
+</p>
+
+
+<h5>共用サーバーより自由度が高いサービスだが、保守管理は自分で行う</h5>
+<p>
+そして、VRPの場合はWebサーバーソフトの環境構築など、専門的な管理を自分でする必要があります。
+</p>
+
+<p>
+共用サーバーよりも自由度が高くいろいろと設定ができる反面、知識がないと管理が出来ないでしょう。
+</p>
+
+
+<h5>マルチプレイ用に人気</h5>
+  
+<p>
+VRPのサービスは、オンライン対戦などの用途で人気になっています。
+</p>
+
+
+<h3 id="senyou">３．専用サーバー</h3>
+
+
+<h5>レンタルサーバー1台を利用できる</h5>
+
+<p>
+専用サーバーは共用サーバーとは違い、1台のサーバーをそのまま丸ごと使うことができます。
+そのため1日のアクセス数が数万あるようなホームぺージでもスムーズな運営が可能になっています。
+</p>
+
+
+<h5>VRP同様に保守管理は自社で行うため「サーバー管理者」が必要になる</h5>
+
+<p>
+専用サーバーでは、ApacheなどWebサーバーソフトのインストールから、ファイヤーウォールや回線のチューニングなど、
+相当に専門的な管理を借りた側で1から行う必要があります。そのため専任のサーバー管理者が必要になります。
+</p>
+
+<h5>料金は月1万円～5万円まで様々</h5>
+
+<p>
+専用サーバーの月額料金は、サービス内容によって大きく変わります。
+</p>
+
+<p>
+標準の価格帯は1万円～5万円ほどになると思いますが、プラン内容によっては10万円近くする料金になるプランもあります。
+</p>
+
+
+
+
+<h3 id="mane-zido">４．マネージドサーバー</h3>
+
+<h5>専用サーバーだけど保守管理が任せられる</h5>
+
+<p>
+「専用サーバーを借りたいが設定が出来る担当者がいない」という場合でも、
+専用サーバーと同様のサービスで1台まるごと借りられるのが「マネージドサーバー」になります。
+</p>
+
+<p>
+さらにマネージドサーバーでは共用サーバーのように、レンタルサーバー事業者が設定や保守を行ってくれます。
+</p>
+
+
+<h5>月額料金は専用サーバーより高い</h5>
+
+<p>
+レンタルサーバーを1つ丸ごと借りられて、さらに管理保守もレンタルサーバーで行ってくれるため、
+月額料金は専用サーバーよりも高くなります。
+</p>
+
+<p>
+月額料金として2万円からがマネージドサーバーの料金体系になっています。
+大体、専用サーバーの1.5倍～2倍コストがかかるのがマネージドサーバーの料金になります。
+</p>
+
+
+
+<h3 id="mail">５．（その他）メールサーバー</h3>
+
+<h5>メールの管理だけ行いたい法人向けサービス</h5>
+
+<p>
+メールサーバーは「メール管理」に特化したサービスになります。
+</p>
+
+<p>
+共用サーバーにおけるサービスの1種類になり、1つのサーバーを複数の会社で共有します。
+ホームぺージデータは置かずメールデータのみを扱うため、急なアクセス数の増加によって負荷がかかることもありません。
+よって通常の共有サーバーよりも、安定した稼働管理が行えます。
+</p>
+
+<p>
+会社のメール作成や管理を行いたい、法人向けのサービスと言えます。
+</p>
+
+
+
+
+
+
+<h2 class="t40">まとめ</h2>
+
+
+<h5>最も人気なのは共用サーバーのサービス</h5>
+
+<p>
+このようにレンタルサーバーには様々なサービスがありますが、最も一般的なのは「共用サーバー」になります。
+</p>
+
+<p>
+1日1万アクセスを超えてくると、このページで紹介している月1,500円ほどのプランでは対応できなくなってきます。
+その場合は、共有サーバーでより料金の高いプランへ移動する形になるでしょう。
+</p>
+
+<p>
+専用サーバー、マネージドサーバーを借りる場合は、アクセス数が多いホームぺージを持つ企業になるでしょう。
+</p>
+
+
+<div class="themebox">
+  <ul>
+    <li><a href="/server/">人気レンタルサーバー14社を比較して項目別にまとめました（2021年10月）</a></li>
+  </ul>
+</div>
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

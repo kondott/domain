@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="keywords" content="gmail,独自ドメイン,メールアドレス,登録,方法,設定,">
+
+<title>独自ドメインで作ったメールアドレスをGmailに設定する方法</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/mail/gmail-domain-settei.html" />
+
+<meta property="og:title" content="【Gmail】独自ドメインで作ったメールアドレスをGmailに設定する方法">
+<meta property="og:description" content="Gmailでは、独自ドメインによるメールアカウントを作ってから、 Gmailに設定して紐づけることが出来ます">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/mail/gmail-domain-settei.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "blogposting",
+    "headline": "独自ドメインで作ったメールアドレスをGmailに設定する方法",
+    "image":        "https://www.domain-server-study.com/img/gmail-domain-settei.png" ,
+    "dateModified": "2021-10-15T09:00:00+08:00",
+    "author": {     "@type": "Person",
+                    "name": "daiji kondo",
+                    "url": "https://www.domain-server-study.com/profile.html"  }
+  }
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?><!--上段ここまで-->
+
+
+
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/mail/gmail-domain-settei.html" >Gmailで独自ドメイン設定</a></li>
+</ul>
+</div>
+
+
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+<h1>独自ドメインで作ったメールアドレスをGmailに設定する方法</h1>
+
+<p>
+Gmailでは独自ドメインで作ったメールアドレスを設定することが出来ます。
+</p>
+
+<p>
+つまり、独自ドメインで「info@domain-study.com」というメールアドレスを作っていれば、
+設定することで、Gmailでも使えるようになります。
+</p>
+
+<p>
+このページでは、実際にどのように設定するのか。その方法について解説します。
+</p>
+
+
+<div class="themebox" >
+<ol>
+<li>Gmailで設定画面を表示させる</li>
+<li>専用メールアドレスの情報を追加する</li>
+<li>メールサーバー情報を入れる</li>
+</ol>
+</div>
+
+
+
+<h2 class="t50">設定の順序</h2>
+
+<h3>１．まず設定画面を出そう</h3>
+
+<p>
+Gmailで独自ドメインで作ったメールアドレスを追加するために、該当する設定画面を出しましょう。ここではパソコン版の画面で説明をします。
+</p>
+
+
+
+<div class="themebox">
+<ol>
+<li>Gmailの画面右上「歯車アイコン（設定ボタン）」をクリック</li>
+<li>「アカウントとインポート」をクリック</li>
+<li>「名前」のところの「他のメールアドレスを追加」をクリック（ポップアップ画面に遷移</li>
+</ol>
+</div>
+
+
+
+<p class="center">
+<img src="/img/gmail-domain-settei.png" alt="Gmailで独自ドメイン設定" width="500px">
+</p>
+
+
+
+
+<h3>２．ポップアップ画面で名前とメールアドレス入力</h3>
+
+
+<p>
+画面が開いたら「名前」と「メールアドレス」を入れていきます。
+</p>
+
+<div class="themebox">
+<ol>
+<li>名前の入力</li>
+<li>メールアドレスの入力</li>
+</ol>
+</div>
+
+<p class="center">
+<img src="/img/gmail-domain-settei2.png" alt="Gmailで独自ドメイン設定その２" width="500px">
+</p>
+
+
+<h3>３．次にレンタルサーバーのメール設定情報を入力</h3>
+
+
+<div class="themebox">
+<ol>
+<li>SMTPサーバーを入力</li>
+<li>ユーザー名を入力</li>
+<li>パスワードを入力</li>
+</ol>
+</div>
+
+<p class="center">
+<img src="/img/gmail-domain-settei3.png" alt="Gmailで独自ドメイン設定その３" width="500px">
+</p>
+
+
+
+<p>
+以上の設定をすることで、独自ドメインでメールの送受信ができるようになります。設定で入力するSMTPサーバやユーザー名やパスワード
+についてはレンタルサーバーでメールアカウント取得し引っ張ってきます。
+</p>
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここから中段の右ＢＯＸ部分が始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidemenu_mail.php'); ?>
+
+
+
+</div><!--右ＢＯＸここまで-->
+
+</div><!--中段ここまで-->
+
+
+
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+</body>
+</html>

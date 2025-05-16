@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>whois情報とは？個人情報を出さないための対策。Whoisの調べ方を解説</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/whois.html" />
+
+<meta property="og:title" content="whois情報とは？個人情報を出さないための対策。Whoisの調べ方を解説">
+<meta property="og:description" content="whois情報とは独自ドメインを取得することで公開される登録情報のこと。このWhois情報は誰でも簡単に検索することが出来ます。Whois情報を出さないための対策や検索方法について解説。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/whois.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "whois情報とは？個人情報を出さないための対策。Whoisの調べ方を解説",
+	  "image":        "https://www.domain-server-study.com/img/main-img-domain.jpg" ,
+	  "datePublished": "2018-04-06",
+	  "dateModified": "2024-08-28", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li>		<a href="/" title="ドメイン取得への道！">home</a> ＞</li>
+<li><a href="/whois.html">whois情報とは？</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1><span class="aka">whois情報とは？</span>個人情報を出さない公開代行の設定、Whoisの調べ方を解説</h1>
+
+<p class="center">
+<img src="/image/whois.jpg" alt="whois情報">
+</p>
+
+<h3>Whois情報とは？</h3> 
+
+<h5>独自ドメインを持つと「登録情報」を開示されてしまう</h5>
+
+<p>
+独自ドメインを登録するとドメインの「登録年月日」や「有効期限」などが開示されることになります。
+またメールアドレス、氏名、会社名、ドメイン名なども開示されます。これら<span class="midori">開示される情報のことを「whois情報」</span>と呼びます。
+</p>
+
+<p>
+内容が「登録年月日」や「有効期限」だけであれば気にする人はいないのかもしれませんが、
+その他にも「名前、メールアドレス、電話番号」といった個人情報、会社情報に関することまで開示されてしまいます。
+</p>
+
+
+
+<h5>whois情報は誰でも調べることが出来る</h5>
+
+<p>
+このwhois情報は、実は誰でも簡単に調べられます。Whois情報が検索できるサイトで独自ドメイン名を入力して検索するだけで調べることが出来ます。
+</p>
+
+<p>
+調べるには料金もかかりませんし、大きなドメイン会社であればWhois情報の検索用ページを作っているので、本当に誰でも調べられる状態になっています。
+</p>
+
+
+
+
+
+
+
+<h5>Whois情報で開示される情報</h5>
+
+<p>
+開示される情報は以下のとうりです。
+</p>
+
+<div class="box">
+
+<blockquote>
+<ul>
+<li> 登録ドメイン名</li>
+<li>レジストラ名</li>
+<li> 登録ドメイン名のプライマリおよびセカンダリネームサーバ</li>
+<li>ドメイン名の登録年月日</li>
+<li>ドメイン名の有効期限</li>
+<li>ドメイン名登録者の名前およびアドレス</li>
+<li>技術的な連絡の担当者の名前、アドレス、電子メールアドレス、電話番号</li>
+<li>登録に関する連絡の担当者の名前、アドレス、電子メールアドレス、電話番号</li>
+</ul>
+</blockquote>
+
+<p class="center">
+<a href="http://jprs.jp/about/dom-search/whois/" target="_blank">Whoisで提供される情報（※株式会社日本レジストリサービス）</a>
+</p>
+</div>
+
+
+
+
+
+
+
+
+<h3>Whois情報の開示は公開代行の制度で阻止できる！</h3>
+
+<p>
+Whois情報では<span class="aka">個人情報が開示されてしまうことになる</span>ため、
+多くのレンタルサーバーでは「whois情報変更サービス」と呼ばれるサービスがあって、
+氏名、電話番号、メールアドレスなどの<span class="aka">Whois情報をドメイン会社名義に変更してくれます</span>。
+</p>
+
+<p>
+  つまりドメイン登録時（またはその後に）変更設定を行えば、自分の個人情報が開示されることはありません。
+  </p>
+
+
+<h5>Whoisの変更設定は簡単にできる</h5>
+
+<p>
+  Whois情報の変更はドメイン登録時に申込みをすることが出来ます。また登録後に行うことも出来ます。
+</p>
+<p>
+  変更依頼もとても簡単になっていて、基本的にはボタンをクリックするだけでドメイン会社のWhois情報に変更することが出来ます。
+</p>
+
+
+
+
+
+<h3>Whois情報にかかる料金</h3>
+
+<p>
+このWhois情報変更についてはドメイン事業者によって無料の会社と有料の会社にわかれます。
+それぞれ、どんな会社があるのか紹介していきましょう。
+</p>
+
+<h5>基本的には無料で変更できるドメイン事業者がほとんど</h5>
+
+<p>
+基本的に多くのドメイン事業者ではwhois情報は無料で変更できます。
+</p>
+  
+  <p>
+「ムームードメイン」「エックスドメイン」「スタードメイン」については0円でWhois情報を変更できます。
+</p>
+
+<p>
+  whois情報の変更についても、ドメイン登録時だけでなく登録後いつでも変更をかけれます。
+</p>
+
+
+
+
+<h5>有料になる事業者もある</h5>
+
+<p>
+  Whois情報の変更が有料になるドメイン事業者としては「お名前ドメイン」「WIX」などがあります。
+</p>
+
+<p>
+  ただし、お名前ドメインはドメイン登録時にドメイン設定すれば0円でWhois変更ができます。
+  登録時に申請しない場合に限りWohis変更に年間980円ほど料金がかかります。
+</p>
+
+
+
+
+
+
+<h2 class="t50">Whois情報の検索方法</h2> 
+
+<p>
+  ここからはWhois情報の調べ方について説明していきます。
+</p>
+
+<p>
+  Whois情報はドメイン会社などで作成している専用ページで調べることが出来ます。以下はお名前ドメインで提供しているWhois情報のページになります。
+</p>
+
+<div class="bbb">
+<ul>
+  <li><a href="https://www.onamae.com/service/whois/" target="_blank">Whois検索ページ（お名前ドメイン）</a></li>
+</ul>
+</div>
+
+
+
+
+<h5>独自ドメインを正しく入れるだけで検索できる</h5>
+
+<p>
+調べる場合、検索欄に独自ドメインを入れます。この時、独自ドメイン以外の部分は一緒に入れないように注意しましょう。
+「https://www.」の部分や最後のスラッシュ「/」は省いて検索します。
+</p>
+
+<p>
+  当サイトのURLで調べる場合であれば、黄色になっている部分だけをコピぺして、検索してください。
+  </p>
+
+<p>
+「https://www.<span class="ki">domain-server-study.com</span>/」
+</p>
+
+
+
+<p class="center">
+<img src="/img/whois_search.png" width="600px" alt="whois情報を検索">
+</p>
+
+
+
+
+
+<h5>検索結果を確認する方法</h5>
+
+<p>
+Whois情報の検索結果は英語で表示されます。どのような情報が載っているのか説明します。
+</p>
+
+
+
+
+<p class="center">
+<img src="/img/whois_result_01.png" width="600px" alt="whois情報の結果">
+<img src="/img/whois_result_02.png" width="600px" alt="whois情報の結果">
+</p>
+
+
+<p>
+基本的には上記の表のようにWhois情報が表示されます。
+</p>
+  
+
+
+<div class="box">
+  <ul>
+  <li><span class="midori">Domain Name：</span>（ドメイン名）</li>
+  <li><span class="midori">Creation Date：</span>（ドメイン登録日）</li>
+  <li><span class="midori">Registrar ～：</span>（所有者の情報各種）</li>
+  <li><span class="midori">Admin ～：</span>（管理担当の情報各種）</li>
+  <li><span class="midori">Name Server：</span>（ネームサーバー情報）</li>
+  </ul>
+</div>
+
+
+
+
+
+<h2>まとめ</h2>
+
+<p>
+Whois情報公開代理があることで、自分の登録情報を出すことなく安心してブログ運営が出来るようになります。
+</p>
+<p>
+初めてレンタルサーバーと契約してブログを運営する際には忘れずに変更しておきましょう。
+</p>
+
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

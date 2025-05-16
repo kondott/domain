@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>ネームサーバー設定（DNS設定）の設定方法を解説！</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+<link rel="icon" href="/img/favicon.ico">
+<link rel="canonical" href="https://www.domain-server-study.com/dns.html" />
+
+
+<meta property="og:title" content="ネームサーバー設定（DNS）の設定・変更方法を解説！">
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/dns.html/">
+<meta property="og:image" content="https://www.domain-server-study.com/img/main2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "ネームサーバー設定（DNS）の設定・変更方法を解説！",
+	  "image":        "https://www.domain-server-study.com/img/main-img-domain.jpg" ,
+	  "dateModified": "2023-03-14",  
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+<body>
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?>
+<div id="panlist">
+<ul>
+<li>		<a href="/" title="ドメイン取得への道！">home</a> ＞</li>
+<li><a href="/dns.html">ネームサーバー設定</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+<h1><span class="aka">【かんたん解説】</span>難しいネームサーバー設定（DNS設定）の設定方法を解説！</h1>
+
+<p>
+  当ページではワードプレスやホームページを作る際に必要になってくる<span class="midori">「ネームサーバー設定（DNS設定ともいいます）」</span>
+  について、その設定方法について詳しく解説しています。
+</p>
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+        ちなみにレンタルサーバーと独自ドメインを一緒に契約すれば、ボタン操作で設定出来るようになります。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="themebox t25">
+<ol>
+  <li><a href="#kihon">設定の準備に必要なもの</a></li>
+<li><a href="#settei">具体的な設定方法について</a></li>
+<li><a href="#ip">レンタルサーバー事業者のIPアドレス一覧</a></li>
+<li><a href="#set">セット契約で設定がかんたんに</a></li>
+</ol>
+</div>
+
+
+
+<h2>１．設定の準備に必要なもの</h2>
+
+<p>
+  実際にネームサーバー設定を行うために必要なものは、ただ1つだけになります。
+</p>
+<p>
+  それは契約したレンタルサーバーが持っているサーバーの<span class="midori">ネームサーバー情報（ドメイン名）</span>を確認することです。
+</p>
+
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+        例えばエックスサーバーなら<span class="aka">ns1.xserver.jp</span>がネームサーバー情報になります。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bbb">
+<p>
+  この情報を確認し、それを契約してるドメイン会社のネームサーバー情報欄に入れて下さい。それがネームサーバー設定になります。
+</p>
+</div>
+
+
+<p>
+  実際にエックスサーバーやロリポップが提供しているネームサーバー情報は以下になります。
+</p>
+
+
+
+
+<div class="spec">
+  <table class="t10">
+  
+    <tr>
+      <th class="hai" class="35%">会社名</th>
+      <td class="hai" class="65%">DNSサーバーのドメイン名</th>
+    </tr>
+    
+  
+    <tr>
+      <th><a href="/server/xserver.html">エックスサーバー</a></td>
+      <td>ns1.xserver.jp<br>ns2.xserver.jp<br>ns3.xserver.jp<br>ns4.xserver.jp<br>ns5.xserver.jp</td>
+    </tr>
+  
+      <th><a href="/server/lolipop.html">ロリポップ</a></td>
+      <td>1uns01.lolipop.jp<br>uns02.lolipop.jp</td>
+    </tr>
+  
+    <tr>
+      <th><a href="/server/starserver.html">スターサーバー</a></td>
+      <td>ns1.star-domain.jp<br>ns2.star-domain.jp<br>ns3.star-domain.jp</td>
+    </tr>
+  
+    </table>
+</div>
+
+
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+        実際の設定において必ず必要になるのは最初の2行です。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<h2 id="settei" class="t50">２．設定方法</h2>
+<p>
+  ここからは実際の設定方法について解説していきたいと思います。
+</p>
+<p>
+ネームサーバー設定と聞くと、とても難しそうに思えてしまう方も多いのではないでしょうか。
+しかし、繰り返しますがネームサーバー設定はわずか2つだけで完了します。
+</p>
+
+
+<div class="ddd">
+<h4 class="ddd">設定ですること</h4>
+    <ol class="futoji">
+    <li><span class="">契約レンタルサーバーのネームサーバー情報（ドメイン名）を調べる</span></li>
+    <li><span class="">ドメイン事業者の管理画面に入って、ネームサーバーの設定欄にそれを貼り付ける</span></li>
+    </ol>
+</div>
+
+<p>
+  単純に言うと、この作業だけでネームサーバー設定は完了します。
+</p>
+
+
+<p>
+では実際に操作方法について解説してみましょう。
+</p>
+
+
+<h3>準備１．ドメイン会社のネームサーバー設定画面を開く</h3>
+
+<p>
+今回は、大手ドメイン会社である「お名前.com」でドメイン契約していると仮定します。
+</p>
+<p>
+まずは「お名前.com」のサイトでID・パスワードを入力して管理画面にログインをします。
+管理画面が出てきたら<span class="midori">「ドメイン設定」＞「ネームサーバーの変更」</span>をクリックしてみましょう。
+</p>
+<p>
+次の画像の画面に切り替わりますので、<span class="midori">「他のネームサーバーを利用」</span>をさらに選択します。
+するとネームサーバー情報（IPアドレス・アドレス名）を入れられる画面に遷移します。
+</p>
+<p>
+まず、この画面まで行くことが準備１になります。
+</p>
+<p class="center">
+<span class="futozi">「お名前.com」ネームサーバー設定画面</span>
+<img src="image/onamae-dns2.png" alt="お名前.comのネームサーバー設定画面">
+</p>
+
+
+
+
+
+
+<h3>準備２．レンタルサーバーのネームサーバー情報（ドメイン名）を入力する</h3>
+<p>
+設定画面まで辿り着いたら、「1プライマリネームサーバー」「2セカンダリネームサーバー」のところに
+登録するレンタルサーバー各社のネームサーバー情報を入力します。
+</p>
+
+<p>
+  下の画面ではエックスサーバーのネームサーバー情報を入力しています。
+</p>
+
+
+<p class="center">
+<span class="futozi">契約レンタルサーバーのネームサーバー情報を入力する</span>
+<img src="img/onamae-dns3.png" width="500" alt="プライマリネームサーバー">
+</p>
+
+
+
+
+
+<h3>ネームサーバー情報は基本的に2行入力すればＯＫ</h3>
+
+<p>
+また、上の画像を見てもらうとわかりように、ネームサーバー情報を入力する箇所が合計で5行あります。
+</p>
+
+<p>
+画像ではエックスサーバーのドメイン名を5行分入力していますが、基本的には「プライマリ」と「セカンダリ」の2行だけ追加すれば問題ありません。
+</p>
+<p>
+そしてドメイン名を入力して、確認画面で「設定する」などにＯＫをクリックすれば
+ネームサーバー設定は完了します。
+</p>
+
+
+
+
+<h3>ネームサーバー情報の調べ方</h3>
+<p>
+ここで問題になるのが「レンタルサーバーのネームサーバー情報はどこで調べるのか？」という点になります。
+</p>
+<p>
+各ドメイン事業者のネームサーバー情報を調べる方法は3通りあります。
+</p>
+
+<div class="bbb">
+  <ol>
+    <li>レンタルサーバーの管理画面で調べる</li>
+    <li>契約時のメールから探す</li>
+    <li>Googleで探す</li>
+  </ol>
+</div>
+
+<p>
+  上記のいずれかの方法で調べることが出来ます。
+</p>
+
+<div class="section">
+  <div class="oneArea">
+    <div class="onebox">
+      <div class="imgArea"><img src="/img/23590683.jpg" alt="shiba 吹き出しアイコン"></div>
+      <div class="fukiArea">
+        <div class="fukidasi">
+          レンタルサーバーによっては確認できる方法が異なります。
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<p>
+Googleで調べられるものについては当ページでも一覧表にして紹介しています。ページ後半部分を参照下さい。
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="ip" class="t40">３．各レンタルサーバーのネームサーバー情報</h2>
+
+  <p>
+  各レンタルサーバーのネームサーバー情報を一覧にしてみました。
+  </p>
+  
+
+  
+  
+  <div class="spec">
+  <table class="t10">
+  
+    <tr>
+      <th class="hai" class="35%">会社名</th>
+      <td class="hai" class="65%">ドメイン名</th>
+    </tr>
+    
+  
+    <tr>
+      <th><a href="/server/xserver.html">エックスサーバー</a></td>
+      <td>ns1.xserver.jp<br>ns2.xserver.jp<br>ns3.xserver.jp<br>ns4.xserver.jp<br>ns5.xserver.jp</td>
+    </tr>
+  
+      <th><a href="/server/lolipop.html">ロリポップ</a></td>
+      <td>uns01.lolipop.jp<br>uns02.lolipop.jp</td>
+    </tr>
+  
+    <tr>
+      <th><a href="/server/starserver.html">スターサーバー</a></td>
+      <td>ns1.star-domain.jp<br>ns2.star-domain.jp<br>ns3.star-domain.jp</td>
+    </tr>
+  
+    <tr>
+      <th><a href="/server/sakura.html">さくらレンタルサーバー</a></td>
+      <td>ns1.dns.ne.jp<br>ns2.dns.ne.jp</td>
+    </tr>
+  
+    <tr>
+      <th><a href="/server/heteml.html">ヘテムル</a></td>
+      <td>dns0.heteml.jp<br>dns1.heteml.jp</td>
+    </tr>
+
+  
+  
+  </table>
+  </div>
+  
+  
+  
+
+
+<h2>その他の知識</h2>
+
+
+<h3>補助知識１．事前にドメイン登録は行っておく</h3>
+
+<p>
+ネームサーバー情報の設定を行う前にレンタルサーバー側で行ってもらいたいことがあります。
+それは「独自ドメインの登録」です。
+</p>
+<p>
+エックスサーバーの管理画面を例にとって説明してみたいと思います。
+</p>
+<p>
+まず、エックスサーバーの管理画面で「ドメイン設定」を選択してください。
+</p>
+
+
+<p class="center">
+<span class="futozi">エックスサーバーの管理画面</span>
+<img src="img/xserver-domaintouroku001.png" width="500" alt="エックスサーバーでドメイン登録">
+</p>
+<p>
+「ドメイン設定」の画面に遷移したら、「ドメイン設定追加」をさらに選択します。
+</p>
+<p>
+そこで独自ドメインを設定しましょう。
+</p>
+<p>
+このように、独自ドメインを契約したらレンタルサーバー側で「ドメイン登録」を行わないといけません。
+</p>
+
+
+
+<p class="center">
+<span class="futozi">独自ドメインを登録する</span><br>
+<img src="img/xserver-domaintouroku002.png" width="500" alt="エックスサーバーでドメイン登録">
+</p>
+<p>
+ドメイン設定はネームサーバー設定と違い、時間がかからずすぐに反映されます。
+</p>
+
+
+
+<h3>補助知識２．ネームサーバー設定後の待ち時間は数時間</h3>
+<p>
+「ネームサーバーの設定も終わったけれども、なかなか画面が反映されない・・・」
+</p>
+<p>
+「お名前.com」でネームサーバー設定を「ＣＰＩ」から「エックスサーバー」に切り替えたとします。
+この時に設定後すぐ切り替わるかというとそうではありません。
+</p>
+<p>
+おおくのドメイン会社では「設定の反映完了まで25時間から72時間程度かかる場合があります」と記載されています。
+</p>
+<p>
+そのため、設定後に3日待ってしまう方も多いと思いますが、
+だいたい私の経験では設定変更して1時間～3時間もたてば、ネームサーバーの反映がおわってホームページが表示されるケースがほとんどです。
+</p>
+<p>
+どれだけ時間がかかっても、まず半日もかかりません。
+半日待っても画面が表示されないようであれば、なにか設定がおかしいのか調べ直してみたほうがいいかもしれません。
+</p>
+
+
+
+
+<h3>設定してもホームぺージが表示されないとき</h3>
+
+<p>
+3時間たっても設定が完了しない、画面が表示されないといった場合は、
+</p>
+
+<div class="ddd">
+<p class="futoji">
+（１）ネームサーバー情報の再確認<br>
+（２）レンタルサーバー側でドメイン登録が終わっているか
+</p>
+</div>
+
+<p>
+に間違いがないかを確認しましょう。
+</p>
+
+<p>
+まれに、Whois情報の設定間違いで表示が止まっていることもあります。
+ドメイン会社から「Whois情報を誤表記している」とメールが来ていないかも確認しましょう。
+</p>
+
+
+
+
+
+<h3>設定が正しいか設定チェックツールで確認しよう</h3>
+
+<p>
+取得しているドメインのネームサーバーがどのレンタルサーバーに向けて設定されているのか、
+チェックツールで正確に確認する方法もあります。
+確認するためのサイトがこちらです。
+</p>
+
+<p>
+<a href="http://dnscheck.jp/" target="_blank">DNS設定チェックツール</a>
+</p>
+
+<p>
+独自ドメインを入力して「検証」をクリックするだけで調べることができます。
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="kakusya" class="t40">より簡単にネームサーバー設定を行う方法</h2> 
+
+
+
+
+<h3>同じ運営元のレンタルサーバーとドメイン会社で契約するとかんたん設定ができる。</h3>
+
+<p>
+ネームサーバー設定がどうしても苦手な方には、より簡単に設定ができる方法もあります。
+</p>
+
+<p>
+それは「エックスサーバー」と「エックスドメイン」だったり、
+「ロリポップ」と「ムームードメイン」というように
+同じ会社が運営しているサーバーとドメイン会社をセットで契約をすると、
+大抵ワンクリックでネームサーバーの設定ができます。
+</p>
+
+<p>
+参照（※<a href="/domain/#unei">同じ運営元となるドメイン会社とレンタルサーバーまとめ</a>）
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_main.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

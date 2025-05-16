@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<title>【1ページでわかる】Googleサーチコンソールの設定と活用方法</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="/style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="/style-iphone.css" />
+
+<meta property="og:title" content="Googleサーチコンソール導入のための設定と活用方法">
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.domain-server-study.com/blog/search-console.html">
+<meta property="og:image" content="https://www.domain-server-study.com/img/domain_twitter_img.png">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "Googleサーチコンソール導入のための設定と活用方法",
+	  "image":        "https://www.domain-server-study.com/img/domain-server-study2.jpg ,
+	  "datePublished": "2023/01/02",
+	  "dateModified": "2023-01-02",  
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74234851-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74234851-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-46FVQB2T6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-46FVQB2T6M');
+</script>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="/"><img src="/img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="/"><img src="/img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/navi.php'); ?><!--上段ここまで-->
+
+
+<div id="panlist">
+<ul>
+<li><a href="/" title="ドメイン取得への道！">Home</a> > </li>
+<li><a href="/blog/search-console.html">Googleサーチコンソールの設定方法</a></li>
+</ul>
+</div>
+
+
+
+<!--ここから中段が始まります--><div class="wrap"><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+<h1><span class="aka">【初心者向け】</span>Googleサーチコンソールの設定方法・使い方</h1>
+
+<p>
+
+</p>
+
+
+
+
+
+<div class="themebox">
+	<ol class="mail"  style="list-style: none;">
+		<li><span class="futoji">Todo１．Googleサーチコンソールについて</span></li>
+			<ul>
+				<li>Googleサーチコンソールとは？</li>
+				<li>GoogleサーチコンソールとGoogleアナリティクスとの違い</li>
+			</ul>
+		<li><span class="futoji">Todo２．開設その１．Googleアカウントを作る</span></li>
+			<ul>
+				<li>サーチコンソールにはGoogleアカウントの開設が必須</li>
+				<li>Googleアカウントの作り方</li>
+			</ul>
+		<li><span class="futoji">Todo３．開設その２．Googleサーチコンソールに登録する</span></li>
+			<ul>
+				<li>導入方法は「ドメインプロパティ」と「URLプレフィックス」の2種類</li>
+				<li>ドメインプロパティでの導入</li>
+				<li>URLプレフィックスでの導入</li>
+			</ul>
+		<li><span class="futoji">Todo４．開設その３．ドメインプロパティでの導入方法</span></li>
+			<ul>
+				<li>サーチコンソール提供の「txt」をドメイン管理画面で設定する</li>
+				<li>サーチコンソールで設定確認</li>
+			</ul>
+		<li><span class="futoji">Todo５．出来ることその１．作成ページをGoogleに登録</span></li>
+			<ul>
+				<li>サイトマップ登録とは？</li>
+				<li>XML形式のサイトマップページを作成する</li>
+				<li>サーチコンソールでサイトマップURLを申請する</li>
+				<li>登録完了後は適時サイトマップを修正（Wordpressは自動申請）</li>
+			</ul>
+		<li><span class="futoji">Todo６．出来ることその２．ぺージのクオリティチェック</span></li>
+			<ul>
+				<li>SEO対策には必須のクオリティチェック</li>
+				<li>サーチコンソールからのエラー通知をチェックしよう</li>
+				<li>エクスペリエンスで詳細を確認してページを修正</li>
+				<li>修正後は適時サーチコンソールで確認する</li>
+			</ul>
+		<li><span class="futoji">Todo７．出来ることその３．Webサイトのキーワード解析</span></li>
+			<ul>
+				<li>クエリ数を確認できる</li>
+				<li>サーチコンソールインサイトの活用</li>
+			</ul>
+		<li><span class="futoji">Todo８．出来ることその４．実践的なケーススタディと対応方法</span></li>
+		<ul>
+			<li>Wordpressのサイトマップ登録はプラグインで自動化できる</li>
+			<li>ページ表示速度が遅い</li>
+			<li>モバイルユーザビリティの問題</li>
+			<li>クエリデータをダウンロードして確認する</li>
+		</ul>
+		<li><span class="futoji">まとめ</span></li>
+	</ol>
+</div>
+
+
+
+
+
+
+
+
+<h3 id=""><span class="ki">Todo１</span>．サーチコンソールについて</h3>
+<p>
+
+</p>
+
+<div class="aaa">
+<div class="themebox">
+	<ul>
+		<li><span class="futoji">サーチコンソールとは？</span></li>
+		<li><span class="futoji">GoogleサーチコンソールとGoogleアナリティクスとの違い</span></li>
+	</ul>
+</div>
+</div>
+
+<h5>サーチコンソールとは？</h5>
+<p>
+GoogleサーチコンソールはGoogleのSEO対策を行う際に必要不可欠なサービスで、Webサイトを運営する人であれば必ず登録しているサービスと言っていいでしょう。
+</p>
+<p>
+サーチコンソールでは主に3つのことが出来ます。「作成したページを検索エンジンに登録する作業」「ページのクオリティエラーの内容確認と修正」「検索クエリの確認」の3つになります。
+ページ登録作業については基本的には自動化されますので（ワードプレスの場合）、サーチコンソールの開設直後に環境を導入してしまえば後は放置で問題ありません。
+</p>
+<p>
+基本的には運営しながら届くページのクオリティエラーのチェックが大切になってきます。エラーが出た時には届いたエラー内容に基づいてページの修正を行います。
+</p>
+
+<h5>GoogleサーチコンソールとGoogleアナリティクスとの違い</h5>
+<p>
+サーチコンソールでは検索クエリの確認ができます。クエリを簡単に説明すると「どんなキーワードで訪問されているのか」がわかります。
+またキーワードごとの検索エンジンの表示順位もわかります。これはアクセス解析の機能に近いと言えますが、サーチコンソールが有するアクセス解析機能はこのクエリ機能ぐらいになります。
+</p>
+<p>
+もう１つGoogleのサービスにはGoogleアナリティクスと呼ばれるアクセス解析のサービスがあります。
+こちらはより専門的なアクセス解析でページごとのアクセス数や、滞在時間や離脱率、訪問者の属性（年齢やブラウザなど）がわかります。
+新しいバージョンのGA4と呼ばれるアナリティクスでは、さらにアプリや動画についての解析も出来るようになっています。
+</p>
+
+
+
+
+<h3 id=""><span class="ki">Todo２</span>．導入その１．Googleアカウントを作る</h3>
+
+<div class="aaa">
+<div class="themebox">
+	<ul>
+		<li><span class="futoji">サーチコンソールにはGoogleアカウントの開設が必須</span></li>
+		<li><span class="futoji">Googleアカウントの作り方</span></li>
+	</ul>
+</div>
+</div>
+
+<h5>サーチコンソールにはGoogleアカウントの開設が必須</h5>
+<p>
+サーチコンソールを活用するためには、まずGoogleアカウントの開設が必要になります。
+GoogleアカウントはサーチコンソールだけでなくGoogleアナリティクス、Googleアドセンス、GmailなどGoogleのサービスを活用する際に必要なものになっています。
+</p>
+<p>
+GMailのID・パスワードは実はGoogleアカウントと同義なので既にGmailなどを利用している場合は、Googleアカウントを持っていることになります。
+GmailのIDとパスワードを入れればサーチコンソールの管理画面に入れます。
+</p>
+<p>
+Googleアカウントを未開設の方は以下を確認して作成してください。大体10分もあれば無料でかつ簡単にアカウントを作ることができます。
+</p>
+
+<h5>Googleアカウントの作り方</h5>
+<p>
+Googleアカウントを作る場合、
+まずは<a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank">Googleアカウントの開設サイト</a>からアカウント登録を行います。
+</p>
+<p>
+ここで<span class="futoji">「氏名」「ユーザ名」「パスワード」</span>の3つを入れます。「ユーザ名」はそのままGmailアドレスになります。
+Googleアカウントの作成においては「ユーザー名」が最も重要な箇所と言えます。
+</p>
+<p>
+「氏名」に本名を入れるべきかどうか迷う方もいると思いますが、「氏名」「パスワード」はアカウント作成後に後からでも変更が出来ます。
+</p>
+<p class="center">
+	<img src="/img/google-account001.png" alt="Googleアカウントの作成" width="90%">
+</p>
+	
+
+<p>
+次に<span class="futoji">「電話番号」「再設定用メールアドレス」「誕生日」「性別」</span>を入れます。
+</p>
+
+<p>
+「電話番号」と「再設定用アドレス」については出来ればどちらかは登録した方が良いでしょう。パスワード忘れの時に対応できなくなります。
+しかし一旦は空欄のままでもOKで省略して登録ことも出来ます。この2つについてもGoogleアカウントを開設した後に追加で入れることが出来ます。
+</p>
+
+<p class="center">
+<img src="/img/google-account002.png" alt="Googleアカウントの作成 電話番号" width="90%" >
+</p><br>
+	
+
+<p>
+これでGoogleアカウントが開設できます。この時に作った「ユーザー名」と「パスワード」がGoogleアカウントとなりますので、サーチコンソールやGoogleアナリティクスに入る場合には
+この時のIDとパスワードを入れて管理画面に入りましょう。
+</p>
+
+
+
+
+
+
+<h3 id=""><span class="ki">Todo３</span>．導入その２．Googleサーチコンソールの導入方法</h3>
+<p>
+Googleアカウントを作成したら、サーチコンソールが作れるようになります。
+まずは<a href="https://search.google.com/search-console/about" target="_blank">Googleサーチコンソールの登録画面</a>からGoogleアカウントを入れて管理画面に入りましょう。
+</p>
+<div class="aaa">
+<div class="themebox">
+	<ul>
+		<li><span class="futoji">ドメインプロパティとURLプレフィックスによる2種類の導入方法。それぞれの違いを解説</span></li>
+		<li><span class="futoji">ドメインプロパティによる導入</span></li>
+		<li><span class="futoji">URLプレフィックスによる導入</span></li>
+	</ul>
+</div>
+</div>
+
+<h5>導入方法は「ドメインプレパティ」と「URLプレフィックス」の2種類</h5>
+<p>
+まず、新しいGoogleアカウントで入った場合、サーチコンソールを登録する所から始まります。以下のように「ドメイン」と「URLプレフィックス」のどちらかのタイプを選択して
+登録します。
+</p>
+
+<p class="center">
+	<img src="/img/search-console.png" alt="サーチコンソール 登録画面" width="90%" >
+</p><br>
+
+<p>
+この2つの違いを説明すると「データ収集できる範囲」が異なっています。ドメインプレパティは広くデータを収集し、URLプレフィックスは限定されたページだけ収集してきます。
+</p>
+
+<p>
+	ドメインプレパティの広く収集するとはどのような意味でしょうか。
+</p>
+<p>
+	これは「domain.jp」というドメインで登録したら「www」がついているURLや「www」がついていないURLのどちらも。また「https」と「http」でもどちらのデータも収集してくれることを意味します。
+	つまり、以下のどのパターンでアクセスがあってもデータに含んでくれます。当然、それ以降の個別ページのデータも含みます。またサブドメインがある場合はそれも含みます。
+</p>
+<div class="aaa">
+<p>
+	ドメインプレパティによる登録はドメイン名（domain.jp）で登録するだけで様々なパターンのデータを収集してくれる。
+</p>
+	<ul>
+		<li>http:domain.jp</li>
+		<li>https:domain.jp</li>
+		<li>http:www.domain.jp</li>
+		<li>https:www.domain.jp</li>
+		<li>http:news.domain.jp</li>
+		<li>http:wordpress.domain.jp</li>
+	</ul>
+<p>
+	※「www」ありなしや「https」の登録はレンタルサーバーやワードプレスで設定します。
+</p>
+</div>
+
+<p>
+	一方でURLプレフィックスは限定した登録データだけ収集してくれます。
+</p>
+<p>
+	これはもし「https:domain.jp」で登録したら、その登録パターンだけ収集してくれることを意味します。
+	この場合「www」がついている「https:www.domain.jp」は区別されデータは収集されません。
+</p>
+<div class="aaa">
+<p>
+	URLプレフィックスの場合は登録したパターンのみデータ収集してくれる。
+</p>
+	<ul>
+		<li>https:domain.jp</li>
+	</ul>
+<p>上記のように「https:」「wwwなし」のパターンである「https:domain.jp」で登録したら以下のパターンはデータ収集しない。</p>
+	<ul>
+		<li>http:www.domain.jp</li>
+		<li>https:www.domain.jp</li>
+		<li>http:news.domain.jp</li>
+		<li>http:wordpress.domain.jp</li>
+	</ul>
+</div>
+
+
+<p>
+	この2種類のどちらで登録したら良いかと言うとGoogleが推奨するのは「ドメインプレパティ」になります。
+	ただし登録方法が難しいため、登録状況を管理できそうであれば「URLプレフィックス」でも良いと思います。
+</p>
+
+<p>
+	たとえば「https」「wwwなし」のパターンで「https:domain.jp」登録した場合、
+	ワードプレスのURL設定だったり内部リンクを「https:domain.jp」で合わせられるのであればURLプレフィックスで登録しても問題ないでしょう。
+</p>
+
+
+
+
+
+<h3 id=""><span class="ki">Todo４</span>．導入その３．Google推奨の「ドメインプレパティ」による設置</h3>
+
+<p>
+ここでは「ドメインプレパティ」と「URLプレフィックス」の2種類において、Googleが推奨する方法である「ドメインプレパティ」による登録方法を解説します。
+</p>
+<p>
+こちらの方法はサーチコンソールで配布されるtxtレコードをコピペして、それをドメイン会社の管理画面で追加することで設定できる方法になります。
+</p>
+
+<div class="aaa">
+<div class="themebox">
+	<ul>
+		<li><span class="futoji">ドメインの登録</span></li>
+		<li><span class="futoji">サーチコンソール提供の「txt」をドメイン管理画面で設定する</span></li>
+		<li><span class="futoji">サーチコンソールで設定確認</span></li>
+	</ul>
+</div>
+</div>
+
+<h5>設置その１．ドメインの登録</h5>
+<p>
+ドメインプレパティで登録する場合、まずは購入している独自ドメインをそのまま入れてください。その後「続行」をクリックします。
+</p>
+<p class="center">
+	<img src="/img/search-console-domain.png" alt="サーチコンソール ドメイン" width="90%" >
+</p><br>
+
+
+
+
+<h5>設置その２．サーチコンソール提供の「txtレコード」をドメインの管理画面で追加する</h5>
+<p>
+次に「DNSレコードでのドメイン所有権の確認」と表示のある画面が出てきます。
+</p>
+<p>
+これを簡単に説明すると「TXTレコードをドメイン会社の管理画面に追加してください」ということになります。
+そのため赤枠で囲っているTXTレコードをお名前.comやエックスサーバードメインなどのドメイン会社の管理画面で追加してあげる必要があります。
+</p>
+<p class="center">
+	<img src="/img/search-console-txt.png" alt="サーチコンソール ドメイン" width="90%" >
+</p><br>
+
+<p>
+では、実際にお名前.comでtxtレコードを追加してみましょう。
+</p>
+<p>
+まず、お名前.comの管理画面に入ります。
+</p>
+<p>
+→画面上部にあるメニューバーの「ドメイン設定」<br>
+→サイドバーにある「DNS/転送設定」<br>
+→該当ドメインを選択してチェックボックスをつけたら「次へ」<br>
+→さらに「DNSレコード設定を利用する」をクリックします。
+</p>
+<p>
+	そうすると、ようやくDNSレコード設定の画面になりtxtxレコードを追加できる画面に遷移します。
+</p>
+<p>
+	実際の画面で説明してみましょう（2023年1月時点の画面をキャプチャ）
+</p>
+
+<p class="futoji t40">
+	（１）まず画面上部にあるメニューバーの「ドメイン設定」をクリックします。
+</p>
+
+<p class="center">
+	<img src="/img/onamae-txt1.png" alt="txtレコード追加 その1" width="90%" >
+</p><br>
+
+<p class="futoji t40">
+	（２）サイドバーにある「DNS/転送設定」をクリックします。サイドバーではない箇所でも同じ場所に遷移するのでどちらを選択しても問題ありません。
+</p>
+
+<p class="center">
+	<img src="/img/onamae-txt2.png" alt="txtレコード追加 その2" width="90%" >
+</p><br>
+
+<p class="futoji t40">
+	（３）該当ドメインを選択してチェックボックスをつけたら「次へ」を選択しましょう。
+</p>
+
+<p class="center">
+	<img src="/img/onamae-txt3.png" alt="txtレコード追加 その3" width="90%" >
+</p><br>
+
+<p class="futoji t40">
+	（４）さらに「DNSレコード設定を利用する」をクリックします。
+</p>
+
+<p class="center">
+	<img src="/img/onamae-txt4.png" alt="txtレコード追加 その4" width="90%" >
+</p><br>
+
+<p class="futoji t40">
+	（５）ここまで来てようやくDNSレコードを触れる画面に遷移します。ここでTXTレコードを追加します。
+</p>
+
+<ul>
+	<li><span class="futoji">ホスト名</span>：すぐ下に選んだドメイン名が記載されているため、ここは空白でOKだったと思います。</li>
+	<li><span class="futoji">TYPE</span>：最初は「A」になっていると思いますので「txt」を選択して変更します。</li>
+	<li><span class="futoji">TTL</span>：反映時間を設定します。デフォルトの「86400」は1440分となり反映に1日掛かります。長いので自分は「3700」（大体1時間）にしています。</li>
+	<li><span class="futoji">VLAUE</span>：ここにサーチコンソールのTXTレコードを貼り付けます。</li>
+</ul>
+
+<p>
+	ここまで設定すると以下のような画面になると思います。右の「追加」をクリックします。
+</p>
+
+<p class="center">
+	<img src="/img/onamae-txt5.png" alt="txtレコード追加 その5" width="90%" >
+</p><br>
+
+
+<p>
+	無事に追加されると、以下のように反映されます。ここまで出来たらサーチコンソールで反映確認を行います。エックスサーバードメインやConohaドメイン等の場合は
+	それぞれのマニュアルを確認してみましょう。
+</p>
+<p class="center">
+	<img src="/img/onamae-txt6.png" alt="txtレコード追加 その6" width="90%" >
+</p><br>
+
+<p>
+	このTXTレコードを追加する方法は、ドメインのDNSレコードを追加することになりそれなりに専門的な作業と言えます。
+</p>
+<p>
+	TXTレコードの追加と削除だけであれば、そこまで問題ないと思いますが
+	その他の部分を触ってしまうとWebサイトの表示やメールの送受信に影響がでる箇所なので注意してください。
+</p>
+
+
+
+
+<h5>設置その３．サーチコンソールで設定確認</h5>
+<p>
+TXTレコードの追加が完了したら、もう一度サチコの画面に戻ってTXTレコードの反映確認をしましょう。そこまで完了すれば生成できます。
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H2 class="t50">Googleサーチコンソール活用</H2>
+
+<p>
+	ここからはGoogleサーチコンソールで出来ることを紹介していきたいと思います。
+</p>
+<p>
+	サーチコンソールで出来ることは主に3つ。「Googleにページ登録される」「ページのクオリティチェックとエラー通知と確認」「検索クエリの確認」になります。
+	この3つについてそれぞれ分けて紹介していきます。
+</p>
+
+<h3 id=""><span class="ki">Todo５</span>．出来ることその１．作成ページをGoogleへ登録する</h3>
+
+<div class="aaa">
+<div class="themebox">
+	<ul>
+		<li><span class="futoji">Googleに登録されるための「サイトマップ」とは？</span></li>
+		<li><span class="futoji">XML形式のサイトマップページを作成する</span></li>
+		<li><span class="futoji">サーチコンソールでサイトマップURLを申請する</span></li>
+		<li><span class="futoji">登録完了後は適時サイトマップを修正（Wordpressは自動申請）</span></li>
+	</ul>
+</div>
+</div>
+
+<h5>Googleに登録されるための「サイトマップ」とは？</h5>
+<p>
+サーチコンソールの機能で最初に紹介したいのがサイトマップになります。
+</p>
+<p>
+サーチコンソールでは、ファイル名の拡張子が「.XML」となっているサイトマップページを登録することが出来ます。
+このXML形式のサイトマップには通常「作成したページのURL」と「作成日時」が記載されています。
+</p>
+<p>
+サイトマップページをサーチコンソールに申請し登録しておくことで、運営サイトのページがGoogleに認識されるのが速くなります。
+また、どのページがGoogleに登録されているのか、どのページが登録されていないのかがわかります。
+</p>
+<p>
+自サイトのページ登録状況がわかるので、登録されいないページは修正するなどして再度Googleに認識してもらいます。
+このようにサイトマップ機能があることでSEO対策を実施することができます。
+</p>
+
+
+
+
+<h5>XML形式のサイトマップページを作成する</h5>
+<p>
+サーチコンソールに作成したサイトマップを申請をするには、実際にファイルを作っていないといけません。
+そのため、XML形式で作られたサイトマップが必要になります。
+</p>
+<p>
+しかし、ワードプレスの場合はプラグインが対応してくれます。そのため自分でこのXML形式のサイトマップを作る必要はありません。
+</p>
+<p>
+自動でサイトマップを作ってくれる「<a href="https://ja.wordpress.org/plugins/google-sitemap-generator/">XLM sitemaps</a>」などの専用プラグインを導入しましょう。
+</p>
+
+
+<h5>サーチコンソールでサイトマップURLを申請する</h5>
+<p>
+プラグインなどでサイトマップを作成したら、そのURLをサーチコンソールで申請しなくてはいけません。申請してからサイトマップが認識されたことの反映確認をして
+始めてサイトマップ機能が開始されます。
+</p>
+
+<h5>登録完了後は適時サイトマップを修正（Wordpressは自動申請）</h5>
+<p>
+一度、サイトマップを申請してしまえば、あとはプラグインが自動的に作ったページのサイトマップを作成してくれます。
+またサーチコンソール側でも自動的にサイトマップを読込みにいって登録状態を把握してくれます。
+</p>
+
+<p>
+そのため一度登録をしてしまえば、基本的には
+</p>
+
+
+
+
+
+<h3 id=""><span class="ki">Todo６</span>．出来ることその２．ぺージのクオリティチェック</h3>
+
+<p>
+	ページ表示速度やテキストの大きさなど問題があるとサーチコンソールから「モバイルユーザビリティエラー」が送られてきます。
+	ページのクオリティチェックについて解説します。
+</p>
+
+<div class="aaa">
+<div class="themebox">
+	<ul>
+		<li><span class="futoji">SEO対策には必須のクオリティチェック</span></li>
+		<li><span class="futoji">サーチコンソールからのエラー通知をチェックしよう</span></li>
+		<li><span class="futoji">エクスペリエンスで詳細を確認してページを修正</span></li>
+		<li><span class="futoji">修正後は適時サーチコンソールで確認する</span></li>
+	</ul>
+</div>
+</div>
+
+<h5>SEO対策には必須のクオリティチェック</h5>
+<p>
+	サーチコンソールは作成ページにエラーやクオリティの問題があれば「モバイルユーザビリティエラー」と呼ばれる通知を送ってきてくれます。
+	メールやサーチコンソール内の通知欄を確認してエラーが発生した時には修正していきましょう。
+</p>
+<p>
+	これらに対応することでページの評価につながるので、これもSEO対策につながります。
+</p>
+
+
+<h5>サーチコンソールからのエラー通知をチェックしよう</h5>
+<p>
+
+</p>
+
+<h5>エクスペリエンスで詳細を確認してページを修正</h5>
+<p>
+
+</p>
+
+<h5>修正後は適時サーチコンソールで確認する</h5>
+<p>
+
+</p>
+
+
+
+
+
+<h3 id=""><span class="ki">Todo７</span>．出来ることその３．Webサイトのキーワード解析</h3>
+<p>
+
+</p>
+
+<div class="aaa">
+<div class="themebox">
+	<ul>
+		<li><span class="futoji">検索クエリを確認できる</span></li>
+		<li><span class="futoji">サーチコンソールインサイトの活用</span></li>
+	</ul>
+</div>
+</div>
+
+<h5>検索クエリを確認できる</h5>
+<p>
+
+</p>
+
+<h5>サーチコンソールインサイトの活用</h5>
+<p>
+
+</p>
+
+
+
+
+<h3 id=""><span class="ki">Todo８</span>．出来ることその４．実践的なケーススタディと対応方法</h3>
+<p>
+
+</p>
+
+<div class="aaa">
+<div class="themebox">
+	<ul>
+		<li><span class="futoji">Wordpressのサイトマップ登録はプラグインで自動化できる</span></li>
+		<li><span class="futoji">ページ表示速度が遅い</span></li>
+		<li><span class="futoji">モバイルユーザビリティの問題</span></li>
+		<li><span class="futoji">クエリデータをダウンロードして確認する</span></li>
+	</ul>
+</div>
+</div>
+
+<h5>Wordpressのサイトマップ登録はプラグインで自動化する</h5>
+<p>
+
+</p>
+
+<h5>ページ表示速度が遅い</h5>
+<p>
+
+</p>
+
+<h5>モバイルユーザビリティの問題を解決する</h5>
+<p>
+
+</p>
+
+<h5>クエリデータをダウンロードして確認する</h5>
+<p>
+
+</p>
+
+
+
+
+
+
+
+
+<h3>まとめ</h3>
+
+
+
+
+
+
+
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sns.php'); ?>
+
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここから中段の右ＢＯＸ部分が始まります--><div id="right-box">
+
+
+
+
+	<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/sidebar_blog.php'); ?>
+
+
+	<h2>プロフィール</h2>
+
+	<div class="zikopr">
+	<p class="center t00 b00">
+	<img src="/img/profile_01.png" alt="プロフィール" width="80%" class="b00 t20">
+	</p>
+	<p class="pr01 t00 b00">demiglase</p>
+	<p class="pr02 t00">
+	2000年代前半からネット広告に携わっています。2年目に月収100万を超えてから専業で仕事をしていましたが、兼業へ。現在はEC系の仕事に就いています。
+	</p>
+	<p class="pr03 t00">
+	以前と比べると個人サイトには受難の時代だと思いますが、改めて2022年9月にブログを立上げました。このカテゴリーではその経緯を記していきます。
+	</p>
+	</div>
+	
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+
+</div></div><!--中段ここまで-->
+
+
+
+			<?php include( $_SERVER['DOCUMENT_ROOT'] . '/php/footer_short.php'); ?>
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+</body>
+</html>
